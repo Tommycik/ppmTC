@@ -1,0 +1,48 @@
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 100%;
+  list-style: none;
+  position: sticky;
+  top:0;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-content: baseline;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+}
+#menu1{
+
+}
+
+#menu2{
+}
+
+#menu3{
+}
+
+#menu4{
+}
+
+.head{
+  border:none;
+  justify-self: flex-start;
+}
+.endHead
+{
+  border:none;
+  justify-self: flex-end;
+}
+#home{
+  color: dodgerblue;
+  font-family: arial,sans-serif;
+  display: block;
+  align-self: baseline;
+  white-space: nowrap ;
+  justify-self: center;
+  text-decoration: none;
+}
