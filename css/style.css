@@ -10,39 +10,52 @@ body{
   top:0;
   border-bottom: 1px solid black;
   display: flex;
-  align-content: baseline;
+  align-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: center;
 
 }
 #menu1{
-
+  height: 100%;
+  width: 100%;
 }
 
 #menu2{
+  height: 100%;
+  width: 100%;
 }
 
 #menu3{
+  height: 100%;
+  width: 100%;
 }
 
 #menu4{
+  height: 100%;
+  width: 100%;
 }
 
 .head{
   border:none;
+  width: 5vw ;
+  height: 5vh;
   justify-self: flex-start;
 }
 .endHead
 {
+
+  width: 5vw ;
+  height: 5vh;
   border:none;
   justify-self: flex-end;
 }
 #home{
+  box-sizing: border-box;
   color: dodgerblue;
-  font-family: arial,sans-serif;
-  display: block;
-  align-self: baseline;
+  font-size: 3vw;
+  text-align: center;
   white-space: nowrap ;
-  justify-self: center;
+  align-self: center;
   text-decoration: none;
 }
