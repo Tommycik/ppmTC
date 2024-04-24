@@ -4,18 +4,18 @@ body{
   padding: 0;
 }
 .header{
-  width: 100%;
   list-style: none;
   position: sticky;
   top:0;
   border-bottom: 1px solid black;
-  display: flex;
-  align-content: center;
+  align-content: baseline;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: safe flex-start  ;
+  background-color: white;
 
 }
+
 #menu1{
   height: 100%;
   width: 100%;
@@ -36,26 +36,106 @@ body{
   width: 100%;
 }
 
-.head{
+.head button{
   border:none;
-  width: 5vw ;
-  height: 5vh;
-  justify-self: flex-start;
+  width: 60px;
+  height:60px;
 }
-.endHead
-{
+ul li{
+  display: flex;
+}
+#textPrime{
+  flex-direction: column;
+  align-content: baseline;
+  flex-wrap: wrap;
+}
 
-  width: 5vw ;
-  height: 5vh;
+ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.normal{
+  display: block;
+}
+.related{
+  border-top: black solid 1px;
+  margin-right: 20px;
+}
+.lessImportant{
+  color: dimgrey;
+  font-size:20px;
+}
+#textPrime{
+  max-width: 50%;
+}
+#textPrime p{
+  font-size: 30px;
+}
+#textPrime h1{
+  font-size: 40px;
+  font-weight: 800;
+}
+.prime a{
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.prime{
+  flex-direction: column;
+  align-content: baseline;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.subPrime{
+  flex-direction: row;
+  align-content: baseline;
+  flex-wrap: wrap;
+}
+
+.endHead button {
+  width: 60px;
+  height:60px;
   border:none;
-  justify-self: flex-end;
+}
+#subOnly{
+  display: block;
+  background-color: darkslateblue;
+  color: white;
+  width: 250px;
+}
+.head{
+  margin-left: 4%;
+}
+li button{
+  margin: auto;
+}
+#ending{
+  margin-right: 3%;
+}
+#home a{
+  display:block;
+  color: royalblue;
+  text-decoration: none;
+  font-size: 70px;
+  letter-spacing: -3px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  transform: scale(1,1.6);
+}
+li a:hover{
+  color: darkslateblue;
 }
 #home{
-  box-sizing: border-box;
-  color: dodgerblue;
-  font-size: 3vw;
-  text-align: center;
+
   white-space: nowrap ;
   align-self: center;
-  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+
 }
