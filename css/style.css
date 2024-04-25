@@ -1,8 +1,9 @@
 body{
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
+
 .header{
   list-style: none;
   position: sticky;
@@ -64,7 +65,7 @@ ul{
 }
 .lessImportant{
   color: dimgrey;
-  font-size:20px;
+  font-size:10px;
 }
 #textPrime{
   max-width: 50%;
@@ -93,17 +94,28 @@ ul{
   align-content: baseline;
   flex-wrap: wrap;
 }
-
+.othersMain{
+  flex-direction: row ;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .endHead button {
   width: 60px;
   height:60px;
   border:none;
 }
-#subOnly{
+.subOnly{
   display: block;
   background-color: darkslateblue;
   color: white;
-  width: 250px;
+  width: 200px;
+  padding: 5px 0;
+  font-size: 100%;
+  text-align: center;
+}
+.news{
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .head{
   margin-left: 4%;
@@ -111,8 +123,15 @@ ul{
 li button{
   margin: auto;
 }
+.newsHead{
+  color: dimgray;
+}
 #ending{
   margin-right: 3%;
+}
+.normal a{
+  text-decoration: none;
+  color: black;
 }
 #home a{
   display:block;
@@ -136,6 +155,52 @@ li a:hover{
   margin-right: auto;
   margin-bottom: 15px;
   margin-top: 15px;
+}
+.othersSub{
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 10vh;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  border-collapse: collapse;
+  margin-bottom:1%;
+  margin-top:1%;
+  padding: 2%;
+}
+.sections{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.othersSub li{
 
-
+  width: 70%;
+  height: 100%;
+}
+.subImg{
+  width :30%;
+}
+.subImg img{
+  width:100%;
+  height: 100%;
+  margin-right: 4%;
+}
+.images{
+  width: 600px;
+  height: 150px;
+}
+.images li{
+  width: 30%;
+  margin-right:3%;
+  margin-left: 3%;
+}
+.images li img{
+  width: 100%;
+}
+#special{
+  border-bottom: orangered solid 1px;
+  display: block;
+  width: 100%;
+  color: orangered;
+  margin-top:100px;
 }
