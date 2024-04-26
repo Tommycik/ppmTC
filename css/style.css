@@ -111,12 +111,15 @@ ul{
 }
 .subOnly{
   display: block;
-  background-color: darkslateblue;
+  background-color: steelblue;
   color: white;
   width: 200px;
   padding: 5px 0;
   font-size: 100%;
   text-align: center;
+}
+.latest{
+  flex-direction: column;
 }
 .news{
   flex-direction: column;
@@ -131,7 +134,7 @@ li button{
 .newsHead{
   color: dimgray;
   padding-bottom: 10px;
-  border-bottom: darkslateblue solid 3px; ;
+  border-bottom: steelblue solid 3px; ;
 }
 #ending{
   margin-right: 3%;
@@ -142,7 +145,7 @@ li button{
 }
 #home a{
   display:block;
-  color: royalblue;
+  color: steelblue;
   text-decoration: none;
   font-size: 70px;
   letter-spacing: -3px;
@@ -151,8 +154,8 @@ li button{
   font-weight: 800;
   transform: scale(1,1.6);
 }
-li a:hover{
-  color: darkslateblue;
+li a,a h1:hover{
+  color: steelblue;
 }
 #home{
 
@@ -213,7 +216,7 @@ li a:hover{
 }
 
 .signup{
-  background-color: beige;
+  background-color: whitesmoke;
   display: block;
   text-align: center;
   height: 120px;
@@ -225,16 +228,102 @@ li a:hover{
   font-size: 20px;
 }
 .signup button{
-  border: darkslateblue solid 2px;
-  color: darkslateblue;
+  border: steelblue solid 2px;
+  color: steelblue;
   width:120px;
   height: 60px;
-  background-color: beige;
+  background-color: whitesmoke;
   border-radius: 5px;
   font-size: 100%;
   font-weight: bold;
 }
 .signup button:hover{
-  background-color: darkslateblue;
+  background-color: steelblue;
   color: white;
+}
+.sections{
+  width: 100%;
+}
+.promo{
+  padding: 10%;
+  justify-content: center;
+}
+.promo a {
+  text-align: center;
+}
+#promoImg{
+  width: 50%;
+  height: 100%;
+}
+.recommended{
+  display: block;
+  width: 100%;
+}
+.forYou{
+  color: steelblue;
+  width: 100%;
+
+  border-bottom: steelblue solid 3px;
+  display: block;
+
+}
+.recommendedNews{
+  margin-left:0px;
+  padding: 0px;
+  list-style: none;
+  counter-reset: steps;
+  width: 100%;
+}
+ .recommendedNews li{
+  counter-increment: steps;
+   margin-bottom: 1.5em;
+}
+.recommendedNews li a{
+
+  font-weight: bold;
+}
+.recommendedNews li ::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: steelblue;
+  color: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
+.parts{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.category{
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.categories ul{
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.categoryRelated{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.categoryImg{
+  height: 50%;
+}
+.categoryHead{
+  color: dimgray;
+  padding-bottom: 10px;
+  border-bottom: steelblue solid 3px;
+
+}
+.categoryName a{
+  text-decoration: none;
+  display: block;
+  width: 100%;
 }
