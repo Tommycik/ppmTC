@@ -287,6 +287,7 @@ li a:hover{
 .recommendedNews{
   margin-left:0;
   padding: 0;
+  margin-top: 5%;
   list-style: none;
   counter-reset: steps;
   width: 100%;
@@ -394,4 +395,40 @@ li a:hover{
 .variant{
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+
+.prova{
+  display: flex;
+  align-items: center;
+}
+.number{
+  background-color: steelblue;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.end{
+  box-shadow: black 0 0 5px ;
+  display: flex;
+}
+.enderPart{
+  display: flex;
+  flex-direction: column;
+}
+.ender{
+  font-weight: bolder;
+}
+.ender:hover{
+  text-decoration: underline;
+  color: black;
+}
+.hidden{
+  display: flex;
+  justify-content: space-between;
 }
