@@ -63,6 +63,11 @@ ul{
   border-top: black solid 1px;
   margin-right: 20px;
 }
+.relatedNews{
+  border-top: black solid 1px;
+  margin-right: 20px;
+  padding: 10px 0;
+}
 .lessImportant{
   color: dimgrey;
   font-size:10px;
@@ -125,6 +130,8 @@ li button{
 }
 .newsHead{
   color: dimgray;
+  padding-bottom: 10px;
+  border-bottom: darkslateblue solid 3px; ;
 }
 #ending{
   margin-right: 3%;
@@ -203,4 +210,31 @@ li a:hover{
   width: 100%;
   color: orangered;
   margin-top:100px;
+}
+
+.signup{
+  background-color: beige;
+  display: block;
+  text-align: center;
+  height: 120px;
+  padding: 15px;
+}
+.signup p{
+
+  font-weight: bold;
+  font-size: 20px;
+}
+.signup button{
+  border: darkslateblue solid 2px;
+  color: darkslateblue;
+  width:120px;
+  height: 60px;
+  background-color: beige;
+  border-radius: 5px;
+  font-size: 100%;
+  font-weight: bold;
+}
+.signup button:hover{
+  background-color: darkslateblue;
+  color: white;
 }
