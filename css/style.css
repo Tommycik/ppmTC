@@ -54,6 +54,7 @@ section{
 .frontPage{
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 .front{
   flex-direction: column;
@@ -67,6 +68,23 @@ section{
 .articleTitle{
   width: 100%;
   flex-direction: column;
+}
+.subArticle{
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 2%;
+  border-bottom: dimgray solid 1px;
+}
+.subArticle img{
+
+  width: 25%;
+}
+.subArticleText{
+  flex-direction: column;
+}
+.mainImg{
+  width: 100%;
 }
 
 li{
