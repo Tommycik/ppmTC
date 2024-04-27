@@ -86,7 +86,10 @@ section{
 .mainImg{
   width: 100%;
 }
-
+.ad{
+  width: 100%;
+  flex-direction: column;
+}
 li{
   display: flex;
 }
