@@ -1,48 +1,75 @@
 body{
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
 }
-
+img{
+  width: 100%;
+  height: 100%;
+}
+div{
+  display: flex;
+}
 .header{
-  list-style: none;
   position: sticky;
   top:0;
   border-bottom: 1px solid black;
-  align-content: baseline;
+  align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: safe flex-start  ;
+  justify-content: space-between;  ;
   background-color: white;
+  widht: 100%;
+  height:70px;
+
+  padding-left: 2%;
+  padding-right: 2%;
 
 }
-
-#menu1{
-  height: 100%;
-  width: 100%;
-}
-
-#menu2{
-  height: 100%;
-  width: 100%;
-}
-
-#menu3{
-  height: 100%;
-  width: 100%;
-}
-
-#menu4{
-  height: 100%;
-  width: 100%;
-}
-
-.head button{
+.menuChange{
   border:none;
-  width: 60px;
-  height:60px;
+  height: 30px;
+  border:none;
+  width: 30px;
+  padding: 5px;
 }
-ul li{
+.menu{
+  height: 30px;
+  border:none;
+  width: 30px;
+  padding: 5px;
+}
+.home{
+  border:none;
+  height: 10vw;
+  width: 40vw;
+  max-height: 85%;
+  max-width: 300px;
+}
+
+section{
+  flex-direction: column;
+  width: 100%;
+}
+.frontPage{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.front{
+  flex-direction: column;
+  width: 100%;
+}
+.articles{
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.articleTitle{
+  width: 100%;
+  flex-direction: column;
+}
+
+li{
   display: flex;
 }
 #textPrime{
