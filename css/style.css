@@ -2,6 +2,9 @@ body{
   font-family: Arial, sans-serif;
   margin: 10px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
 }
 img{
   width: 100%;
@@ -19,8 +22,8 @@ div{
   flex-direction: row;
   justify-content: space-between;  ;
   background-color: white;
-  widht: 100%;
-  height:70px;
+  width: 100%;
+  height:90px;
 
   padding-left: 2%;
   padding-right: 2%;
@@ -41,7 +44,7 @@ div{
 }
 .home{
   border:none;
-  height: 10vw;
+  height: 8vw;
   width: 40vw;
   max-height: 85%;
   max-width: 300px;
@@ -65,6 +68,12 @@ section{
   flex-direction: row;
   flex-wrap: wrap;
 }
+.main{
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  border-bottom: dimgray solid 1px;
+}
 .articleTitle{
   width: 100%;
   flex-direction: column;
@@ -79,6 +88,18 @@ section{
   padding-left: 0;
   border-bottom: dimgray solid 1px;
 }
+
+.subArticleText{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 60%;
+}
+.subArticleText a{
+  padding-right: 15px;
+  width: 100%;
+
+}
+
 .subArticle a {
   padding-right: 15px;
   height: 80%;
@@ -88,14 +109,9 @@ section{
   height: 100%;
   width: 100%;
 }
-
-.subArticleText{
-  flex-direction: column;
-}
 .mainImg{
   width: 100%;
-  padding-bottom: 15px;
-  border-bottom: dimgray solid 1px;
+
 }
 .mainImg a{
   width: 100%;
@@ -109,7 +125,7 @@ section{
   max-width: 400px;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-bottom: -80px;
+  margin-bottom: -60px;
 }
 .images li{
   height: 80px;
@@ -167,6 +183,7 @@ ul{
 }
 .headlines{
   flex-direction: column;
+  margin-top: 100px ;
   width: 100%;
 }
 
@@ -304,19 +321,21 @@ li a:hover{
 .sections{
   width: 100%;
 }
-.promo{
-  padding: 10%;
+.paper{
+  padding: 20px;
+  margin: 50px 0;
   justify-content: center;
+  width: 100%;
+  height: 50vw;
 }
-.promo a {
+.paper a {
   text-align: center;
-}
-#promoImg{
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 .recommended{
-  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
 }
 .forYou{
@@ -324,7 +343,6 @@ li a:hover{
   width: 100%;
 
   border-bottom: steelblue solid 3px;
-  display: block;
 
 }
 .recommendedNews{
