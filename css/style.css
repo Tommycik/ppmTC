@@ -255,9 +255,9 @@ li a:hover{
   margin-top:1%;
   padding: 2%;
 }
-.sections{
+.section{
   flex-direction: column;
-  flex-wrap: wrap;
+
 }
 .othersSub li{
 
@@ -349,8 +349,6 @@ li a:hover{
   margin-left:0;
   padding: 0;
   margin-top: 5%;
-  list-style: none;
-  counter-reset: steps;
   width: 100%;
 }
 .categories ul{
@@ -362,26 +360,7 @@ li a:hover{
 .categories{
   width: 100%;
 }
- .recommendedNews li{
-  counter-increment: steps;
-   margin-bottom: 1.5em;
-}
-.recommendedNews li a{
 
-  font-weight: bold;
-}
-.recommendedNews li ::before {
-  content: counter(steps);
-  margin-right: 0.5rem;
-  background: steelblue;
-  color: white;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  display: inline-grid;
-  place-items: center;
-  line-height: 1.2em;
-}
 .parts{
   flex-direction: column;
   flex-wrap: nowrap;
