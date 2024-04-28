@@ -1,6 +1,6 @@
 body{
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 10px;
   padding: 5px;
 }
 img{
@@ -93,14 +93,32 @@ section{
   width: 100%;
   flex-direction: column;
 }
+
+.images{
+  max-width: 400px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: -80px;
+}
+.images li{
+  height: 80px;
+  display: block;
+  margin-bottom: 0;
+  padding: 0;
+}
+.images li a{
+  width: 100%;
+  margin:0 ;
+  padding: 0;
+}
+.images li a img{
+  height: 100%;
+  width: 100%;
+}
 li{
   display: flex;
 }
-#textPrime{
-  flex-direction: column;
-  align-content: baseline;
-  flex-wrap: wrap;
-}
+
 
 ul{
   display: flex;
@@ -114,38 +132,33 @@ ul{
   border-top: black solid 1px;
   margin-right: 20px;
 }
-.relatedNews{
-  border-top: black solid 1px;
-  margin-right: 20px;
+.headline{
+  border-top: darkgrey solid 1px;
   padding: 10px 0;
+  flex-direction: column;
+}
+.headline a{
+  font-size: 15px;
 }
 .lessImportant{
   color: dimgrey;
   font-size:10px;
 }
-#textPrime{
-  max-width: 50%;
-}
+
 .articleBody{
   font-size: 30px;
   color: dimgray;
 }
-#textPrime h1{
-  font-size: 40px;
-  font-weight: 800;
+.seeAll{
+  margin-left: 10px;
+  color: darkgrey;
+  font-size: 15px;
 }
-.prime a{
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-}
-.prime{
+.headlines{
   flex-direction: column;
-  align-content: baseline;
-  flex-wrap: wrap;
-  margin-left: 20px;
+  width: 100%;
 }
+
 .subPrime{
   flex-direction: row;
   align-content: baseline;
@@ -156,26 +169,13 @@ ul{
   flex-wrap: wrap;
   width: 100%;
 }
-.endHead button {
-  width: 60px;
-  height:60px;
-  border:none;
-}
 .subOnly{
-  display: block;
-  background-color: steelblue;
+  padding: 5px;
+  background-color:#0F52BA;
   color: white;
-  width: 200px;
-  padding: 5px 0;
-  font-size: 100%;
-  text-align: center;
-}
-.latest{
-  flex-direction: column;
-}
-.news{
-  flex-direction: column;
-  flex-wrap: wrap;
+  font-size: 12px;
+  width: fit-content;
+  text-align: left;
 }
 .head{
   margin-left: 4%;
@@ -185,12 +185,12 @@ li button{
 }
 .newsHead{
   color: dimgray;
+  font-size: 20px;
+  font-weight: normal;
   padding-bottom: 10px;
   border-bottom: steelblue solid 3px; ;
 }
-#ending{
-  margin-right: 3%;
-}
+
 .normal a{
   text-decoration: none;
   color: black;
@@ -204,20 +204,9 @@ img{
 
 }
 a:hover{
+  color: steelblue;
+}
 
-  color: steelblue;
-}
-#home a{
-  display:block;
-  color: steelblue;
-  text-decoration: none;
-  font-size: 70px;
-  letter-spacing: -3px;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-  font-weight: 800;
-  transform: scale(1,1.6);
-}
 li a h1:hover{
   color: steelblue;
 }
@@ -225,15 +214,7 @@ li a h1:hover{
 li a:hover{
   color: steelblue;
 }
-#home{
 
-  white-space: nowrap ;
-  align-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
 .othersSub{
   flex-wrap: nowrap;
   flex-direction: row;
@@ -284,7 +265,7 @@ li a:hover{
 }
 
 .signup{
-  background-color: whitesmoke;
+  background-color: rgba(226, 223, 210,0.3);
   display: block;
   text-align: center;
   height: 120px;
@@ -296,7 +277,7 @@ li a:hover{
   font-size: 20px;
 }
 .signup button{
-  border: steelblue solid 2px;
+  border: #0F52BA solid 2px;
   color: steelblue;
   width:120px;
   height: 60px;
