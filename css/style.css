@@ -126,35 +126,19 @@ section{
   flex-direction: row;
   flex-wrap: nowrap;
   margin-bottom: -60px;
+  gap: 10px
 }
-.images li{
-  height: 80px;
-  display: block;
-  margin-bottom: 0;
-  padding: 0;
-}
-.images li a{
-  width: 100%;
+
+.images a{
+  height: 90px;
   margin:0 ;
   padding: 0;
 }
-.images li a img{
+.images a img{
   height: 100%;
   width: 100%;
 }
-li{
-  display: flex;
-}
 
-
-ul{
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-.normal{
-  display: block;
-}
 .related{
   border-top: black solid 1px;
   margin-right: 20px;
@@ -177,7 +161,7 @@ ul{
   color: dimgray;
 }
 .seeAll{
-  margin-left: 10px;
+  margin-left: 0;
   color: darkgrey;
   font-size: 15px;
 }
@@ -323,14 +307,15 @@ li a:hover{
 }
 .paper{
   padding: 20px;
-  margin: 50px 0;
+  margin: 40px 0;
+  margin-bottom: 70px;
   justify-content: center;
   width: 100%;
-  height: 50vw;
+  height: 45vw;
 }
 .paper a {
   text-align: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 .recommended{
@@ -341,9 +326,27 @@ li a:hover{
 .forYou{
   color: steelblue;
   width: 100%;
-
+  font-size: 20px;
+  font-weight: normal;
   border-bottom: steelblue solid 3px;
-
+}
+.element{
+  display: flex;
+  align-items: center;
+}
+.number{
+  background-color: steelblue;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.text{
+  font-size: 20px;
 }
 .recommendedNews{
   margin-left:0;
@@ -438,21 +441,7 @@ li a:hover{
 }
 
 
-.prova{
-  display: flex;
-  align-items: center;
-}
-.number{
-  background-color: steelblue;
-  color: white;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-}
+
 .end{
   box-shadow: black 0 0 5px ;
   display: flex;
