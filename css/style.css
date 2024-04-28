@@ -75,18 +75,29 @@ section{
 
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 2%;
+  padding: 15px;
+  padding-left: 0;
   border-bottom: dimgray solid 1px;
 }
-.subArticle img{
-  padding-right: 2%;
+.subArticle a {
+  padding-right: 15px;
   height: 80%;
   width: 40%;
 }
+.subArticle a img{
+  height: 100%;
+  width: 100%;
+}
+
 .subArticleText{
   flex-direction: column;
 }
 .mainImg{
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: dimgray solid 1px;
+}
+.mainImg a{
   width: 100%;
 }
 .ad{
@@ -269,18 +280,18 @@ li a:hover{
   display: block;
   text-align: center;
   height: 120px;
-  padding: 15px;
+  padding: 5px;
 }
 .signup p{
 
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 .signup button{
   border: #0F52BA solid 2px;
   color: steelblue;
-  width:120px;
-  height: 60px;
+  width:100px;
+  height: 50px;
   background-color: whitesmoke;
   border-radius: 5px;
   font-size: 100%;
