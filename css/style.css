@@ -6,6 +6,7 @@ body{
   flex-direction: column;
   padding-top: 0;
 }
+
 img{
   width: 100%;
   height: 100%;
@@ -157,7 +158,7 @@ section{
 }
 
 .articleBody{
-  font-size: 30px;
+  font-size: 15px;
   color: dimgray;
 }
 .seeAll{
@@ -215,17 +216,7 @@ a{
 img{
 
 }
-a:hover{
-  color: steelblue;
-}
 
-li a h1:hover{
-  color: steelblue;
-}
-
-li a:hover{
-  color: steelblue;
-}
 
 .othersSub{
   flex-wrap: nowrap;
@@ -260,14 +251,7 @@ li a:hover{
   width:100%;
   height: 150px;
 }
-.images li{
-  width: 30%;
-  margin-right:3%;
-  margin-left: 3%;
-}
-.images li img{
-  width: 100%;
-}
+
 .special{
   border-bottom: orangered solid 1px;
   display: block;
@@ -331,22 +315,26 @@ li a:hover{
   border-bottom: steelblue solid 3px;
 }
 .element{
+  width: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 .number{
-  background-color: steelblue;
+  background-color: #0F52BA;
   color: white;
-  border-radius: 50%;
-  width: 60px;
-  height: 30px;
+  border-radius: 1000px;
+  flex: 0 0 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 10px;
 }
 .text{
-  font-size: 20px;
+  font-size: 15px;
 }
 .recommendedNews{
   margin-left:0;
@@ -354,14 +342,10 @@ li a:hover{
   margin-top: 5%;
   width: 100%;
 }
-.categories ul{
-  width: 100%;
-}
-.categories ul li{
-  width: 100%;
-}
 .categories{
   width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .parts{
@@ -374,25 +358,44 @@ li a:hover{
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.categories ul{
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
+.category a:hover{
+  color:steelblue;
 }
 .categoryRelated{
     flex-direction: column;
     flex-wrap: wrap;
 }
+.relatedNews{
+  border-top: #E5E4E2 solid 1px;
+  flex-direction: column;
+  padding: 20px 0;
+}
 .categoryImg{
-  padding: 5%;
+  padding: 0;
   flex-direction: column ;
   margin-bottom: 1%;
+  widht: 100%;
+
+}
+
+.categoryImg a{
+  margin-bottom: 30px;
+  font-size: 20px;
+  width: 100%;
+}
+.categoryImg a img{
+  width: 100%;
+  height: 100%;
 }
 .categoryHead{
   color: dimgray;
+  font-size: 20px;
   padding-bottom: 10px;
+  font-weight: normal;
   border-bottom: steelblue solid 3px;
-
+}
+.categoryHead:hover{
+  color: steelblue;
 }
 .categoryName a{
   text-decoration: none;
@@ -404,10 +407,7 @@ li a:hover{
   margin-bottom: 10%;
   margin-top: 5%;
 }
-.category img {
-  width: 100%;
-  height: 100%;
-}
+
 .photo\&video ul li img{
   width:100%;
 }
