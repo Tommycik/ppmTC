@@ -179,7 +179,7 @@ section{
 
 .articleBody{
   font-size: 15px;
-  color: dimgray;
+  color: black;
 }
 .seeAll{
   margin-left: 0;
@@ -478,8 +478,16 @@ a{
   width: 100%;
 }
 
-
-
+.variant .relatedNews{
+  border-top: none;
+  border-bottom:#E5E4E2 solid 1px;
+}
+.first{
+  border-top: #E5E4E2 solid 1px;
+  border-bottom:#E5E4E2 solid 1px;
+  flex-direction: column;
+  padding: 20px 0;
+}
 .end{
   box-shadow: black 0 0 5px ;
   display: flex;
