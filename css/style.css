@@ -6,7 +6,9 @@ body{
   flex-direction: column;
   padding-top: 0;
 }
-
+a:hover{
+  color: steelblue;
+}
 img{
   width: 100%;
   height: 100%;
@@ -117,6 +119,24 @@ section{
 .mainImg a{
   width: 100%;
 }
+.relatedTitle{
+  font-size: 12px;
+  margin-top: 0px;
+  color:dimgrey;
+}
+.related{
+  margin-top: 5px;
+  margin-left: 0;
+}
+.related a{
+  font-size: 12px;
+  margin-left: 0;
+  padding-left: 0;
+}
+.related li{
+  padding: 5px 0;
+  margin-left: 0;
+}
 .ad{
   width: 100%;
   flex-direction: column;
@@ -184,7 +204,7 @@ section{
 }
 .subOnly{
   padding: 5px;
-  background-color:#0F52BA;
+  background-color:#095f9e;
   color: white;
   font-size: 12px;
   width: fit-content;
@@ -213,39 +233,37 @@ a{
   color: black;
   font-weight: bold;
 }
-img{
 
+.photoText{
+  flex-direction: column;
 }
-
 
 .othersSub{
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  height: 10vh;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
+  height: 100px;
+  border-bottom: #E5E4E2 solid 1px;
   border-collapse: collapse;
-  margin-bottom:1%;
-  margin-top:1%;
-  padding: 2%;
+  padding :10px 0;
+
 }
 .section{
   flex-direction: column;
 
 }
-.othersSub li{
 
-  width: 70%;
-  height: 100%;
-}
 .subImg{
-  width :30%;
+  flex: 0 0 100px;
+  height: 50px;
+  margin-right: 10px;
 }
 .subImg img{
   width:100%;
   height: 100%;
-  margin-right: 4%;
+}
+.variant .othersSub a{
+  font-size: 14px;
 }
 .images{
   width:100%;
@@ -321,7 +339,7 @@ img{
   margin-bottom: 15px;
 }
 .number{
-  background-color: #0F52BA;
+  background-color: #095f9e;
   color: white;
   border-radius: 1000px;
   flex: 0 0 35px;
@@ -362,8 +380,9 @@ img{
   color:steelblue;
 }
 .categoryRelated{
-    flex-direction: column;
-    flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .relatedNews{
   border-top: #E5E4E2 solid 1px;
@@ -373,8 +392,7 @@ img{
 .categoryImg{
   padding: 0;
   flex-direction: column ;
-  margin-bottom: 1%;
-  widht: 100%;
+  width: 100%;
 
 }
 
@@ -408,28 +426,47 @@ img{
   margin-top: 5%;
 }
 
-.photo\&video ul li img{
+.photo\&video{
   width:100%;
 }
 .photo\&video {
   width:100%;
 }
-.photo\&video ul{
+.photo\&video {
   width:100%;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.photo\&video ul li{
- width: 100%;
+.variant .categoryImg a{
+  font-size: 25px;
+  font-weight: 1000;
+}
+.photo\&video .categoryImg p{
+  display: none;
+}
+.photo\&video .categoryImg{
+
 }
 .promoFull{
-  padding: 5%;
+  width: 100%;
+  height: 50vw;
+  max-width: 552px;
+  max-height: 287px;
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
-
+.promoFull img{
+  width: 100%;
+  height: 100%;
+}
+.promoFull a {
+  width: 100%;
+  height: 100%;
+}
 .showMore{
   display: block;
   text-align: center;
-  color: steelblue;
+  color: #095f9e;
   font-weight: bold;
 }
 .showMore:hover{
@@ -438,6 +475,7 @@ img{
 .variant{
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 
@@ -460,4 +498,7 @@ img{
 .hidden{
   display: flex;
   justify-content: space-between;
+}
+.showMore:hover{
+  color: black;
 }
