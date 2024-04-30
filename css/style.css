@@ -494,14 +494,31 @@ a{
 }
 .enderPart{
   flex-direction: column;
+  border-bottom: black solid 1px;
   width: 100%;
+  padding: 20px;
 }
-.enderPart div{
-  display: none;
+.headHid{
+  justify-content: space-between;
+
 }
 
+#hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness{
+  display: none;
+  flex-direction: column;
+
+}
+#newsButton,#contactButton,#classButton,#businessButton{
+  width: 15px;
+  height: 15px;
+}
+.hiddenLink{
+  padding: 5px 0;
+}
 .ender{
   font-weight: bolder;
+  font-size: 20px;
+  height: fit-content;
 }
 .ender:hover{
   text-decoration: underline;
