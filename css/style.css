@@ -490,12 +490,16 @@ a{
 }
 .end{
   box-shadow: black 0 0 5px ;
-  display: flex;
-}
-.enderPart{
-  display: flex;
   flex-direction: column;
 }
+.enderPart{
+  flex-direction: column;
+  width: 100%;
+}
+.enderPart div{
+  display: none;
+}
+
 .ender{
   font-weight: bolder;
 }
@@ -503,8 +507,13 @@ a{
   text-decoration: underline;
   color: black;
 }
+.options{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .hidden{
-  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .showMore:hover{
