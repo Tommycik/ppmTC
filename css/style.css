@@ -59,13 +59,14 @@ header{
 }
 #lateralMenu{
   background-color: rgba(0, 0, 0, 0);
-  height: 100%;
-  width: 100%;
-  position: sticky;
+  height: 100vh;
+  width: auto;
+  position: absolute;
   top:90px
 }
 .lateral{
   background-color: white;
+  width:300px;
 }
 section{
   flex-direction: column;

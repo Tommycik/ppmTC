@@ -25,11 +25,13 @@ function menu1(){
     document.getElementById("menu1").src="img/placeholder.svg";
     x.style.backgroundColor="rgba(0, 0, 0, 0)";
     document.getElementById("body").style.overflow="scroll";
+    document.getElementById("lateralMenu").style.position="absolute";
 
   }else{
     document.getElementById("menu1").src="img/placeholder.svg";
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)"
     document.getElementById("body").style.overflow="hidden";
+    document.getElementById("lateralMenu").style.position="sticky";
   }
   elementVisible('lateralMenu',0);
 
