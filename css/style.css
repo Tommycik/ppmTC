@@ -1,14 +1,17 @@
 body{
   font-family: Arial, sans-serif;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+
   padding: 0;
   margin: 0;
 }
-.section{
+section{
   margin: 10px;
   padding: 5px;
+  display: flex;
 }
 a:hover{
   color: steelblue;
@@ -20,7 +23,8 @@ img{
 div{
   display: flex;
 }
-.header{
+header{
+  display: flex;
   position: sticky;
   top:0;
   padding-left: 2%;
@@ -36,13 +40,6 @@ div{
 
 
 
-}
-.menuChange{
-  border:none;
-  height: 30px;
-  border:none;
-  width: 30px;
-  padding: 5px;
 }
 .menuGroup {
   padding-right: 10px;
@@ -60,7 +57,16 @@ div{
   max-height: 85%;
   max-width: 300px;
 }
-
+#lateralMenu{
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
+  position: sticky;
+  top:90px
+}
+.lateral{
+  background-color: white;
+}
 section{
   flex-direction: column;
   width: 100%;
@@ -136,7 +142,7 @@ section{
 }
 .relatedTitle{
   font-size: 12px;
-  margin-top: 0px;
+  margin-top: 0;
   color:dimgrey;
 }
 .related{
@@ -263,15 +269,14 @@ a{
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  height: 100px;
+  height: 70px;
   border-bottom: #E5E4E2 solid 1px;
   border-collapse: collapse;
   padding :20px 0;
 
 }
-.section{
+section{
   flex-direction: column;
-
 }
 
 .subImg{
@@ -470,8 +475,34 @@ a{
 .photo\&video .categoryImg p{
   display: none;
 }
-.photo\&video .categoryImg{
+.hiddenArticles{
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  display: none;
+  margin-bottom: 30px;
+}
 
+.hiddenArticles a{
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.hiddenArticles img{
+  width: 100%;
+  height: 25vw ;
+
+}
+.hiddenArticles div{
+  flex-direction: column;
+}
+.hiddenArticle{
+  width: 47%;
+  flex-direction: column;
+  height: 250px;
+  margin-bottom: 10px;
 }
 .promoFull{
   width: 100%;
@@ -489,11 +520,27 @@ a{
   width: 100%;
   height: 100%;
 }
+.centeredGeometry{
+  justify-content: center;
+  border-top: #E5E4E2 solid 1px;
+}
+#triangolo {
+  width: 0;
+  height: 0;
+  line-height: 0;
+
+  border-top: 25px solid #E5E4E2;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+}
 .showMore{
+  background-color: white;
   display: block;
   text-align: center;
+  border: none;
   color: #095f9e;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 800;
 }
 .showMore:hover{
   color: black;
@@ -602,9 +649,6 @@ footer{
 
 }
 
-.showMore:hover{
-  color: black;
-}
 .endFinal{
   margin-top: 20px;
   flex-direction: column;

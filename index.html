@@ -9,22 +9,28 @@
   <script src="js/script.js"></script>
 </head>
 
-<body>
+<body id="body">
 
-  <div class="header">
+  <header id="header">
 
-    <button  class="menu"><img alt="menu"  src="img/placeholder.svg"></button>
+    <button  class="menu" onclick="menu1()"><img id="menu1" alt="menu"  src="img/placeholder.svg"></button>
     <button class="home"><img alt="home"  src="img/placeholder.svg"></button>
 
     <div class="menuGroup">
       <button class="menu" ><img  alt="account" src="img/placeholder.svg"></button>
-      <button class="menuChange"><img  alt="arrow" src="img/placeholder.svg"></button>
+      <button class="menu"><img id="menu2"  alt="arrow" src="img/placeholder.svg"></button>
       <button class="menu"><img  alt="search" src="img/placeholder.svg"></button>
     </div>
 
+  </header>
+  <div id="lateralMenu">
+      <div class="lateral">
+        <p>4664454</p>
+      </div>
+
   </div>
 
-  <div class="section">
+  <section id="section">
 
 
     <div class="frontPage">
@@ -325,7 +331,7 @@
                 <a href="#"><img alt ="imgOther" src="img/placeholder.jpeg"></a>
               </div>
               <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus pharetra ante massa, et pellentesque quam condimentum quis.</a>
+                Phasellus pharetra ante massa.</a>
             </div>
 
 
@@ -333,23 +339,50 @@
               <div class="subImg">
                 <a href="#"><img alt ="imgOther" src="img/placeholder.jpeg"></a>
               </div>
-              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus pharetra ante massa, et pellentesque quam condimentum quis.</a>
+              <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
             </div>
 
-            <div class="othersSub">
+            <div id="lastSub" class="othersSub">
               <div class="subImg">
                 <a href="#"><img alt ="imgOther" src="img/placeholder.jpeg"></a>
               </div>
               <div class="photoText">
                 <h2 class="subOnly">SUBSCRIBER ONLY</h2>
-                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus pharetra ante massa, et pellentesque quam condimentum quis.</a>
+                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
               </div>
 
             </div>
+            <div class="hiddenArticles">
 
-            <a class="showMore" href="#" >SHOW MORE PHOTOS</a>
+              <div class="hiddenArticle">
+                <a href="#"><img alt ="imgOther" src="img/placeholder.jpeg"></a>
+                <div>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+              </div>
+
+              <div class="hiddenArticle">
+                <a href="#"><img alt ="imgOther" src="img/placeholder.jpeg"></a>
+                <div>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+              </div>
+
+              <div class="hiddenArticle">
+                <a href="#"><img alt ="imgOther" src="img/placeholder.jpeg"></a>
+                <div>
+                  <h2 class="subOnly">SUBSCRIBER ONLY</h2>
+                  <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                </div>
+              </div>
+
+
+
+            </div>
+            <div class="centeredGeometry">
+              <div id="triangolo"></div>
+            </div>
+            <button class="showMore" onclick="showMore()" >SHOW MORE PHOTOS</button>
 
           </div>
         </div>
@@ -539,9 +572,9 @@
 
 
 
-  </div>
+  </section>
 
-  <footer>
+  <footer id="footer">
       <div class="end">
         <a class="homeEnd"><img alt="home"  src="img/placeholder.svg"></a>
         <div class="options">
