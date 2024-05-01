@@ -19,21 +19,29 @@ function showMore(){
   document.getElementsByClassName("centeredGeometry")[0].style.display="none";
 }
 function menu1(){
-  var x= document.getElementById("lateralMenu");
 
-  if(visible[0]){
-    document.getElementById("menu1").src="img/placeholder.svg";
-    x.style.backgroundColor="rgba(0, 0, 0, 0)";
-    document.getElementById("body").style.overflow="scroll";
+  if(window.scrollY==0){
     document.getElementById("lateralMenu").style.position="absolute";
 
   }else{
-    document.getElementById("menu1").src="img/placeholder.svg";
-    x.style.backgroundColor="rgba(0, 0, 0, 0.5)"
-    document.getElementById("body").style.overflow="hidden";
     document.getElementById("lateralMenu").style.position="sticky";
   }
+  var x= document.getElementById("lateralMenu");
+  if(visible[0]){
+    document.getElementById("menu1").src="img/placeholder.svg";
+    document.getElementById("body").style.overflow="scroll";
+    x.style.width="0%";
+    x.style.backgroundColor="rgba(0, 0, 0, 0)";
+
+  }else{
+    document.getElementById("menu1").src="img/placeholder.svg";
+    document.getElementById("body").style.overflow="hidden";
+    x.style.width="100%";
+    x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
+
+  }
   elementVisible('lateralMenu',0);
+
 
 
 }
