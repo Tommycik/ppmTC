@@ -770,3 +770,23 @@ footer{
   max-height: 85%;
   max-width: 300px;
 }
+.lateral .enderPart{
+  flex-direction: column;
+  justify-content: space-between;
+  border:none;
+
+}
+.lateral .enderPart button{
+  width: 5px;
+  height: 15px;
+}
+#hiddenMenuNews,#hiddenMenuOpinion{
+  padding-left: 20px;
+  display: none;
+  flex-direction: column;
+}
+.lateral .enderPart .hiddenLink,.lateral .enderPart .ender{
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
