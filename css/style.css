@@ -774,19 +774,43 @@ footer{
   flex-direction: column;
   justify-content: space-between;
   border:none;
+  padding:0;
 
 }
 .lateral .enderPart button{
   width: 5px;
   height: 15px;
 }
+
 #hiddenMenuNews,#hiddenMenuOpinion{
   padding-left: 20px;
   display: none;
   flex-direction: column;
 }
-.lateral .enderPart .hiddenLink,.lateral .enderPart .ender{
+.lateral .hiddenLink{
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-top: 10px;
   font-size: 15px;
+}
+.lateral  .ender{
+  font-weight: bold;
+  font-size: 15px;
+}
+.lateral  .ender:hover{
+  text-decoration: none;
+}
+.lateral .headHid{
+  margin-top: 20px;
+}
+.subscribeLog{
+  flex-direction: column;
+  margin-top: 10px;
+}
+.subscribeLog a{
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+.subscribeLog a:hover{
+  color: black;
 }
