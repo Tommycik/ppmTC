@@ -24,7 +24,7 @@ function menu1(){
   if(visible[0]){
     document.getElementById("menu1").src="img/placeholder.svg";
     x.style.backgroundColor="rgba(0, 0, 0, 0)";
-    document.getElementById("body").style.overflow;
+    document.getElementById("body").style.overflow="scroll";
 
   }else{
     document.getElementById("menu1").src="img/placeholder.svg";
