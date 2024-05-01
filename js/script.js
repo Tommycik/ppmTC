@@ -30,12 +30,14 @@ function menu1(){
   if(visible[0]){
     document.getElementById("menu1").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="scroll";
+    document.getElementById("lateralMenu").style.overflow="hidden";
     x.style.width="0%";
     x.style.backgroundColor="rgba(0, 0, 0, 0)";
 
   }else{
     document.getElementById("menu1").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="hidden";
+    document.getElementById("lateralMenu").style.overflow="auto";
     x.style.width="100%";
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
 
