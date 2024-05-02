@@ -82,6 +82,18 @@ header{
 #accountMenu{
   transition: width 0.05s;
 }
+#searchMenu{
+  background-color: rgba(0, 0, 0, 0.5);
+  height:100vh;
+  width: 100%;
+  display: none;
+  position: sticky;
+  top:91px;
+  justify-content: flex-end;
+}
+#searchMenu{
+  transition: width 0.05s;
+}
 .lateral{
 
   flex-direction: column;
@@ -91,9 +103,59 @@ header{
   height:fit-content;
   max-width:280px;
 }
+#searchMenu .lateral{
+  max-width: none;
+  height: fit-content;
+  min-height:0 ;
+  padding: 10px 4%;
+}
+
+.search div{
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+.search img{
+  flex-grow: 0;
+  width: 25px;
+  height: 25px;
+}
+.search form{
+  display: flex;
+  padding: 5px;
+  width: 100%;
+}
+.search form input{
+  border: none;
+  font-size: 17px;
+  color: black;
+  font-weight: lighter;
+  margin-right: auto;
+}
+.search form button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #095f9e;
+  cursor:pointer;
+  color:white ;
+  border: none;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 8px 10px;
+  border-radius: 5px;
+
+}
+:focus {
+  outline: white;
+}
+::placeholder {
+  color: #b7b7b7 ;
+  opacity: 1;
+}
 .up{
   flex-direction: column;
-  padding-left: 10px;
+  padding:0 10px;
 }
 #accountMenu .signupMenu{
   margin-top:auto;
@@ -154,7 +216,7 @@ header{
   text-decoration: underline;
 }
 .subscribeButtonMenu{
-  padding:0 10px;
+
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;

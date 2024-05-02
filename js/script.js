@@ -40,8 +40,10 @@ function menu1(){
   if(visible[3]){
     menu2();
   }
+  if(visible[4]){
+    menu3();
+  }
   elementVisible('lateralMenu',0);
-
 }
 
 function menu2(){
@@ -65,7 +67,34 @@ function menu2(){
   if(visible[0]){
     menu1();
   }
+  if(visible[4]){
+    menu3();
+  }
   elementVisible('accountMenu',3);
+}
 
+function menu3(){
 
+  if(window.scrollY==0){
+    document.getElementById("searchMenu").style.position="absolute";
+  }else{
+    document.getElementById("searchMenu").style.position="sticky";
+  }
+  var x= document.getElementById("searchMenu");
+  if(visible[4]){
+    document.getElementById("body").style.overflow="scroll";
+    document.getElementById("searchMenu").style.overflow="hidden";
+  }else{
+    document.getElementById("body").style.overflow="hidden";
+    document.getElementById("searchMenu").style.overflow="auto";
+    x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
+  }
+  if(visible[0]){
+    menu1();
+  }
+  if(visible[3]){
+    menu2();
+  }
+
+  elementVisible('searchMenu',4);
 }
