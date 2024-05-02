@@ -43,7 +43,31 @@ function menu1(){
 
   }
   elementVisible('lateralMenu',0);
+}
 
+function menu2(){
 
+  if(window.scrollY==0){
+    document.getElementById("accountMenu").style.position="absolute";
 
+  }else{
+    document.getElementById("accountMenu").style.position="sticky";
+  }
+  var x= document.getElementById("accountMenu");
+  if(visible[0]){
+    document.getElementById("menu2").src="img/placeholder.svg";
+    document.getElementById("body").style.overflow="scroll";
+    document.getElementById("accountMenu").style.overflow="hidden";
+    x.style.width="0%";
+    x.style.backgroundColor="rgba(0, 0, 0, 0)";
+
+  }else{
+    document.getElementById("menu2").src="img/placeholder.svg";
+    document.getElementById("body").style.overflow="hidden";
+    document.getElementById("accountMenu").style.overflow="auto";
+    x.style.width="100%";
+    x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
+
+  }
+  elementVisible('accountMenu',0);
 }
