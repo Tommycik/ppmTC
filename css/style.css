@@ -114,6 +114,7 @@ header{
   justify-content: center;
   align-items: center;
   width: fit-content;
+  margin-right: 5px;
 }
 .search img{
   flex-grow: 0;
