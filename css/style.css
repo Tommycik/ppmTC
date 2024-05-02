@@ -984,6 +984,9 @@ footer{
   .photo\&video{
     gap: 20px;
   }
+  .category{
+    width:55%;
+  }
   .photo\&video .category{
     width: 60%;
   }
@@ -998,6 +1001,9 @@ footer{
   }
   .enderPart{
     width: 40%;
+  }
+  .categories .category{
+    max-width: 48%;
   }
 
 }
