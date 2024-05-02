@@ -31,43 +31,41 @@ function menu1(){
     document.getElementById("menu1").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="scroll";
     document.getElementById("lateralMenu").style.overflow="hidden";
-    x.style.width="0%";
-    x.style.backgroundColor="rgba(0, 0, 0, 0)";
-
   }else{
     document.getElementById("menu1").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="hidden";
     document.getElementById("lateralMenu").style.overflow="auto";
-    x.style.width="100%";
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
-
+  }
+  if(visible[3]){
+    menu2();
   }
   elementVisible('lateralMenu',0);
+
 }
 
 function menu2(){
 
   if(window.scrollY==0){
     document.getElementById("accountMenu").style.position="absolute";
-
   }else{
     document.getElementById("accountMenu").style.position="sticky";
   }
   var x= document.getElementById("accountMenu");
-  if(visible[0]){
+  if(visible[3]){
     document.getElementById("menu2").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="scroll";
     document.getElementById("accountMenu").style.overflow="hidden";
-    x.style.width="0%";
-    x.style.backgroundColor="rgba(0, 0, 0, 0)";
-
   }else{
     document.getElementById("menu2").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="hidden";
     document.getElementById("accountMenu").style.overflow="auto";
-    x.style.width="100%";
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
-
   }
-  elementVisible('accountMenu',0);
+  if(visible[0]){
+    menu1();
+  }
+  elementVisible('accountMenu',3);
+
+
 }

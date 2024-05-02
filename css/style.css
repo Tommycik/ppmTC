@@ -62,27 +62,47 @@ header{
 #lateralMenu{
   background-color: rgba(0, 0, 0, 0.5);
   height:100vh;
-  width: 0;
+  width: 100%;
   display: none;
   position: sticky;
-  top:91px
+  top:91px;
 }
 #lateralMenu{
   transition: width 0.05s;
 }
+#accountMenu{
+  background-color: rgba(0, 0, 0, 0.5);
+  height:100vh;
+  width: 100%;
+  display: none;
+  position: sticky;
+  top:91px;
+  justify-content: flex-end;
+}
+#accountMenu{
+  transition: width 0.05s;
+}
 .lateral{
-  padding:10px;
+
   flex-direction: column;
   background-color: white;
   width: 100%;
   min-height:100% ;
   height:fit-content;
-  max-width:300px;
+  max-width:280px;
+}
+.up{
+  flex-direction: column;
+  padding-left: 10px;
+}
+#accountMenu .signupMenu{
+  margin-top:auto;
+  margin-bottom: 25vh;
 }
 .homepage{
 
   align-content: baseline;
-  flex-direction: row;
+
 }
 .homepage a{
   font-weight: bold;
@@ -113,6 +133,7 @@ header{
   justify-content: center;
   font-size: 15px;
   font-weight: bolder;
+
 }
 .signupMenu span{
   display: flex;
@@ -133,6 +154,7 @@ header{
   text-decoration: underline;
 }
 .subscribeButtonMenu{
+  padding:0 10px;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 100%;
@@ -774,6 +796,7 @@ footer{
   border:none;
   padding:0;
 
+
 }
 .lateral .enderPart button{
   width: 5px;
@@ -803,6 +826,8 @@ footer{
 .subscribeLog{
   flex-direction: column;
   margin-top: 20px;
+  margin-left: 10px;
+
 }
 .subscribeLog a{
   font-weight: bold;
