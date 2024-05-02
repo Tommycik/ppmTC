@@ -318,6 +318,7 @@ section{
 .mainImg a{
   width: 100%;
 }
+
 .relatedTitle{
   font-size: 12px;
   margin-top: 0;
@@ -902,4 +903,32 @@ footer{
 }
 #hp:hover{
   color: black;
+}
+@media screen and(max-width: 600px) {
+
+}
+@media only screen and (min-width: 600px) {
+  .articleTitle,.subArticle,.mainImg{
+    width: 50%;
+
+  }
+  .mainImg{
+    height: 30vw;
+
+  }
+  .subArticle img{
+
+  }
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 992px) {
+
+
+}
+@media only screen and (min-width: 1200px) {
+
+
 }
