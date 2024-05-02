@@ -629,12 +629,6 @@ section{
   margin-top: 150px;
 }
 
-.photo\&video{
-  width:100%;
-}
-.photo\&video {
-  width:100%;
-}
 .photo\&video {
   width:100%;
   flex-direction: row;
@@ -837,7 +831,7 @@ footer{
   flex-wrap: wrap;
 }
 
-.endLInk{
+.endLink{
   width: 100%;
   color: black;
   margin: 12px 0;
@@ -845,7 +839,7 @@ footer{
   font-size: 17px;
 }
 
-.endLInk:hover{
+.endLink:hover{
   color: black;
 }
 .homeEnd{
@@ -947,7 +941,15 @@ footer{
     width: 100%;
   }
   .end{
-    width: 50%;
+    width: 30%;
+  }
+  .subscribeButton{
+    height: 50px;
+
+  }
+  .subscribeButton a{
+
+    font-size: 17px;
   }
   #hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness {
     display: flex;
@@ -955,9 +957,48 @@ footer{
   #newsButton,#contactButton,#classButton,#businessButton{
     display: none;
   }
+  .endPage{
+    padding-bottom: 120px;
+  }
+  .endLink{
+    margin: 3px;
+  }
 
 }
 @media only screen and (min-width: 768px) {
+  .recommended{
+    width: 55%;
+  }
+  .front{
+    width: 40%;
+  }
+  .paper,.headlines{
+    width: 25%;
+  }
+  .articleTitle,.mainImg{
+    width: 100%;
+  }
+  #lastAd{
+    display: none;
+  }
+  .photo\&video{
+    gap: 20px;
+  }
+  .photo\&video .category{
+    width: 60%;
+  }
+  .photo\&video .promoFull{
+    width: 30%;
+  }
+  .promoFull a{
+    margin-top: 120px;
+  }
+  .end{
+    width: 100%;
+  }
+  .enderPart{
+    width: 40%;
+  }
 
 }
 @media only screen and (min-width: 992px) {
