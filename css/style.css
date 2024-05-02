@@ -584,7 +584,7 @@ section{
 }
 .categoryRelated{
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 .relatedNews{
@@ -930,6 +930,30 @@ footer{
   }
   .element{
     width: 50%;
+  }
+  .categories{
+    gap:20px;
+  }
+  .categories .category{
+    max-width: 48%;
+  }
+  .photo\&video .categoryRelated{
+    gap: 20px;
+  }
+  .photo\&video .othersSub{
+    width: 48%;
+  }
+  .centeredGeometry,.showMore{
+    width: 100%;
+  }
+  .end{
+    width: 50%;
+  }
+  #hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness {
+    display: flex;
+  }
+  #newsButton,#contactButton,#classButton,#businessButton{
+    display: none;
   }
 
 }
