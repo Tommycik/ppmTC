@@ -919,6 +919,18 @@ footer{
   .subArticle img{
 
   }
+  .paper{
+    height: 105vw;
+  }
+  .paper a{
+    width: 90%;
+    max-width: 550px ;
+    max-height: 700px;
+
+  }
+  .element{
+    width: 50%;
+  }
 
 }
 @media only screen and (min-width: 768px) {
