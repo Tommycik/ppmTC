@@ -59,6 +59,23 @@ header{
   max-height: 85%;
   max-width: 300px;
 }
+.headButton{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #095f9e;
+  color: white;
+  width: 130px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 17px ;
+  border-radius: 5px;
+}
+.headButton:hover{
+  text-decoration: underline;
+  color: white;
+  background-color: steelblue;
+}
 #lateralMenu{
   background-color: rgba(0, 0, 0, 0.5);
   height:100vh;
@@ -1140,6 +1157,12 @@ footer{
   }
   .photo\&video .othersSub{
     width: 100%;
+  }
+  #menuA,#menuB{
+    display: none;
+  }
+  .headButton{
+    display: flex;
   }
 
 }
