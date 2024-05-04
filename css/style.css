@@ -1078,6 +1078,24 @@ footer{
 
 }
 @media only screen and (min-width: 992px) {
+  .categories .category{
+    width: 25%;
+  }
+  #lastAd{
+    display: block;
+  }
+  .subArticle{
+    width: 100%;
+  }
+  .paper{
+    width: 30%;
+  }
+  .headlines{
+    width: 15%;
+  }
+  .front{
+    width: 50%;
+  }
   .half .enderPart{
     width: 38%;
     margin-right: 50px;
@@ -1113,11 +1131,15 @@ footer{
     width: 40%;
   }
   .photo\&video .categoryRelated {
-    width: 50%;
+    width: 45%;
     flex-direction: column;
   }
   .photo\&video .categoryImg{
     width: 50%;
+    margin-right: 20px;
+  }
+  .photo\&video .othersSub{
+    width: 100%;
   }
 
 }
