@@ -491,12 +491,13 @@
 
         <div class="variant">
           <div class="categoryImg">
-            <img alt="categorySample" src="img/placeholder.jpeg">
-            <a href="#">Mauris varius ac urna ac ultrices. Phasellus euismod,
-              quam et suscipit convallis, turpis erat iaculis odio,
-              quis tristique justo mi nec nunc.</a>
-            <p class="articleBody">suscipit convallis, turpis erat iaculis odio,
-              quis tristique justo mi nec nunc...</p>
+            <a href=""><img alt="categorySample" src="img/placeholder.jpeg"></a>
+            <div class="categoryText">
+              <a href="#">Mauris varius ac urna ac ultrices. Phasellus euismod,
+                quam et suscipit convallis.</a>
+              <p class="articleBody">suscipit convallis, turpis erat iaculis odio,
+                quis tristique justo mi nec nunc...</p>
+            </div>
           </div>
 
           <div class="categoryRelated">
@@ -536,12 +537,13 @@
 
       <div class="variant">
         <div class="categoryImg">
-          <img alt="categorySample" src="img/placeholder.jpeg">
-          <a href="#">Mauris varius ac urna ac ultrices. Phasellus euismod,
-            quam et suscipit convallis, turpis erat iaculis odio,
-            quis tristique justo mi nec nunc.</a>
-          <p class="articleBody">suscipit convallis, turpis erat iaculis odio,
-            quis tristique justo mi nec nunc...</p>
+          <a href=""><img alt="categorySample" src="img/placeholder.jpeg"></a>
+          <div class="categoryText">
+            <a href="#">Mauris varius ac urna ac ultrices. Phasellus euismod,
+              quam et suscipit convallis.</a>
+            <p class="articleBody">suscipit convallis, turpis erat iaculis odio,
+              quis tristique justo mi nec nunc...</p>
+          </div>
         </div>
 
         <div class="categoryRelated">
@@ -581,12 +583,13 @@
 
       <div class="variant">
         <div class="categoryImg">
-          <img alt="categorySample" src="img/placeholder.jpeg">
-          <a href="#">Mauris varius ac urna ac ultrices. Phasellus euismod,
-            quam et suscipit convallis, turpis erat iaculis odio,
-            quis tristique justo mi nec nunc.</a>
-          <p class="articleBody">suscipit convallis, turpis erat iaculis odio,
-            quis tristique justo mi nec nunc...</p>
+          <a href=""><img alt="categorySample" src="img/placeholder.jpeg"></a>
+          <div class="categoryText">
+            <a href="#">Mauris varius ac urna ac ultrices. Phasellus euismod,
+              quam et suscipit convallis.</a>
+            <p class="articleBody">suscipit convallis, turpis erat iaculis odio,
+              quis tristique justo mi nec nunc...</p>
+          </div>
         </div>
 
         <div class="categoryRelated">
@@ -657,59 +660,71 @@
       <div class="end">
         <a class="homeEnd"><img alt="home"  src="img/placeholder.svg"></a>
         <div class="options">
-          <div class="enderPart">
-            <div class="headHid">
-              <a class="ender" href="#">SIGN UP FOR NEWSLETTERS</a>
-              <button id ="newsButton" onClick="elementVisible('hiddenNews',5)"><img alt="button" src="img/placeholder.jpeg"></button>
+
+          <div class="half">
+            <div class="enderPart">
+              <div class="headHid">
+                <a class="ender" href="#">SIGN UP FOR NEWSLETTERS</a>
+                <button id ="newsButton" onClick="elementVisible('hiddenNews',5)"><img alt="button" src="img/placeholder.jpeg"></button>
+              </div>
+              <div id="hiddenNews">
+                <a class="hiddenLink" href="#">e-Edition</a>
+                <a class="hiddenLink" href="#">Send a News Tip</a>
+              </div>
             </div>
-            <div id="hiddenNews">
-              <a class="hiddenLink" href="#">e-Edition</a>
-              <a class="hiddenLink" href="#">Send a News Tip</a>
+
+            <div class="enderPart">
+              <div class="headHid">
+                <a class="ender" href="#">CONTACT US</a>
+                <button id ="contactButton" onClick="elementVisible('hiddenContact',6)"><img alt="button" src="img/placeholder.jpeg"></button>
+              </div>
+              <div id="hiddenContact">
+                <a class="hiddenLink" href="#">Boston Herald Store/Back Copies</a>
+                <a class="hiddenLink" href="#">Work With Us</a>
+                <a class="hiddenLink" href="#">Legal Notices</a>
+                <a class="hiddenLink" href="#">Privacy Policy</a>
+                <a class="hiddenLink" href="#">Accessibility</a>
+                <a class="hiddenLink" href="#">Sitemap</a>
+              </div>
             </div>
+
+          </div>
+          <div class="half" id="half2">
+            <div class="a">
+              <div class="enderPart">
+                <div class="headHid">
+                  <a class="ender" href="#">CLASSIFIEDS</a>
+                  <button id ="classButton" onClick="elementVisible('hiddenClass',7)" ><img alt="button" src="img/placeholder.jpeg"></button>
+                </div>
+                <div id="hiddenClass">
+                  <a class="hiddenLink" href="#">Contests</a>
+                  <a class="hiddenLink" href="#">Special Sections</a>
+                  <a class="hiddenLink" href="#">Fun & Games</a>
+                  <a class="hiddenLink" href="#">Jobs</a>
+                </div>
+              </div>
+
+              <div class="enderPart">
+                <div class="headHid">
+                  <a class="ender" href="#">BUSINESS DIRECTORY</a>
+                  <button id ="businessButton" onClick="elementVisible('hiddenBusiness',8)" ><img alt="button" src="img/placeholder.jpeg"></button>
+                </div>
+                <div id="hiddenBusiness">
+                  <a class="hiddenLink" href="#">Network Advertising</a>
+                  <a class="hiddenLink" href="#">Adtaxi Solutions</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="subscribeButton">
+              <a href="#">SUBSCRIBE NOW</a>
+            </div>
+
+
           </div>
 
-          <div class="enderPart">
-            <div class="headHid">
-              <a class="ender" href="#">CONTACT US</a>
-              <button id ="contactButton" onClick="elementVisible('hiddenContact',6)"><img alt="button" src="img/placeholder.jpeg"></button>
-            </div>
-            <div id="hiddenContact">
-              <a class="hiddenLink" href="#">Boston Herald Store/Back Copies</a>
-              <a class="hiddenLink" href="#">Work With Us</a>
-              <a class="hiddenLink" href="#">Legal Notices</a>
-              <a class="hiddenLink" href="#">Privacy Policy</a>
-              <a class="hiddenLink" href="#">Accessibility</a>
-              <a class="hiddenLink" href="#">Sitemap</a>
-            </div>
-          </div>
-
-          <div class="enderPart">
-            <div class="headHid">
-              <a class="ender" href="#">CLASSIFIEDS</a>
-              <button id ="classButton" onClick="elementVisible('hiddenClass',7)" ><img alt="button" src="img/placeholder.jpeg"></button>
-            </div>
-            <div id="hiddenClass">
-              <a class="hiddenLink" href="#">Contests</a>
-              <a class="hiddenLink" href="#">Special Sections</a>
-              <a class="hiddenLink" href="#">Fun & Games</a>
-              <a class="hiddenLink" href="#">Jobs</a>
-            </div>
-          </div>
-
-          <div class="enderPart">
-            <div class="headHid">
-              <a class="ender" href="#">BUSINESS DIRECTORY</a>
-              <button id ="businessButton" onClick="elementVisible('hiddenBusiness',8)" ><img alt="button" src="img/placeholder.jpeg"></button>
-            </div>
-            <div id="hiddenBusiness">
-              <a class="hiddenLink" href="#">Network Advertising</a>
-              <a class="hiddenLink" href="#">Adtaxi Solutions</a>
-            </div>
-          </div>
         </div>
-        <div class="subscribeButton">
-          <a href="#">SUBSCRIBE NOW</a>
-        </div>
+
       </div>
       <div class="endFinal">
         <div class="endPage">
