@@ -1,6 +1,6 @@
 body{
   font-family: Arial, sans-serif;
-  width: 100%;
+  width: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@ section{
   margin: 10px;
   padding: 5px;
   display: flex;
+  width: auto;
 }
 a{
   text-decoration: none;
@@ -41,7 +42,7 @@ header{
   justify-content: space-between;
   background-color: white;
   width: auto;
-  height:90px;
+  height:65px;
 }
 .menuGroup {
   padding-right: 10px;
@@ -54,10 +55,11 @@ header{
 }
 .home{
   border:none;
-  height: 8vw;
-  width: 40vw;
-  max-height: 85%;
+  height: 16vw;
+  width: 45vw;
+  max-height:95%;
   max-width: 300px;
+  background-color: white;
 }
 .headButton{
   display: none;
@@ -757,9 +759,10 @@ footer{
   background-color: #f5f5f5;
 }
 .end{
-  padding:40px;
+  padding:15px;
   flex-direction: column;
   width: auto;
+
 }
 .enderPart{
   flex-direction: column;
@@ -865,12 +868,8 @@ footer{
 .endLink:hover{
   color: black;
 }
-.homeEnd{
-  height: 8vw;
-  width: 40vw;
-  max-height: 85%;
-  max-width: 300px;
-}
+
+
 
 .lateral .enderPart{
   flex-direction: column;
@@ -936,10 +935,30 @@ footer{
 .half .enderPart,.half .subscribeButton{
   width: 100%;
 }
+#footer .homeEnd{
+  padding-top: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.homeEnd a{
+  width: fit-content;
+}
+.homeEnd a:hover{
+  cursor: pointer;
+}
+#homeEndImg{
+  width: 250px;
+
+}
 @media screen and(max-width: 600px) {
 
 }
 @media only screen and (min-width: 600px) {
+  #homeEndImg{
+    width: 40vw;
+  }
   .articleTitle,.subArticle,.mainImg{
     width: 50%;
 
@@ -979,7 +998,7 @@ footer{
     width: 100%;
   }
   .end{
-    width: 30%;
+    width: 40%;
   }
   .subscribeButton{
     height: 50px;
@@ -1004,6 +1023,11 @@ footer{
 
 }
 @media only screen and (min-width: 768px) {
+  .home{
+    height: 10vw;
+    width: 35vw;
+  }
+
   .recommended{
     width: 55%;
   }
@@ -1033,12 +1057,20 @@ footer{
     margin-top: 120px;
   }
   .end{
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
   }
 
   .half{
     width: 30%;
     margin-right: 150px;
+  }
+  #footer .homeEnd{
+    justify-content: flex-start;
+  }
+  #homeEndImg{
+    width: 28vw;
   }
   .half .enderPart{
     width: 100%;
@@ -1099,6 +1131,10 @@ footer{
 
 }
 @media only screen and (min-width: 992px) {
+
+  #homeEndImg{
+    width: 18vw;
+  }
 
   #lastAd{
     display: block;
