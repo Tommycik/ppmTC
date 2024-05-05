@@ -14,6 +14,10 @@ section{
   display: flex;
   width: auto;
 }
+button:hover{
+  cursor: pointer;
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -52,6 +56,21 @@ header{
   border:none;
   width: 30px;
   padding: 5px;
+
+}
+#allSections{
+  margin-left: 5px;
+  display: none;
+  height: 30px;
+  border:none;
+  width: fit-content;
+  font-size: 17px;
+  background-color: white;
+  color: #616161;
+  font-weight: bolder;
+}
+.neutral{
+  width: fit-content;
 }
 .home{
   border:none;
@@ -761,7 +780,8 @@ footer{
   background-color: #f5f5f5;
 }
 .end{
-  padding:15px;
+  padding-left:40px;
+  padding-bottom: 15px;
   flex-direction: column;
   width: auto;
 
@@ -1212,6 +1232,9 @@ footer{
   .headButton{
     display: flex;
   }
+  #allSections{
+    display:block;
+  }
 
 
 }
@@ -1227,7 +1250,17 @@ footer{
 
   .half .enderPart{
     width: 100%;
-    margin-right: 30px;
+
+  }
+  .half{
+    margin-right: 145px;
+    width: 25%;
+  }
+  #half2{
+    width: 50%;
+  }
+  #half2 .a{
+    margin-right: 145px;
   }
 
 }
