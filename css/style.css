@@ -757,13 +757,13 @@ footer{
   background-color: #f5f5f5;
 }
 .end{
-  padding:15px;
+  padding:40px;
   flex-direction: column;
   width: auto;
 }
 .enderPart{
   flex-direction: column;
-  border-bottom: black solid 2px;
+  border-top: black solid 2px;
   width: 100%;
   padding: 20px 0;
   height:fit-content;
@@ -802,6 +802,7 @@ footer{
 .options{
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 
 .hidden{
@@ -810,9 +811,10 @@ footer{
 }
 
 .subscribeButton{
-  margin-top: 20px;
+  padding-top: 20px;
   width: 100%;
   height: 13vw;
+  border-top: black solid 2px;
 
 }
 .subscribeButton a{
@@ -923,6 +925,7 @@ footer{
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+
 }
 .a{
   flex-direction: row;
@@ -1095,9 +1098,7 @@ footer{
 
 }
 @media only screen and (min-width: 992px) {
-  .categories .category{
-    width: 25%;
-  }
+
   #lastAd{
     display: block;
   }
@@ -1115,19 +1116,20 @@ footer{
   }
   .half .enderPart{
     width: 38%;
-    margin-right: 50px;
+    margin-right: 30px;
   }
   .a{
-    width: 50%;
+    width: 40%;
+    margin-right: 30px;
   }
   .half .subscribeButton{
-    width: 50%;
+    width: 40%;
   }
   .a .enderPart{
     width: 100%;
   }
   .half{
-    width: 47%;
+    width: 50%;
     margin-right: 0;
     flex-direction: row;
 
@@ -1135,6 +1137,13 @@ footer{
   .photo\&video .category{
     width: 70%;
   }
+  #section > .category{
+    width: 70%;
+  }
+  .categories .category{
+    width: 25%;
+  }
+
   .photo\&video .promoFull{
     width: 20%;
   }
@@ -1164,6 +1173,7 @@ footer{
   .headButton{
     display: flex;
   }
+
 
 }
 @media only screen and (min-width: 1200px) {
