@@ -871,6 +871,7 @@ footer{
   max-height: 85%;
   max-width: 300px;
 }
+
 .lateral .enderPart{
   flex-direction: column;
   justify-content: space-between;
