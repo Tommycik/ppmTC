@@ -1271,7 +1271,7 @@ footer{
   #header .thirdLevel{
     border-bottom: 1px solid black;
   }
-  #header .secondLevel,.header .thirdLevel,.header .fourthLevel{
+  #header .secondLevel,#header .thirdLevel,#header .fourthLevel{
     display: flex;
   }
 
