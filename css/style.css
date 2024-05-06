@@ -56,20 +56,40 @@ header{
 }
 #header .secondLevel{
   display: none;
+  height: 65px;
   flex-direction: row;
   justify-content: center;
 }
 #header .thirdLevel{
+  padding: 20px;
   display: none;
   justify-content: center;
+  gap:2vw;
   align-items: center;
 
 }
+.thirdLevel .headCategory:hover{
+  text-decoration: underline;
+}
 #header .fourthLevel{
+  width: 100%;
   display: none;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
+  margin-left: 15px;
+  gap:40px
+}
+#header .fourthLevel .linksPart{
+  gap:25px;
+}
+.fourthLevel .textPart p{
+  color: #00538a;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.fourthLevel .headLinks{
+  font-weight: lighter;
+  font-size: 14px;
 }
 .menuGroup {
   padding-right: 10px;
@@ -1282,6 +1302,9 @@ footer{
   .articleTitle,.subArticle,.mainImg{
     width: 50%;
 
+  }
+  #header .thirdLevel{
+    gap:15px;
   }
 
 }
