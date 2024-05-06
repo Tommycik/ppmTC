@@ -37,16 +37,38 @@ header{
   display: flex;
   position: sticky;
   top:0;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  background-color: white;
+  width: auto;
+  height:65px;
+}
+.header .firstLevel{
+  display: flex;
+  width: 100%;
   padding-left: 2%;
   padding-right: 2%;
-  border-bottom: 1px solid black;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
-  width: auto;
-  height:65px;
+}
+.header .secondLevel{
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+}
+.header .thirdLevel{
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+.header .fourthLevel{
+  display: none;
+  justify-content: center;
+  align-items: center;
+
 }
 .menuGroup {
   padding-right: 10px;
@@ -1234,6 +1256,19 @@ footer{
   }
   #allSections{
     display:block;
+  }
+  .header{
+    height: 180px;
+    border: none;
+  }
+  .header .firstLevel .home{
+    visibility: hidden;
+  }
+  .header .thirdLevel{
+    border-bottom: 1px solid black;
+  }
+  .header .secondLevel,.header .thirdLevel,.header .fourthLevel{
+    display: flex;
   }
 
 
