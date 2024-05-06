@@ -43,8 +43,9 @@ header{
   width: auto;
   height:65px;
 }
-.header .firstLevel{
+#header .firstLevel{
   display: flex;
+  height: 100%;
   width: 100%;
   padding-left: 2%;
   padding-right: 2%;
@@ -53,18 +54,18 @@ header{
   flex-direction: row;
   justify-content: space-between;
 }
-.header .secondLevel{
+#header .secondLevel{
   display: none;
   flex-direction: row;
   justify-content: center;
 }
-.header .thirdLevel{
+#header .thirdLevel{
   display: none;
   justify-content: center;
   align-items: center;
 
 }
-.header .fourthLevel{
+#header .fourthLevel{
   display: none;
   justify-content: center;
   align-items: center;
@@ -1257,17 +1258,20 @@ footer{
   #allSections{
     display:block;
   }
-  .header{
+  #header{
     height: 180px;
     border: none;
   }
-  .header .firstLevel .home{
+  #header .firstLevel{
+    height: fit-content;
+  }
+  #header .firstLevel .home{
     visibility: hidden;
   }
-  .header .thirdLevel{
+  #header .thirdLevel{
     border-bottom: 1px solid black;
   }
-  .header .secondLevel,.header .thirdLevel,.header .fourthLevel{
+  #header .secondLevel,.header .thirdLevel,.header .fourthLevel{
     display: flex;
   }
 
