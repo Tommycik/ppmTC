@@ -67,7 +67,7 @@ function menu1(){
     document.getElementById("menu1").style.visibility="visible";
     document.getElementById("menu1").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="hidden";
-    document.getElementById("lateralMenu").style.overflow="auto";
+    document.getElementById("lateralMenu").style.overflow="hidden";
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
 
 
@@ -98,7 +98,7 @@ function menu2(){
   }else{
     document.getElementById("menu2").src="img/placeholder.svg";
     document.getElementById("body").style.overflow="hidden";
-    document.getElementById("accountMenu").style.overflow="auto";
+    document.getElementById("accountMenu").style.overflow="hidden";
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
     overlay(1);
   }
@@ -126,7 +126,7 @@ function menu3(){
     overlay(0);
   }else{
     document.getElementById("body").style.overflow="hidden";
-    document.getElementById("searchMenu").style.overflow="auto";
+    document.getElementById("searchMenu").style.overflow="hidden";
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
     overlay(1);
   }
@@ -137,9 +137,9 @@ function menu3(){
 window.onscroll = function() {activeWindow()};
 window.onresize = function() {activeWindow()};
 function activeWindow(){
-  if (window.scrollY > 10) {
+  if (window.scrollY > 0) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
-  }else{
+  }else if(window.scrollY <= 10){
     document.getElementById("header").style.boxShadow = "none";
   }
   if(window.innerWidth >=1040) {
@@ -159,7 +159,7 @@ function activeWindow(){
 }
 function scrollFunction() {
 
-    if (window.scrollY > 10) {
+    if (window.scrollY > 0) {
       document.getElementsByClassName("secondLevel")[0].style.display="none";
       document.getElementsByClassName("thirdLevel")[0].style.display="none";
       document.getElementsByClassName("fourthLevel")[0].style.display="none";
@@ -168,7 +168,7 @@ function scrollFunction() {
       document.getElementById("header").style.borderBottom="1px solid #9d9a98"
       document.getElementsByClassName("thirdLevel")[0].style.boder="none";
       document.getElementsByClassName("firstLevel")[0].style.height="100%";
-    }else{
+    }else if(window.scrollY <= 10) {
       document.getElementsByClassName("firstLevel")[0].style.height="65px";
       document.getElementsByClassName("secondLevel")[0].style.display="flex";
       document.getElementsByClassName("thirdLevel")[0].style.display="flex";
