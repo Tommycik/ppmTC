@@ -38,10 +38,14 @@ header{
   position: sticky;
   top:0;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #9d9a98 ;
   background-color: white;
+  justify-content: center;
+  align-content: center;
   width: auto;
   height:65px;
+  box-shadow: #9d9a98 0 0 10px ;
+
 }
 #header .firstLevel{
   display: flex;
@@ -55,12 +59,14 @@ header{
   justify-content: space-between;
 }
 #header .secondLevel{
+  width: 100%;
   display: none;
   height: 65px;
   flex-direction: row;
   justify-content: center;
 }
 #header .thirdLevel{
+  width: 100%;
   padding: 20px;
   display: none;
   justify-content: center;
@@ -73,6 +79,7 @@ header{
 }
 #header .fourthLevel{
   width: 100%;
+  max-width: 800px;
   display: none;
   justify-content: flex-start;
   align-items: center;
@@ -1279,21 +1286,23 @@ footer{
     display:block;
   }
   #header{
-    height: 180px;
+
     border: none;
+    margin-bottom: 500px;
   }
   #header .firstLevel{
-    height: fit-content;
+
   }
   #header .firstLevel .home{
     visibility: hidden;
   }
   #header .thirdLevel{
-    border-bottom: 1px solid black;
+
   }
   #header .secondLevel,#header .thirdLevel,#header .fourthLevel{
     display: flex;
   }
+
 
 
 }
@@ -1305,6 +1314,11 @@ footer{
   }
   #header .thirdLevel{
     gap:15px;
+  }
+  #header .fourthLevel{
+    margin-left: auto;
+    margin-right: 500px;
+    padding-right: 0.5vw;
   }
 
 }
