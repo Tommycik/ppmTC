@@ -183,7 +183,7 @@ header{
   transition: width 0.05s;
 }
 .lateral{
-
+  border: black solid 1px;
   flex-direction: column;
   background-color: white;
   width: 100%;
@@ -1317,8 +1317,8 @@ footer{
   }
   #header .fourthLevel{
     margin-left: auto;
-    margin-right: 500px;
-    padding-right: 0.5vw;
+    margin-right: auto;
+
   }
 
 }
