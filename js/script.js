@@ -48,6 +48,12 @@ function menu1(){
   }else{
     document.getElementById("lateralMenu").style.position="sticky";
   }
+  if(visible[3]){
+    menu2();
+  }
+  if(visible[4]){
+    menu3();
+  }
   var x= document.getElementById("lateralMenu");
 
   if(visible[0]){
@@ -66,12 +72,7 @@ function menu1(){
 
 
   }
-  if(visible[3]){
-    menu2();
-  }
-  if(visible[4]){
-    menu3();
-  }
+
   elementVisible('lateralMenu',0);
 }
 
@@ -81,6 +82,12 @@ function menu2(){
     document.getElementById("accountMenu").style.position="absolute";
   }else{
     document.getElementById("accountMenu").style.position="sticky";
+  }
+  if(visible[0]){
+    menu1();
+  }
+  if(visible[4]){
+    menu3();
   }
   var x= document.getElementById("accountMenu");
   if(visible[3]){
@@ -95,12 +102,7 @@ function menu2(){
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
     overlay(1);
   }
-  if(visible[0]){
-    menu1();
-  }
-  if(visible[4]){
-    menu3();
-  }
+
   elementVisible('accountMenu',3);
 }
 
@@ -112,6 +114,12 @@ function menu3(){
     document.getElementById("searchMenu").style.position="sticky";
   }
   var x= document.getElementById("searchMenu");
+  if(visible[0]){
+    menu1();
+  }
+  if(visible[3]){
+    menu2();
+  }
   if(visible[4]){
     document.getElementById("body").style.overflow="scroll";
     document.getElementById("searchMenu").style.overflow="hidden";
@@ -122,12 +130,7 @@ function menu3(){
     x.style.backgroundColor="rgba(0, 0, 0, 0.5)";
     overlay(1);
   }
-  if(visible[0]){
-    menu1();
-  }
-  if(visible[3]){
-    menu2();
-  }
+
 
   elementVisible('searchMenu',4);
 }
@@ -139,7 +142,6 @@ function activeWindow(){
   }else{
     document.getElementById("header").style.boxShadow = "none";
   }
-
   if(window.innerWidth >=1040) {
     scrollFunction();
 

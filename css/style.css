@@ -79,7 +79,7 @@ header{
 }
 #header .fourthLevel{
   width: 100%;
-  max-width: 800px;
+  max-width: 1280px;
   display: none;
   justify-content: flex-start;
   align-items: center;
@@ -153,7 +153,7 @@ header{
   width: 100%;
   display: none;
   position: sticky;
-  top:91px;
+  top:65px;
 }
 #lateralMenu{
   transition: width 0.05s;
@@ -164,7 +164,7 @@ header{
   width: 100%;
   display: none;
   position: sticky;
-  top:91px;
+  top:65px;
   justify-content: flex-end;
 }
 #accountMenu{
@@ -176,7 +176,7 @@ header{
   width: 100%;
   display: none;
   position: sticky;
-  top:91px;
+  top:65px;
   justify-content: flex-end;
 }
 #searchMenu{
@@ -336,6 +336,7 @@ header{
 section{
   flex-direction: column;
   width: 100%;
+  max-width: 1280px;
 }
 .frontPage{
   flex-direction: row;
@@ -1319,6 +1320,10 @@ footer{
     margin-left: auto;
     margin-right: auto;
 
+  }
+  #section{
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
