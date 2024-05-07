@@ -152,7 +152,7 @@ header{
   height:100vh;
   width: 100%;
   display: none;
-  position: sticky;
+  position: fixed;
   top:65px;
 }
 #lateralMenu{
@@ -163,7 +163,7 @@ header{
   height:100vh;
   width: 100%;
   display: none;
-  position: sticky;
+  position: fixed;
   top:65px;
   justify-content: flex-end;
 }
@@ -175,7 +175,7 @@ header{
   height:100vh;
   width: 100%;
   display: none;
-  position: sticky;
+  position: fixed;
   top:65px;
   justify-content: flex-end;
 }

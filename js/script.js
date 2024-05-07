@@ -41,13 +41,6 @@ function overlay(x){
   }
 }
 function menu1(){
-
-  if(window.scrollY==0){
-    document.getElementById("lateralMenu").style.position="absolute";
-
-  }else{
-    document.getElementById("lateralMenu").style.position="sticky";
-  }
   if(visible[3]){
     menu2();
   }
@@ -77,12 +70,6 @@ function menu1(){
 }
 
 function menu2(){
-
-  if(window.scrollY==0){
-    document.getElementById("accountMenu").style.position="absolute";
-  }else{
-    document.getElementById("accountMenu").style.position="sticky";
-  }
   if(visible[0]){
     menu1();
   }
@@ -107,12 +94,6 @@ function menu2(){
 }
 
 function menu3(){
-
-  if(window.scrollY==0){
-    document.getElementById("searchMenu").style.position="absolute";
-  }else{
-    document.getElementById("searchMenu").style.position="sticky";
-  }
   var x= document.getElementById("searchMenu");
   if(visible[0]){
     menu1();
