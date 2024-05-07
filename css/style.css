@@ -1287,18 +1287,19 @@ footer{
     display:block;
   }
   #header{
-
+    height: 300px;
     border: none;
-    margin-bottom: 500px;
+    margin-bottom: 200px;
+    box-shadow: none;
   }
   #header .firstLevel{
-
+    height: 65px;
   }
   #header .firstLevel .home{
     visibility: hidden;
   }
   #header .thirdLevel{
-
+    border-bottom: black solid 1px;
   }
   #header .secondLevel,#header .thirdLevel,#header .fourthLevel{
     display: flex;
