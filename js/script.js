@@ -217,3 +217,24 @@ function upComing(){
 window.onload=function (){
   upComing();
 }
+var position=0
+var eventDisplayed=2;
+function slider(left){
+  let change="0"
+  if(left){
+    position+=100;
+    if(position>0){
+      position=0;
+    }
+
+  }else{
+    position-=100;
+    if(position<-(7/eventDisplayed)*100){
+      position=-(7/eventDisplayed)*100;
+    }
+
+
+  }
+  change=position.toString()+'%'
+  document.getElementsByClassName("draggable")[0].style.left = change;
+}
