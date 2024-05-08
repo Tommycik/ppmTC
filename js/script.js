@@ -218,7 +218,8 @@ window.onload=function (){
   upComing();
 }
 var position=0
-var eventDisplayed=2;
+var eventDisplayed=3;
+var end=false
 function slider(left){
   let change="0"
   if(left){
@@ -226,13 +227,17 @@ function slider(left){
     if(position>0){
       position=0;
     }
+    end=false;
 
   }else{
     position-=100;
-    if(position<-(7/eventDisplayed)*100){
-      position=-(7/eventDisplayed)*100;
+    if(end){
+      position+=100;
+    }else  if(position<-(7%eventDisplayed)*100){
+      position+=100;
+      position-=(100/eventDisplayed);
+      end=true;
     }
-
 
   }
   change=position.toString()+'%'
