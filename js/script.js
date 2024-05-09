@@ -160,6 +160,16 @@ function activeWindow() {
   }
   let width=((events/eventDisplayed)*100).toString()
   document.getElementsByClassName("draggable")[0].style.width = width+'%';
+  let container = document.getElementsByClassName("draggable")[0];
+  let content = container.innerHTML;
+  container.innerHTML= content;
+  let change="0"
+  if(end){
+    position=-((events/eventDisplayed)*100-100);
+    change=position.toString()+'%';
+    container.style.left = change;
+  }
+
 
 }
 
@@ -250,13 +260,16 @@ function slider(left){
     position-=100;
     if(end){
       position+=100;
-    }else  if(position<-(events%eventDisplayed)*100){
+    }else  if(position<-((events/eventDisplayed)*100-100)|| events/eventDisplayed<2){
       position+=100;
-      position-=(100/eventDisplayed);
+      position-=(100/eventDisplayed)*(events%eventDisplayed);
       end=true;
     }
 
   }
-  change=position.toString()+'%'
-  document.getElementsByClassName("draggable")[0].style.left = change;
+  change=position.toString()+'%';
+  let container = document.getElementsByClassName("draggable")[0];
+  container.style.left = change;
+  let content = container.innerHTML;
+  container.innerHTML= content;
 }
