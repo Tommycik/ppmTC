@@ -693,17 +693,20 @@
         <a href="#" id="upTitle">Upcoming Events</a>
         <div>
           <span>
-            <i class='icon'></i>
-            <a href="#" class="upSub">See All Events</a>
+            <a href="#" ><img src="img/placeholder2.svg"></a>
           </span>
+          <a href="#" class="upSub">See All Events</a>
           <span>
-            <i class='icon'></i>
-           <a href="#" class="upSub">Add your event</a>
-          </span>
+            <a href="#" ><img src="img/placeholder2.svg"></a>
+          </span><a href="#" class="upSub">Add your event</a>
+
         </div>
       </div>
       <div class="upMain">
-        <button class="drag" onclick="slider(true)"><</button>
+        <div class="sliderContainer">
+          <button class="drag" onclick="slider(true)"><</button>
+        </div>
+
         <div class="wrapper">
           <div class="draggable">
 
@@ -711,7 +714,7 @@
               <div class="dragElementHead">
                 <span>Day,Month Date</span>
               </div>
-              <div class="dragElementDescription">
+              <div id="first" class="dragElementDescription">
                 <h4>Title Example</h4>
                 <p>Location Example</p>
               </div>
@@ -779,11 +782,13 @@
 
           </div>
         </div>
+        <div class="sliderContainer">
+          <button class="drag" onclick="slider(false)">></button>
+        </div>
 
-        <button class="drag" onclick="slider(false)">></button>
       </div>
       <div class="upInteractive">
-        <img src="img/placeholder2.svg">
+        <a href="#" ><img src="img/placeholder2.svg"></a>
         <div class="days">
           <div id="1">
             <p class="day">856</p>
