@@ -1024,6 +1024,7 @@ footer{
   width: 250px;
 
 }
+
 .upComing{
   background-color: white;
   flex-direction: column;
@@ -1233,15 +1234,10 @@ footer{
   .upComing{
     width: 50%;
   }
-  .draggable{
-    width:350% ;
-  }
   .upHead span{
     margin-right: 15px;
   }
-  .dragElement{
-    width: 45%;
-  }
+
   .upSub{
     display: none;
   }
@@ -1372,15 +1368,10 @@ footer{
   .upComing{
     width: 60%;
   }
-  .draggable{
-    width:233.33% ;
-  }
   .upHead span{
     margin-right: 0px;
   }
-  .dragElement{
-    width: 20%;
-  }
+
   .upSub{
     display: inline-block;
   }
@@ -1400,12 +1391,6 @@ footer{
   .upComing{
     width: 65%;
   }
-  .draggable{
-    width:175% ;
-  }
-  .dragElement{
-    width: 20%;
-  }
 
 }
 
@@ -1414,7 +1399,6 @@ footer{
   #homeEndImg{
     width: 18vw;
   }
-
   #lastAd{
     display: block;
   }
@@ -1518,18 +1502,10 @@ footer{
     width: 70%;
   }
 
-
-
 }
 @media only screen and (min-width: 1130px) {
   .upComing{
     width: 75%;
-  }
-  .draggable{
-    width:140% ;
-  }
-  .dragElement{
-    width: 20%;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -1553,13 +1529,6 @@ footer{
   .upComing{
     width: 78%;
   }
-  .draggable{
-     width:116.66% ;
-   }
-  .dragElement{
-    width: 20%;
-  }
-
 
 }
 @media only screen and (min-width: 1400px) {

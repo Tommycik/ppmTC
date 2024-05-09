@@ -144,6 +144,22 @@ function activeWindow() {
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
   }
+  if(window.innerWidth < 640) {
+    eventDisplayed=3;
+  }else if (window.innerWidth < 800) {
+    eventDisplayed=2;
+  }else if (window.innerWidth < 940) {
+    eventDisplayed=3;
+
+  }else if (window.innerWidth < 1040) {
+    eventDisplayed=4;
+  }else if (window.innerWidth < 1280) {
+    eventDisplayed=5;
+  }else if (window.innerWidth < 1400) {
+    eventDisplayed=6;
+  }
+  let width=((events/eventDisplayed)*100).toString()
+  document.getElementsByClassName("draggable")[0].style.width = width+'%';
 
 }
 
@@ -219,6 +235,7 @@ window.onload=function (){
 }
 var position=0
 var eventDisplayed=3;
+var events=7;
 var end=false
 function slider(left){
   let change="0"
@@ -233,7 +250,7 @@ function slider(left){
     position-=100;
     if(end){
       position+=100;
-    }else  if(position<-(7%eventDisplayed)*100){
+    }else  if(position<-(events%eventDisplayed)*100){
       position+=100;
       position-=(100/eventDisplayed);
       end=true;
