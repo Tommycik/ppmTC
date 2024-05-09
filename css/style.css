@@ -157,6 +157,45 @@ header{
 #lateralMenu{
   transition: width 0.05s;
 }
+.meteoAndDate{
+  padding: 0 5px 15px 5px;
+}
+.meteo{
+  width: 60px;
+  height: 27px;
+}
+.meteo a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.temperature{
+  width: 34px;
+  height: 100%;
+}
+.meteoIcon{
+  width: 26px;
+  height: 100%;
+}
+.todayDate{
+  margin-left: 12px;
+  flex-direction: column;
+}
+.dateShow{
+  font-weight: bold;
+  font-size: 16px;
+  margin:0;
+}
+.todayDate a{
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #7f817f;
+}
+.todayDate a:hover{
+  color: black;
+  text-decoration: underline;
+}
 #accountMenu{
   background-color: rgba(0, 0, 0, 0.5);
   height:100vh;
@@ -249,8 +288,7 @@ header{
   margin-top:auto;
   margin-bottom: 25vh;
 }
-.homepage{
-
+.up .homepage{
   align-content: baseline;
 
 }

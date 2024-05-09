@@ -69,6 +69,7 @@ function menu1() {
   }
 
   elementVisible('lateralMenu', 0);
+  document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
 }
 
 function menu2() {
