@@ -1048,7 +1048,7 @@ footer{
   font-size: 18px;
 }
 .upSub{
-  font-size: 10px;
+  font-size: 12px;
   font-weight: lighter;
   margin-right: 20px;
 }
@@ -1100,6 +1100,7 @@ footer{
   justify-content: center;
   height: 100%;
 }
+
 .drag{
   font-weight: normal;
   height: fit-content;
@@ -1160,7 +1161,7 @@ footer{
 }
 
 .upInteractive{
-  padding: 6px 6px 0 35px;
+  padding: 6px 20px 0 35px;
   height:50px;
   align-items: center;
   overflow: hidden;
@@ -1176,8 +1177,8 @@ footer{
   height: 52px;
   flex-direction: column;
   padding: 6px 0;
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 .upInteractive .days div p{
   margin: 0;
