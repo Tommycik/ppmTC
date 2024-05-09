@@ -161,6 +161,7 @@ header{
   padding: 0 5px 15px 5px;
 }
 .meteo{
+  align-self: center;
   width: 60px;
   height: 27px;
 }
