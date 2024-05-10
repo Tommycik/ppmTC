@@ -69,7 +69,7 @@ function menu1() {
   }
 
   elementVisible('lateralMenu', 0);
-  document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
+
 }
 
 function menu2() {
@@ -210,8 +210,17 @@ function getTodaysDate(){
   let date = new Date();
   let year = date.getFullYear();
   let month = months[date.getMonth()];
-  let day = days[date.getDay()][0];
-  return day+', ' + month +' '+date.getDate()+' '+ year;
+  let day = days[(date.getDay())-1][0];
+  let number=date.getDate();
+  let x="th";
+  if(number==1){
+    x="st";
+  }else if(number==2){
+    x="nd";
+  }else if(number==3){
+    x="rd"
+  }
+  return day+', ' + month +' '+date.getDate()+x+' '+ year;
 }
 function upComing(){
   let date = new Date();
@@ -243,6 +252,8 @@ function upComing(){
 }
 window.onload=function (){
   upComing();
+  document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
+  document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
 }
 var position=0
 var eventDisplayed=3;
