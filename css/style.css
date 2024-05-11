@@ -470,13 +470,13 @@ section{
   color: #5c5a5e;
 }
 .related{
-  margin-top: 5px;
-  margin-left: 0;
-  padding: 0 5px;
+  margin: 0;
+  padding: 5px 5px 0 5px;
   list-style: none;
+  border-top: black solid 1px;
 }
 .related a{
-  font-size: 12px;
+  font-size: 13px;
   margin-left: 0;
   padding-left: 0;
 }
@@ -484,7 +484,7 @@ section{
   padding: 5px 0;
   margin-bottom: 5px;
   display: flex;
-  gap: 5px;
+  gap: 10px;
   align-items: center;
 }
 .related li:before{
@@ -496,6 +496,11 @@ section{
 .related li div{
   display: flex;
   flex-direction: column;
+}
+.related p{
+  color: #6a6a73;
+  font-size: 12px;
+  margin: 5px 0 0 0;
 }
 .ad{
   width: 100%;
@@ -520,10 +525,6 @@ section{
   width: 100%;
 }
 
-.related{
-  border-top: black solid 1px;
-  margin-right: 20px;
-}
 .headline{
   border-top: darkgrey solid 1px;
   padding: 10px 0;
@@ -1457,7 +1458,7 @@ footer{
     width: 60%;
   }
   .upHead span{
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .upSub{
