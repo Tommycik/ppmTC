@@ -676,6 +676,7 @@ section{
   width: 100%;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin-bottom: 30px ;
 }
 .categoryName a{
   text-decoration: none;
@@ -723,9 +724,9 @@ section{
   flex-wrap: wrap;
 }
 .relatedNews{
-  border-top: #E5E4E2 solid 1px;
+  border-top: #ddd8d5 solid 1px;
   flex-direction: column;
-  padding: 20px 0;
+  padding: 15px 0 10px 0;
 }
 
 li button{
