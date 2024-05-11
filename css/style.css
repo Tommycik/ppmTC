@@ -9,13 +9,6 @@ body{
   padding: 0;
   margin: 0;
 }
-section{
-  margin: 10px;
-  padding: 5px;
-  display: flex;
-  width: auto;
-  max-width: 100%;
-}
 button:hover{
   cursor: pointer;
 }
@@ -394,8 +387,11 @@ header{
 }
 section{
   flex-direction: column;
-  width: 100%;
+  width: auto;
   max-width: 1280px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
 }
 .frontPage{
   flex-direction: row;
@@ -470,13 +466,14 @@ section{
 .relatedTitle{
   font-size: 12px;
   margin-top: 0;
-  margin-bottom: 0px;
-  color:dimgrey;
+  margin-bottom: 0;
+  color: #5c5a5e;
 }
 .related{
   margin-top: 5px;
   margin-left: 0;
-  padding: 0 20px;
+  padding: 0 5px;
+  list-style: none;
 }
 .related a{
   font-size: 12px;
@@ -486,6 +483,12 @@ section{
 .related li{
   padding: 5px 0;
   margin-left: 0;
+}
+.related li:before{
+  content:"•";
+  font-size:13px;
+  vertical-align:middle;
+  line-height:20px;
 }
 .ad{
   width: 100%;
@@ -528,9 +531,11 @@ section{
 }
 
 .articleBody{
-  margin-top: 10px;
-  font-size: 15px;
-  color: black;
+  margin-top: 0;
+  font-size: 16px;
+  color: #2b303d ;
+  font-weight: lighter;
+  font-family: "Times New Roman", Serif;
 }
 .seeAll{
   margin-left: 0;
