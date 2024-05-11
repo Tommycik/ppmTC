@@ -482,13 +482,20 @@ section{
 }
 .related li{
   padding: 5px 0;
-  margin-left: 0;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 .related li:before{
   content:"•";
   font-size:13px;
   vertical-align:middle;
   line-height:20px;
+}
+.related li div{
+  display: flex;
+  flex-direction: column;
 }
 .ad{
   width: 100%;
