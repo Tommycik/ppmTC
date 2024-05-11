@@ -62,7 +62,7 @@ function menu1() {
     document.getElementById("menu1").style.visibility = "visible";
     document.getElementById("menu1").src = "img/placeholder.svg";
     document.getElementById("body").style.overflow = "hidden";
-    document.getElementById("lateralMenu").style.overflow = "hidden";
+    document.getElementById("lateralMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
 
 
@@ -88,7 +88,7 @@ function menu2() {
   } else {
     document.getElementById("menu2").src = "img/placeholder.svg";
     document.getElementById("body").style.overflow = "hidden";
-    document.getElementById("accountMenu").style.overflow = "hidden";
+    document.getElementById("accountMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     overlay(1);
   }
@@ -110,7 +110,7 @@ function menu3() {
     overlay(0);
   } else {
     document.getElementById("body").style.overflow = "hidden";
-    document.getElementById("searchMenu").style.overflow = "hidden";
+    document.getElementById("searchMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     overlay(1);
   }

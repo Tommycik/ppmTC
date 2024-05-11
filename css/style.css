@@ -247,13 +247,15 @@ header{
   width: 100%;
   min-height:100% ;
   height:fit-content;
-  max-width:280px;
+  max-width:300px;
 }
 #searchMenu .lateral{
   max-width: none;
   height: fit-content;
   min-height:0 ;
   padding: 10px 4%;
+  border: #7d7d7d solid 2px;
+  box-shadow: black 0 0 5px;
 }
 
 .search div{
@@ -297,7 +299,7 @@ header{
   outline: white;
 }
 ::placeholder {
-  color: #b7b7b7 ;
+  color: #7d7d7d ;
   opacity: 1;
 }
 .up{
@@ -334,7 +336,7 @@ header{
   align-items: center;
   border-top: black solid 1px;
   padding-top: 20px;
-
+  height: fit-content;
 }
 .signupMenu p{
   width: auto;
@@ -1045,6 +1047,12 @@ footer{
 .subscribeLog a{
   font-weight: bold;
   font-size: 15px;
+  margin-bottom: 60px;
+}
+#accountMenu .subscribeLog a{
+  margin-bottom: 30px;
+}
+#accountMenu .subscribeLog {
   margin-bottom: 60px;
 }
 .subscribeLog a:hover{
