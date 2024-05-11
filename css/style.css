@@ -357,13 +357,11 @@ header{
   text-decoration: underline;
 }
 .subscribeButtonMenu{
-
   margin-top: 25px;
   margin-bottom: 15px;
   width: 100%;
   height: 40px;
   justify-content: center;
-
 }
 .subscribeButtonMenu a{
   font-size: 16px;
@@ -513,10 +511,10 @@ section{
   flex-direction: column;
 }
 .special{
-  border-bottom: orangered solid 2px;
+  border-bottom: #da4b1f solid 2px;
   display: block;
   width: 100%;
-  color: orangered;
+  color: #dc582f;
   margin:0 0 5px 0;
   font-weight: normal;
   font-size: 22px;
@@ -545,18 +543,6 @@ section{
 .seeAll:hover{
   color: #808080;
 }
-.headline{
-  border-top: darkgrey solid 1px;
-  padding: 10px 0;
-  flex-direction: column;
-}
-.headline a{
-  font-size: 15px;
-}
-.lessImportant{
-  color: dimgrey;
-  font-size:10px;
-}
 .headlines{
   flex-direction: column;
   margin-top: 60px ;
@@ -570,16 +556,56 @@ section{
   border-bottom: #005d9c solid 2px;
   font-family: "Times New Roman", Serif;
 }
-
+.headline{
+  border-top: #ddd8d5 solid 1px;
+  padding: 20px 0;
+  flex-direction: column;
+}
+#firstHeadline{
+  border: none;
+}
+.headline a{
+  font-size: 15px;
+}
+.headline a p{
+  display: inline;
+}
+.signup{
+  background-color: #ecede7;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-items:  center;
+  height: 100px;
+  padding: 10px;
+}
+.signup p{
+  margin: 15px;
+  text-align: center;
+  font-weight: 790;
+  font-size: 16px;
+}
+.signup a{
+  border: #005d9c solid 2px;
+  color: #005d9c;
+  width:100px;
+  height: 40px;
+  background-color: #ecede7;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup a:hover{
+  background-color: #0072b4;
+  color: white;
+}
 .subPrime{
   flex-direction: row;
   align-content: baseline;
   flex-wrap: wrap;
-}
-.othersMain{
-  flex-direction: row ;
-  flex-wrap: wrap;
-  width: 100%;
 }
 .subOnly{
   margin-bottom: 5px;
@@ -592,158 +618,78 @@ section{
   height: fit-content;
   text-align: left;
 }
-.head{
-  margin-left: 4%;
-}
-li button{
-  margin: auto;
-}
-
-
-
-
-
-.photoText{
-  flex-direction: column;
-  padding: 0;
-  align-content: flex-start;
-}
-
-.othersSub{
-  flex-wrap: nowrap;
-  flex-direction: row;
-  width: 100%;
-  height: 70px;
-  border-bottom: #E5E4E2 solid 1px;
-  border-collapse: collapse;
-  padding :20px 0;
-
-}
-section{
-  flex-direction: column;
-}
-
-.subImg{
-  flex: 0 0 90px;
-  height: 50px;
-  margin-right: 10px;
-}
-.subImg a{
-  width:100%;
-  height: 100%;
-}
-.subImg img{
-  width:100%;
-  height: 100%;
-}
-
-.variant .othersSub a{
-  font-size: 14px;
-}
-
-
-
-.signup{
-  background-color: rgba(226, 223, 210,0.3);
-  display: block;
-  text-align: center;
-  height: 120px;
-  padding: 5px;
-}
-.signup p{
-
-  font-weight: bold;
-  font-size: 17px;
-}
-.signup button{
-  border: #0F52BA solid 2px;
-  color: steelblue;
-  width:100px;
-  height: 50px;
-  background-color: whitesmoke;
-  border-radius: 5px;
-  font-size: 100%;
-  font-weight: bold;
-}
-.signup button:hover{
-  background-color: steelblue;
-  color: white;
-}
-.sections{
-  width: 100%;
-}
 .paper{
-  padding: 20px;
-  margin: 40px 0;
-  margin-bottom: 70px;
+  margin: 50px 0 0 0;
   justify-content: center;
   width: 100%;
-  height: 45vw;
+
 }
 .paper a {
-  text-align: center;
-  width: 50%;
+  width: 50vw;
+  margin:0 auto;
   height: 100%;
 }
 .recommended{
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 120px;
 }
 .forYou{
-  color: steelblue;
+  font-family: "Times New Roman", Serif;
+  margin-bottom: 30px;
+  color: #005d9c;
   width: 100%;
   font-size: 20px;
   font-weight: normal;
-  border-bottom: steelblue solid 3px;
+  border-bottom: #005d9c solid 2px;
 }
 .element{
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 .number{
-  background-color: #095f9e;
+  background-color: #005d9c;
   color: white;
   border-radius: 1000px;
-  flex: 0 0 35px;
-  height: 35px;
+  flex: 0 0 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
   margin-right: 10px;
 }
 .text{
-  font-size: 15px;
-}
-.recommendedNews{
-  margin-left:0;
-  padding: 0;
-  margin-top: 5%;
-  width: 100%;
+  font-size: 16px;
 }
 .categories{
   width: 100%;
   flex-direction: row;
+  margin-top: 130px;
   flex-wrap: wrap;
 }
-
-.parts{
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 100%;
-}
-
 .category{
   width: 100%;
   flex-direction: column;
   flex-wrap: nowrap;
 }
-.category a:hover{
-  color:steelblue;
+.categoryHead{
+  color: #5d5b5a;
+  font-family: "Times New Roman", Serif;
+  font-size: 22px;
+  padding-bottom: 10px;
+  font-weight: normal;
+  border-bottom: #005d9c solid 2px;
+  display: flex;
+  gap:10px;
+  align-items: center;
+}
+.categoryHead img{
+  width: 22px;
 }
 .categoryText{
   flex-direction: column;
@@ -774,13 +720,7 @@ section{
   width: 100%;
   height: 100%;
 }
-.categoryHead{
-  color: dimgray;
-  font-size: 20px;
-  padding-bottom: 10px;
-  font-weight: normal;
-  border-bottom: steelblue solid 3px;
-}
+
 .categoryHead:hover{
   color: steelblue;
 }
@@ -792,9 +732,42 @@ section{
 .categoryName{
   display: block;
   margin-bottom: 10px;
-  margin-top: 150px;
+}
+li button{
+  margin: auto;
+}
+.photoText{
+  flex-direction: column;
+  padding: 0;
+  align-content: flex-start;
+}
+.othersSub{
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  border-bottom: #E5E4E2 solid 1px;
+  border-collapse: collapse;
+  padding :20px 0;
 }
 
+.subImg{
+  flex: 0 0 90px;
+  height: 50px;
+  margin-right: 10px;
+}
+.subImg a{
+  width:100%;
+  height: 100%;
+}
+.subImg img{
+  width:100%;
+  height: 100%;
+}
+
+.variant .othersSub a{
+  font-size: 14px;
+}
 .photo\&video {
   width:100%;
   flex-direction: row;
