@@ -423,46 +423,12 @@ section{
   margin: 0;
   padding: 0;
 }
-.subArticle{
-  height: 30vw;
-  width: 100%;
-  gap: 20px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 15px 0;
-
-  border-bottom: #aaa7a4  solid 1px;
-}
-
-.subArticleText{
-  flex-direction: column;
-  flex-wrap: nowrap;
-  width: 60%;
-}
-
-
-.subArticle a {
-
-  height: 80%;
-  width: 40%;
-}
-.subArticleText a{
-  height: 40%;
-  width: 100%;
-
-}
-.subArticle a img{
-  height: 100%;
-  width: 100%;
-}
 .mainImg{
   width: 100%;
-
 }
 .mainImg a{
   width: 100%;
 }
-
 .relatedTitle{
   font-size: 12px;
   margin-top: 0;
@@ -485,7 +451,6 @@ section{
   margin-bottom: 5px;
   display: flex;
   gap: 10px;
-  align-items: center;
 }
 .related li:before{
   content:"•";
@@ -501,6 +466,36 @@ section{
   color: #6a6a73;
   font-size: 12px;
   margin: 5px 0 0 0;
+}
+.subArticle{
+  width: 100%;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 25px 0;
+  border-bottom: #aaa7a4  solid 1px;
+}
+
+.subArticleText{
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 70%;
+}
+
+
+.subArticle a {
+
+  height: 80%;
+  width: 40%;
+}
+.subArticleText a{
+  height: 40%;
+  width: 100%;
+
+}
+.subArticle a img{
+  height: 100%;
+  width: 100%;
 }
 .ad{
   width: 100%;
