@@ -410,7 +410,7 @@ section{
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 15px;
-  border-bottom: dimgray solid 1px;
+  border-bottom: #ddd8d5 solid 1px;
 }
 .articleTitle{
   width: 100%;
@@ -449,7 +449,7 @@ section{
   margin: 0;
   padding: 5px 5px 0 5px;
   list-style: none;
-  border-top: black solid 1px;
+  border-top: #aaa7a4 solid 1px;
 }
 .related a{
   font-size: 13px;
@@ -686,7 +686,6 @@ section{
   color: #5d5b5a;
   font-family: "Times New Roman", Serif;
   font-size: 22px;
-  margin-bottom:-5px ;
   padding-bottom: 5px;
   font-weight: normal;
   border-bottom: #005d9c solid 2px;
@@ -706,7 +705,7 @@ section{
   width: 100%;
 }
 .categoryImg a{
-  margin-top: 25px;
+  margin-top: 20px;
   font-size: 20px;
   width: 100%;
 }
@@ -717,6 +716,10 @@ section{
 }
 .categoryText{
   flex-direction: column;
+  margin-top: 25px;
+}
+.categoryText a{
+  margin-top: 0;
 }
 .categoryRelated{
   width: 100%;
@@ -728,43 +731,8 @@ section{
   flex-direction: column;
   padding: 15px 0 10px 0;
 }
-
-li button{
-  margin: auto;
-}
-.photoText{
-  flex-direction: column;
-  padding: 0;
-  align-content: flex-start;
-}
-.othersSub{
-  flex-wrap: nowrap;
-  flex-direction: row;
-  width: 100%;
-  height: 70px;
-  border-bottom: #E5E4E2 solid 1px;
-  border-collapse: collapse;
-  padding :20px 0;
-}
-
-.subImg{
-  flex: 0 0 90px;
-  height: 50px;
-  margin-right: 10px;
-}
-.subImg a{
-  width:100%;
-  height: 100%;
-}
-.subImg img{
-  width:100%;
-  height: 100%;
-}
-
-.variant .othersSub a{
-  font-size: 14px;
-}
 .photo\&video {
+  margin: 150px 0 0 0;
   width:100%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -862,6 +830,43 @@ li button{
   flex-direction: column;
   padding: 20px 0;
 }
+
+li button{
+  margin: auto;
+}
+.photoText{
+  flex-direction: column;
+  padding: 0;
+  align-content: flex-start;
+}
+.othersSub{
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  height: 70px;
+  border-bottom: #E5E4E2 solid 1px;
+  border-collapse: collapse;
+  padding :20px 0;
+}
+
+.subImg{
+  flex: 0 0 90px;
+  height: 50px;
+  margin-right: 10px;
+}
+.subImg a{
+  width:100%;
+  height: 100%;
+}
+.subImg img{
+  width:100%;
+  height: 100%;
+}
+
+.variant .othersSub a{
+  font-size: 14px;
+}
+
 footer{
   margin-top: 200px;
   display: flex;
