@@ -8,6 +8,7 @@ body{
   background-color: #fafafa;
   padding: 0;
   margin: 0;
+  line-height: 19px;
 }
 button:hover{
   cursor: pointer;
@@ -423,7 +424,7 @@ section{
 .articleBody{
   margin-top: 0;
   font-size: 16px;
-  color: #2b303d ;
+  color: #737272 ;
   font-weight: lighter;
   font-family: "Times New Roman", Serif;
 }
@@ -432,6 +433,7 @@ section{
   width: 100%;
   margin: 0;
   padding: 0;
+  line-height: 29px;
 }
 .mainImg{
   width: 100%;
@@ -710,6 +712,7 @@ section{
   margin-top: 20px;
   font-size: 20px;
   width: 100%;
+  line-height: 29px;
 }
 .categoryImg p{
   margin:15px 0 20px 0;
@@ -766,6 +769,13 @@ section{
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  border-bottom: #aaa7a4 solid 1px;
+}
+.variant .articleBody{
+  font-family: "Times New Roman", serif;
+}
+.photo\&video .variant{
+  border-bottom: none;
 }
 .othersSub{
   flex-wrap: nowrap;
@@ -860,16 +870,9 @@ section{
   height: 100%;
 }
 
-.variant .relatedNews{
+.photo\&video .relatedNews{
   border-top: none;
   border-bottom:#E5E4E2 solid 1px;
-}
-
-.first{
-  border-top: #E5E4E2 solid 1px;
-  border-bottom:#E5E4E2 solid 1px;
-  flex-direction: column;
-  padding: 20px 0;
 }
 
 li button{
