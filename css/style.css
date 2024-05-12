@@ -684,9 +684,9 @@ section{
 }
 .categoryHead{
   color: #5d5b5a;
-  font-family: "Times New Roman", Serif;
+  font-family:"Times New Roman", serif;
   font-size: 22px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   font-weight: normal;
   border-bottom: #005d9c solid 2px;
   display: flex;
@@ -736,6 +736,12 @@ section{
   width:100%;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.photo\&video .categoryHead{
+  margin-bottom: 0;
+}
+.variant .categoryText{
+  margin-top:5px;
 }
 .variant .categoryImg a{
   font-size: 25px;
@@ -833,11 +839,6 @@ section{
 
 li button{
   margin: auto;
-}
-.photoText{
-  flex-direction: column;
-  padding: 0;
-  align-content: flex-start;
 }
 .othersSub{
   flex-wrap: nowrap;
