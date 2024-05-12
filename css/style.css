@@ -1101,7 +1101,7 @@ footer{
   flex-direction: column;
   border-top: black solid 2px;
   width: 100%;
-  padding: 20px 0;
+  padding: 15px 0 20px 0;
   height:fit-content;
 }
 .headHid{
@@ -1165,7 +1165,7 @@ footer{
 }
 .endPage{
   padding-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   padding-left: 10px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1234,7 +1234,7 @@ footer{
 .subscribeLog a:hover{
   color: black;
 }
-#hp:hover{
+#homePage:hover{
   color: black;
 }
 .half{
