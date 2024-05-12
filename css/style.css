@@ -640,6 +640,7 @@ section{
 .forYou{
   font-family: "Times New Roman", Serif;
   margin-bottom: 30px;
+  padding-bottom: 5px;
   color: #005d9c;
   width: 100%;
   font-size: 20px;
@@ -879,232 +880,21 @@ li button{
   margin: auto;
 }
 
-footer{
-  margin-top: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: black 0 0 5px inset;
-  background-color: #f5f5f5;
-}
-.end{
-  padding-left:40px;
-  padding-bottom: 15px;
-  flex-direction: column;
-  width: auto;
-
-}
-.enderPart{
-  flex-direction: column;
-  border-top: black solid 2px;
-  width: 100%;
-  padding: 20px 0;
-  height:fit-content;
-}
-.headHid{
-  justify-content: space-between;
-  align-content: baseline ;
-
-}
-#hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness{
-  display: none;
-  flex-direction: column;
-  margin-top: 10px;
-
-}
-#newsButton,#contactButton,#classButton,#businessButton{
-  width: 15px;
-  height: 15px;
-}
-.hiddenLink{
-  padding: 5px 0;
-  font-weight: normal;
-}
-.hiddenLink:hover{
-  color: black;
-}
-.ender{
-  font-weight: 900;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-.ender:hover{
-  text-decoration: underline;
-  color: black;
-}
-.options{
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
-.hidden{
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.subscribeButton{
-  padding-top: 20px;
-  width: 100%;
-  height: 13vw;
-  border-top: black solid 2px;
-
-}
-.subscribeButton a{
-  font-size: 20px;
-  color: white;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: #095f9e solid 1px;
-  border-radius: 5px;
-  background-color: #005d9c;
-}
-
-
-.subscribeButton a:hover{
-  text-decoration: underline;
-  background-color: steelblue;
-  border-color: steelblue;
-
-}
-
-.endFinal{
-  margin-top: 20px;
-  flex-direction: column;
-  width: 100%;
-  border-top: #E5E4E2 solid 2px;
-}
-.endPage{
-  padding-top: 30px;
-  padding-bottom: 100px;
-  padding-left: 15px;
-  border-top: #f5f5f5 solid 2px;
-  border-bottom: #f5f5f5 solid 2px;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.endLink{
-  width: 100%;
-  color: black;
-  margin: 12px 0;
-  font-weight: lighter;
-  font-size: 17px;
-}
-
-.endLink:hover{
-  color: black;
-}
-
-.lateral .enderPart{
-  flex-direction: column;
-  justify-content: space-between;
-  border:none;
-  padding:0;
-  margin:0;
-
-
-}
-.lateral .enderPart button{
-  width: 5px;
-  height: 15px;
-}
-
-#hiddenMenuNews,#hiddenMenuOpinion{
-  padding-left: 20px;
-  display: none;
-  flex-direction: column;
-}
-.lateral .hiddenLink{
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.lateral  .ender{
-  font-weight: bold;
-  margin:0;
-  font-size: 15px;
-}
-.lateral  .ender:hover{
-  text-decoration: none;
-}
-.lateral .headHid{
-  margin-top: 20px;
-}
-.subscribeLog{
-  flex-direction: column;
-  margin-top: 20px;
-  margin-left: 10px;
-
-}
-.subscribeLog a{
-  font-weight: bold;
-  font-size: 15px;
-  margin-bottom: 60px;
-}
-#accountMenu .subscribeLog a{
-  margin-bottom: 30px;
-}
-#accountMenu .subscribeLog {
-  margin-bottom: 60px;
-}
-.subscribeLog a:hover{
-  color: black;
-}
-#hp:hover{
-  color: black;
-}
-.half{
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-
-}
-.a{
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.half .enderPart,.half .subscribeButton{
-  width: 100%;
-}
-#footer .homeEnd{
-  padding-top: 10px;
-  padding-bottom: 25px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.homeEnd a{
-  width: fit-content;
-}
-.homeEnd a:hover{
-  cursor: pointer;
-}
-#homeEndImg{
-  width: 250px;
-
-}
-
 .upComing{
   background-color: white;
   flex-direction: column;
   width: 100%;
   height: 260px;
+  margin-top: 20px;
 }
 .upComing a:hover{
   color:black;
-
 }
 .upHead{
   height: fit-content;
   max-height:27px;
   padding:5px 20px 10px 20px;
   justify-content: space-between;
-
 }
 
 #upTitle{
@@ -1119,22 +909,18 @@ footer{
 .upHead div{
   justify-content: flex-end;
   align-items: center;
-
 }
 .upHead div img{
   max-width: 20px;
   max-height: 20px;
-
 }
 .upHead span a{
   max-width: 10px;
   max-height: 10px;
-
 }
 .upMain{
   max-height: 172px;
   height: 172px;
-
 }
 .wrapper{
   position: relative;
@@ -1142,8 +928,6 @@ footer{
   width: 100%;
   height: 172px;
   overflow: hidden;
-
-
 }
 .draggable{
   background: inherit;
@@ -1154,9 +938,6 @@ footer{
   height: 172px;
   z-index: 100;
   transition: left .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
-
-
 }
 .sliderContainer{
   align-items: center;
@@ -1257,6 +1038,213 @@ footer{
   margin-right: 10px;
 }
 
+footer{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: black 0 0 5px inset;
+  background-color: #f5f5f5;
+}
+.end{
+  padding-left:40px;
+  padding-bottom: 15px;
+  flex-direction: column;
+  width: auto;
+
+}
+.enderPart{
+  flex-direction: column;
+  border-top: black solid 2px;
+  width: 100%;
+  padding: 20px 0;
+  height:fit-content;
+}
+.headHid{
+  justify-content: space-between;
+  align-content: baseline ;
+
+}
+#hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness{
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+
+}
+#newsButton,#contactButton,#classButton,#businessButton{
+  width: 15px;
+  height: 15px;
+}
+.hiddenLink{
+  padding: 5px 0;
+  font-weight: normal;
+}
+.hiddenLink:hover{
+  color: black;
+}
+.ender{
+  font-weight: 900;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.ender:hover{
+  text-decoration: underline;
+  color: black;
+}
+.options{
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.hidden{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subscribeButton{
+  padding-top: 20px;
+  width: 100%;
+  height: 13vw;
+  border-top: black solid 2px;
+
+}
+.subscribeButton a{
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #095f9e solid 1px;
+  border-radius: 5px;
+  background-color: #005d9c;
+}
+
+.subscribeButton a:hover{
+  text-decoration: underline;
+  background-color: steelblue;
+  border-color: steelblue;
+
+}
+
+.endFinal{
+  margin-top: 20px;
+  flex-direction: column;
+  width: 100%;
+  border-top: #E5E4E2 solid 2px;
+}
+.endPage{
+  padding-top: 30px;
+  padding-bottom: 100px;
+  padding-left: 15px;
+  border-top: #f5f5f5 solid 2px;
+  border-bottom: #f5f5f5 solid 2px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.endLink{
+  width: 100%;
+  color: black;
+  margin: 12px 0;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.endLink:hover{
+  color: black;
+}
+
+.lateral .enderPart{
+  flex-direction: column;
+  justify-content: space-between;
+  border:none;
+  padding:0;
+  margin:0;
+
+}
+.lateral .enderPart button{
+  width: 5px;
+  height: 15px;
+}
+
+#hiddenMenuNews,#hiddenMenuOpinion{
+  padding-left: 20px;
+  display: none;
+  flex-direction: column;
+}
+.lateral .hiddenLink{
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.lateral  .ender{
+  font-weight: bold;
+  margin:0;
+  font-size: 15px;
+}
+.lateral  .ender:hover{
+  text-decoration: none;
+}
+.lateral .headHid{
+  margin-top: 20px;
+}
+.subscribeLog{
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px;
+
+}
+.subscribeLog a{
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+#accountMenu .subscribeLog a{
+  margin-bottom: 30px;
+}
+#accountMenu .subscribeLog {
+  margin-bottom: 60px;
+}
+.subscribeLog a:hover{
+  color: black;
+}
+#hp:hover{
+  color: black;
+}
+.half{
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.a{
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.half .enderPart,.half .subscribeButton{
+  width: 100%;
+}
+#footer .homeEnd{
+  padding-top: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.homeEnd a{
+  width: fit-content;
+}
+.homeEnd a:hover{
+  cursor: pointer;
+}
+#homeEndImg{
+  width: 250px;
+
+}
+
 @media screen and(max-width: 640px) {
 
 }
@@ -1271,11 +1259,8 @@ footer{
   }
   .mainImg{
     height: 30vw;
-
   }
-  .subArticle img{
 
-  }
   .paper{
     height: 105vw;
   }
