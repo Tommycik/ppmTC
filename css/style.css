@@ -729,6 +729,7 @@ section{
   font-size: 20px;
   width: 100%;
   line-height: 29px;
+  height: fit-content;
 }
 .categoryImg p{
   margin:15px 0 20px 0;
@@ -1461,21 +1462,37 @@ footer{
     flex-wrap: nowrap;
     width: 100%;
   }
+  .variant.categoryText{
+    width: 50%;
+  }
+  .variant .categoryImg .categoryText{
+    border-bottom: #ddd8d5 solid 1px;
+  }
   .variant .categoryImg a{
     width: 50%;
+  }
+  .variant .categoryImg a{
+    width: 100%;
   }
   .variant .categoryText a{
     width: 100%;
   }
   .variant .first,.variant .categoryRelated .relatedNews{
-    width: 50%;
+    width: 48%;
+    border-top: none;
+    border-bottom: #ddd8d5 solid 1px;
   }
   .photo\&video .categoryImg a{
     width: 100%;
   }
+  .variant{
+    border-bottom: none;
+  }
   .variant .categoryRelated{
+
     flex-direction: column;
     align-content: flex-end;
+    margin-bottom: 20px;
   }
   .photo\&video .categoryRelated{
     flex-direction: row;
