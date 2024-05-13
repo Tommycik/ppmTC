@@ -1459,7 +1459,7 @@ footer{
   .categoryText{
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 50%;
+    width: 100%;
   }
   .variant .categoryImg a{
     width: 50%;
