@@ -1387,6 +1387,9 @@ footer{
   .recommended{
     width: 55%;
   }
+  .ad{
+    margin-bottom: 100px;
+  }
   .front{
     width: 40%;
   }
