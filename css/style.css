@@ -494,6 +494,12 @@ section{
   font-size: 12px;
   margin: 5px 0 0 0;
 }
+.subArticles{
+  width: 100%;
+  height: fit-content;
+  flex-wrap: wrap;
+  gap:20px;
+}
 .subArticle{
   width: 100%;
   height: auto;
@@ -1287,7 +1293,7 @@ footer{
     gap:20px;
   }
   .articleTitle,.subArticle,.imageWrapper{
-    width: 46%;
+    width: 48%;
   }
   #mainTitle h1{
     font-size: 28px;
@@ -1295,9 +1301,6 @@ footer{
   }
   .articleTitle h1{
     margin-top: 0;
-  }
-  .subArticle {
-    margin-right:20px ;
   }
   .paper{
     height: 105vw;
@@ -1383,6 +1386,14 @@ footer{
   }
   .ad{
     margin-bottom: 100px;
+  }
+
+  .subArticle .subArticleText,.subArticle a{
+    width: 100%;
+  }
+  .subArticle{
+    flex-direction: column;
+    width: 43%;
   }
   .front{
     width: 40%;
