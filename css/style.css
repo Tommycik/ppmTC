@@ -774,6 +774,12 @@ section{
 .photo\&video .categoryText{
   margin-top:5px;
 }
+.variant .categoryRelated .categoryText {
+  margin-top:5px;
+}
+.photo\&video .categoryImg a{
+  line-height: 33px;
+}
 .variant .categoryImg a{
   font-size: 29px;
   font-weight: 700;
@@ -798,9 +804,12 @@ section{
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-bottom: #E5E4E2 solid 1px;
+  border-bottom: #DDD8D5 solid 1px;
   border-collapse: collapse;
   padding :10px 0 40px 0;
+}
+#lastSub{
+  border: none;
 }
 .subImg{
   flex: 0 0 90px;
@@ -822,6 +831,8 @@ section{
 
 .centeredGeometry{
   justify-content: center;
+  border-top: #DDD8D5 solid 1px;
+  border-collapse: collapse;
 
 }
 #triangolo {
@@ -852,6 +863,7 @@ section{
   flex-wrap: wrap;
   gap: 20px;
   display: none;
+  margin-bottom: -20px;
 }
 
 .hiddenArticles a{
@@ -865,11 +877,12 @@ section{
 
 }
 .hiddenArticle{
-  width: 47%;
+  width: 46%;
   flex-direction: column;
   height: auto;
   margin-bottom: 65px;
 }
+
 .promoFull{
   width: 100%;
   max-width: 552px;
@@ -1315,25 +1328,29 @@ footer{
   .centeredGeometry,.showMore{
     width: 100%;
   }
+  #lastSub{
+    border-bottom: #DDD8D5 solid 1px;
+  }
   .upComing{
     width: 50%;
+    margin-bottom: 40px;
   }
   .upHead span{
     margin-right: 15px;
   }
-
   .upSub{
     display: none;
+  }
+  #footer{
+    margin-top: 0;
   }
   .end{
     width: 40%;
   }
   .subscribeButton{
     height: 50px;
-
   }
   .subscribeButton a{
-
     font-size: 17px;
   }
   #hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness {

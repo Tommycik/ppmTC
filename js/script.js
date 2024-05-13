@@ -15,7 +15,6 @@ function elementVisible(id, n) {
 
 function showMore() {
   document.getElementsByClassName("showMore")[0].style.display = "none";
-  document.getElementById("lastSub").style.border = "none";
   document.getElementsByClassName("hiddenArticles")[0].style.display = "flex";
   document.getElementsByClassName("centeredGeometry")[0].style.display = "none";
 }
