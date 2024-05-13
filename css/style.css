@@ -1347,6 +1347,9 @@ footer{
   .end{
     width: 40%;
   }
+  #footer .homeEnd{
+    padding-bottom: 15px;
+  }
   .subscribeButton{
     height: 50px;
   }
@@ -1369,8 +1372,11 @@ footer{
 }
 @media only screen and (min-width: 800px) {
   .home{
-    height: 10vw;
-    width: 35vw;
+    height: 8vw;
+    width: 33vw;
+  }
+  #header{
+    margin-bottom: 130px;
   }
 
   .recommended{
