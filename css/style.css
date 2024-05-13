@@ -1420,6 +1420,12 @@ footer{
   .photo\&video .category,.category{
     width: 60%;
   }
+  .photo\&video .categoryText .articleBody{
+    display: flex;
+  }
+  .hiddenArticles .hiddenArticle{
+    width: 29%;
+  }
   .photo\&video .promoFull{
     width: 30%;
   }
