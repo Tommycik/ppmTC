@@ -1290,11 +1290,14 @@ footer{
     width: 40vw;
   }
   .main{
-    gap:30px;
+    gap:20px;
   }
   .articleTitle,.subArticle,.imageWrapper{
     width: 46%;
-
+  }
+  #mainTitle h1{
+    font-size: 28px;
+    font-weight: 800;
   }
   .articleTitle h1{
     margin-top: 0;
@@ -1378,7 +1381,9 @@ footer{
   #header{
     margin-bottom: 130px;
   }
-
+  .frontPage{
+    gap:20px;
+  }
   .recommended{
     width: 55%;
   }
