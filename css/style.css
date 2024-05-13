@@ -1468,6 +1468,9 @@ footer{
   .variant .categoryImg .categoryText{
     border-bottom: #ddd8d5 solid 1px;
   }
+  .photo\&video .variant .categoryImg .categoryText{
+    border-bottom: none;
+  }
   .variant .categoryImg a{
     width: 50%;
   }
