@@ -1137,6 +1137,7 @@ footer{
 .options{
   flex-direction: row;
   flex-wrap: wrap;
+
 }
 .enderPart{
   flex-direction: column;
@@ -1364,19 +1365,20 @@ footer{
   }
   #footer{
     margin-top: 0;
+    overflow: hidden;
   }
   .end{
     width: 40%;
-    margin-left: 20px;
+    margin-left: 3%;
   }
   #footer .homeEnd{
     padding-bottom: 15px;
   }
   .subscribeButton{
-    height: 50px;
+    height: 40px;
   }
   .subscribeButton a{
-    font-size: 17px;
+    font-size: 15px;
   }
   #hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness {
     display: flex;
@@ -1736,7 +1738,18 @@ footer{
   .endPage{
     margin-bottom:15px;
   }
+  .half,#half2{
 
+    width: 45%;
+  }
+
+  .options{
+    gap:20px;
+  }
+  .half .enderPart{
+    margin-right: 0;
+    width: 49%;
+  }
 }
 @media only screen and (min-width: 1130px) {
   .upComing{
@@ -1795,20 +1808,33 @@ footer{
   }
 }
 @media only screen and (min-width: 1431px) {
+  .options{
+    flex-wrap: nowrap;
+  }
 
   .half .enderPart{
     width: 100%;
+  }
 
+  #half2 .a .enderPart{
+    width: 100%;
   }
   .half{
     margin-right: 145px;
-    width: 25%;
+    width: 20%;
   }
   #half2{
-    width: 50%;
+    width: 67%;
+    margin-right: 0;
+    gap:145px;
   }
   #half2 .a{
-    margin-right: 145px;
+    width: 30%;
   }
+  #half2 .subscribeButton{
+    width: 30%;
+
+  }
+
 
 }

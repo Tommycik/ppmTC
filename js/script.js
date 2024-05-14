@@ -124,13 +124,13 @@ function menu3() {
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("searchMenu").style.overflow = "hidden";
     overlay(0);
-    visible[2]=true;
+    visible[2]=false;
   } else {
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("searchMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     overlay(1);
-    visible[2]=false;
+    visible[2]=true;
   }
 
 
