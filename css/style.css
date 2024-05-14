@@ -1560,6 +1560,9 @@ footer{
 }
 
 @media only screen and (min-width: 1040px) {
+  .headlines{
+    margin-right: 20px;
+  }
 
   #homeEndImg{
     width: 18vw;
@@ -1568,13 +1571,17 @@ footer{
     display: block;
   }
   .subArticle{
+    flex-direction: row;
     width: 100%;
   }
+  .subArticle .subArticleText,.subArticle a{
+    width: 45%;
+  }
   .paper{
-    width: 30%;
+    width: 28%;
   }
   .headlines{
-    width: 15%;
+    width: 18%;
   }
   .front{
     width: 50%;
@@ -1644,7 +1651,7 @@ footer{
   }
   #header{
     height: 300px;
-    margin-bottom: 200px;
+    margin-bottom: 220px;
     border: none;
     box-shadow: none;
     padding: 0;
