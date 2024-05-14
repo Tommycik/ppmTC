@@ -318,8 +318,8 @@ header{
 
 #figure{
   margin-right: 15px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 #figure img{
   width: 100%;
@@ -945,8 +945,8 @@ li button{
   align-items: center;
 }
 .upHead div img{
-  max-width: 20px;
-  max-height: 20px;
+  max-width: 12px;
+  max-height: 12px;
 }
 .upHead span a{
   max-width: 10px;
@@ -1062,8 +1062,8 @@ li button{
   overflow: hidden;
 }
 .upInteractive img{
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 .days{

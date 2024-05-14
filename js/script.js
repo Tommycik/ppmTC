@@ -51,15 +51,16 @@ function menu1() {
   var x = document.getElementById("lateralMenu");
 
   if (visible[0]) {
+
     overlay(0);
-    document.getElementById("menu1").src = "img/placeholder.svg";
+    document.getElementById("menu1").src="img/menu.svg" ;
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("lateralMenu").style.overflow = "hidden";
 
   } else {
     overlay(1);
     document.getElementById("menu1").style.visibility = "visible";
-    document.getElementById("menu1").src = "img/placeholder.svg";
+    document.getElementById("menu1").src="img/cross.svg" ;
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("lateralMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
@@ -79,13 +80,14 @@ function menu2() {
     menu3();
   }
   var x = document.getElementById("accountMenu");
+
   if (visible[3]) {
-    document.getElementById("menu2").src = "img/placeholder.svg";
+    document.getElementById("menu2").style.transform="rotate(0deg)";
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("accountMenu").style.overflow = "hidden";
     overlay(0);
   } else {
-    document.getElementById("menu2").src = "img/placeholder.svg";
+    document.getElementById("menu2").style.transform="rotate(180deg)";
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("accountMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
