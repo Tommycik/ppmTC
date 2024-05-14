@@ -1113,10 +1113,10 @@ footer{
   background-color: #f5f5f5;
 }
 .end{
-  padding: 5px 5px 15px 5px;
-  margin:5px;
+  padding: 10px 0 20px 0;
   flex-direction: column;
-  width: auto;
+  max-width: 100%;
+  max-width: 1450px;
 }
 #footer .homeEnd{
   padding-top: 10px;
@@ -1369,10 +1369,10 @@ footer{
   }
   .end{
     width: 38%;
-    margin-left: 3%;
   }
   #footer .homeEnd{
     padding-bottom: 15px;
+    padding-left: 3%;
   }
   .subscribeButton{
     height: 40px;
@@ -1389,6 +1389,9 @@ footer{
 
   .endLink{
     margin: 3px;
+  }
+  .options{
+    padding-left: 3%;
   }
 
 }
@@ -1850,4 +1853,11 @@ footer{
   }
 
 
+}
+@media only screen and (min-width: 1550px) {
+  .end{
+    padding-left: 55px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
