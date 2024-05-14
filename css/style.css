@@ -1739,16 +1739,22 @@ footer{
     margin-bottom:15px;
   }
   .half,#half2{
-
-    width: 45%;
+    gap: 50px;
+    width: 47%;
   }
 
   .options{
-    gap:20px;
+    gap:50px;
   }
   .half .enderPart{
     margin-right: 0;
-    width: 49%;
+    width: 44%;
+  }
+  #half2 .a{
+    margin-right: 0;
+  }
+  #half2 .enderPart{
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1130px) {
