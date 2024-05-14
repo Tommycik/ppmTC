@@ -1368,7 +1368,7 @@ footer{
     overflow: hidden;
   }
   .end{
-    width: 40%;
+    width: 38%;
     margin-left: 3%;
   }
   #footer .homeEnd{
@@ -1567,6 +1567,12 @@ footer{
     width: fit-content;
     font-size: 13px;
   }
+  .half{
+    width: 27%;
+  }
+  .options{
+    justify-content: space-between;
+  }
 
 }
 @media only screen and (min-width: 940px) {
@@ -1739,16 +1745,17 @@ footer{
     margin-bottom:15px;
   }
   .half,#half2{
-    gap: 50px;
+    gap: 8%;
     width: 47%;
   }
 
   .options{
-    gap:50px;
+    gap:1%;
+    justify-content: flex-start;
   }
   .half .enderPart{
     margin-right: 0;
-    width: 44%;
+    width: 42%;
   }
   #half2 .a{
     margin-right: 0;
