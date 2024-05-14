@@ -28,8 +28,12 @@ img{
 }
 div{
   display: flex;
-
 }
+button{
+  background-color: inherit;
+  border: none;
+}
+
 header{
   display: flex;
   position: sticky;
@@ -1142,13 +1146,10 @@ footer{
   align-content: baseline ;
 }
 .headHid button{
-  background-color: inherit;
-  border: none;
+
   width: 24px;
   height: 24px;
 }
-
-
 .ender{
   font-weight: 900;
   font-size: 15px;
