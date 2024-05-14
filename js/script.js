@@ -172,7 +172,7 @@ function activeWindow() {
 
   }else if (window.innerWidth < 1040) {
     eventDisplayed=4;
-  }else if (window.innerWidth < 1280) {
+  }else if (window.innerWidth < 1310) {
     eventDisplayed=5;
   }else if (window.innerWidth < 1400) {
     eventDisplayed=6;

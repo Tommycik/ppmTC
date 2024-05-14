@@ -1767,10 +1767,13 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }
+
+
+}
+@media only screen and (min-width: 1310px) {
   .upComing{
     width: 78%;
   }
-
 }
 @media only screen and (min-width: 1400px) {
 
