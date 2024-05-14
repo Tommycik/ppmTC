@@ -174,7 +174,7 @@ function activeWindow() {
     eventDisplayed=4;
   }else if (window.innerWidth < 1310) {
     eventDisplayed=5;
-  }else if (window.innerWidth < 1400) {
+  }else {
     eventDisplayed=6;
   }
   let width=((events/eventDisplayed)*100).toString()
