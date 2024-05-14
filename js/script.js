@@ -5,9 +5,11 @@ function elementVisible(id, n) {
 
   if (visible[n]) {
     document.getElementById(id).style.display = "none";
+    document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(0deg)";
     visible[n] = false;
   } else {
     document.getElementById(id).style.display = "flex";
+    document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(180deg)";
     visible[n] = true;
   }
 
