@@ -20,7 +20,7 @@ a{
   font-weight: bold;
 }
 a:hover{
-  color: steelblue;
+  color: #005d9b;
 }
 img{
   width: 100%;
@@ -711,6 +711,7 @@ section{
 .categoryName a{
   text-decoration: none;
   width: 100%;
+  border-bottom: #005d9b solid 2px;
 }
 
 .categoryName .categoryHead{
@@ -719,18 +720,15 @@ section{
   font-size: 22px;
   padding-bottom: 10px;
   font-weight: normal;
-  border-bottom: #005d9c solid 2px;
   display: flex;
-  gap:10px;
+  gap:0;
   align-items: center;
   margin-bottom: 0;
 }
 .categoryHead:hover{
-  color: steelblue;
-  stroke:steelblue;
-}
-.categoryName .categoryHead img{
-  width: 30px;
+  filter: invert(14%) sepia(99%)
+  saturate(5833%) hue-rotate(194deg)
+  brightness(87%) contrast(100%);
 }
 .categoryName .categoryHead img{
   width: 30px;
