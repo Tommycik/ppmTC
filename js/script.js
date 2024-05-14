@@ -1,16 +1,14 @@
-var visible = [false, false, false, false, false, false, false, false, false];
+var visible = [false, false, false];
 var homeChecked = false;
 
-function elementVisible(id, n) {
-
-  if (visible[n]) {
+function elementVisible(id) {
+  //visible[n]
+  if (document.getElementById(id).style.display == "flex") {
     document.getElementById(id).style.display = "none";
-    document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(0deg)";
-    visible[n] = false;
+    //document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(0deg)";
   } else {
     document.getElementById(id).style.display = "flex";
-    document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(180deg)";
-    visible[n] = true;
+    //document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(180deg)";
   }
 
 }
@@ -44,10 +42,10 @@ function overlay(x) {
 }
 
 function menu1() {
-  if (visible[3]) {
+  if (visible[1]) {
     menu2();
   }
-  if (visible[4]) {
+  if (visible[2]) {
     menu3();
   }
   var x = document.getElementById("lateralMenu");
@@ -58,6 +56,7 @@ function menu1() {
     document.getElementById("menu1").src="img/menu.svg" ;
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("lateralMenu").style.overflow = "hidden";
+    visible[0]=false;
 
   } else {
     overlay(1);
@@ -66,8 +65,7 @@ function menu1() {
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("lateralMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-
-
+    visible[0]=true;
   }
 
   elementVisible('lateralMenu', 0);
@@ -78,25 +76,27 @@ function menu2() {
   if (visible[0]) {
     menu1();
   }
-  if (visible[4]) {
+  if (visible[2]) {
     menu3();
   }
   var x = document.getElementById("accountMenu");
 
-  if (visible[3]) {
+  if (visible[1]) {
     document.getElementById("menu2").style.transform="rotate(0deg)";
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("accountMenu").style.overflow = "hidden";
     overlay(0);
+    visible[1]=false;
   } else {
     document.getElementById("menu2").style.transform="rotate(180deg)";
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("accountMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     overlay(1);
+    visible[1]=true;
   }
 
-  elementVisible('accountMenu', 3);
+  elementVisible('accountMenu', 1);
 }
 
 function menu3() {
@@ -104,22 +104,24 @@ function menu3() {
   if (visible[0]) {
     menu1();
   }
-  if (visible[3]) {
+  if (visible[1]) {
     menu2();
   }
-  if (visible[4]) {
+  if (visible[2]) {
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("searchMenu").style.overflow = "hidden";
     overlay(0);
+    visible[2]=true;
   } else {
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("searchMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     overlay(1);
+    visible[2]=false;
   }
 
 
-  elementVisible('searchMenu', 4);
+  elementVisible('searchMenu', 2);
 }
 
 window.onscroll = function () {
