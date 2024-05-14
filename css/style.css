@@ -108,6 +108,9 @@ header{
 .menuGroup {
   padding-right: 10px;
 }
+.menuGroup .menu{
+  align-self: center;
+}
 .menu{
   height: 20px;
   border:none;
@@ -119,7 +122,7 @@ header{
 #allSections{
   margin-left: 5px;
   display: none;
-  height: 30px;
+  height: fit-content;
   border:none;
   width: fit-content;
   font-size: 17px;
@@ -1399,7 +1402,7 @@ footer{
     margin-right: 20px;
   }
   .recommended{
-    width: 55%;
+    width: 60%;
   }
   .ad{
     margin-bottom: 100px;
@@ -1581,12 +1584,17 @@ footer{
   .headlines{
     margin-right: 20px;
   }
-
+  .recommended{
+    width: 70%;
+  }
+  .category + .recommended{
+    width: 100%;
+  }
   #homeEndImg{
     width: 18vw;
   }
   .ad{
-    margin-bottom: 280px;
+    margin-bottom: 700px;
   }
   #lastAd{
     display: block;
@@ -1659,14 +1667,14 @@ footer{
     flex-direction: column;
   }
   .variant .categoryRelated {
-    width: 30%;
+    width: 35%;
   }
   .variant .categoryRelated .relatedNews{
     width: 100%;
   }
   .variant .categoryImg{
-    width: 50%;
-    margin-right: 1em;
+    width: 60%;
+    margin-right: 5%;
     gap:10px;
   }
   .variant .categoryImg .categoryText{
