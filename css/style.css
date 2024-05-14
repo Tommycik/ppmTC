@@ -500,7 +500,7 @@ section{
   width: 100%;
   height: fit-content;
   flex-wrap: wrap;
-  gap:20px;
+  column-gap:20px;
 }
 .subArticle{
   width: 100%;
@@ -508,7 +508,7 @@ section{
   gap: 20px;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding: 25px 0;
+  padding: 20px 0;
   border-bottom: #aaa7a4  solid 1px;
 }
 .subArticleText{
@@ -1367,9 +1367,7 @@ footer{
   #newsButton,#contactButton,#classButton,#businessButton{
     display: none;
   }
-  .endPage{
-    padding-bottom: 120px;
-  }
+
   .endLink{
     margin: 3px;
   }
@@ -1398,7 +1396,7 @@ footer{
   }
   .subArticle{
     flex-direction: column;
-    width: 43%;
+    width: 46%;
   }
   .front{
     width: 40%;
@@ -1434,7 +1432,7 @@ footer{
     display: flex;
   }
   .hiddenArticles .hiddenArticle{
-    width: 29%;
+    width: 30%;
   }
   .photo\&video .promoFull{
     width:37%;
@@ -1448,7 +1446,9 @@ footer{
     justify-content: flex-start;
     width: 100%;
   }
-
+  .categories{
+    margin-top:160px;
+  }
   .half{
     width: 30%;
     margin-right: 150px;
@@ -1539,10 +1539,14 @@ footer{
   }
   .endPage{
     flex-direction: row;
+    padding-top: 15px;
     flex-wrap: wrap;
+    margin-bottom:100px;
+    column-gap: 10px;
   }
   .endPage a{
     width: fit-content;
+    font-size: 13px;
   }
 
 }
@@ -1567,24 +1571,37 @@ footer{
   #homeEndImg{
     width: 18vw;
   }
+  .ad{
+    margin-bottom: 280px;
+  }
   #lastAd{
     display: block;
   }
+  .subArticles{
+    margin-bottom: 20px;
+  }
   .subArticle{
     flex-direction: row;
+    border: none;
     width: 100%;
   }
-  .subArticle .subArticleText,.subArticle a{
-    width: 45%;
+  .subArticle .subArticleText{
+    width: 43%;
+  }
+  .subArticle a{
+    width: 57%;
+  }
+  .subArticleText a{
+    width: 100%;
   }
   .paper{
-    width: 28%;
+    width: 29%;
   }
   .headlines{
     width: 18%;
   }
   .front{
-    width: 50%;
+    width: 48%;
   }
   .half .enderPart{
     width: 38%;
@@ -1607,26 +1624,39 @@ footer{
 
   }
   .photo\&video .category{
-    width: 70%;
+    width: 68%;
   }
   #section > .category{
-    width: 70%;
+    width: 68%;
   }
   .categories .category{
     width: 24%;
   }
-
+  .categories{
+    margin-top:280px;
+  }
   .photo\&video .promoFull{
-    width: 28%;
+    width: 23%;
+  }
+  .hiddenArticles .hiddenArticle{
+    width: 23%;
   }
   .a{
     flex-direction: column;
   }
   .variant .categoryRelated {
-    width: 40%;
+    width: 30%;
+  }
+  .variant .categoryRelated .relatedNews{
+    width: 100%;
   }
   .variant .categoryImg{
-    width: 40%;
+    width: 50%;
+    margin-right: 1em;
+    gap:10px;
+  }
+  .variant .categoryImg .categoryText{
+    border-bottom: none;
   }
   .photo\&video .categoryRelated {
     width: 45%;
@@ -1679,6 +1709,10 @@ footer{
   }
   .upComing{
     width: 70%;
+    margin-bottom: 290px;
+  }
+  .endPage{
+    margin-bottom:15px;
   }
 
 }
@@ -1692,6 +1726,12 @@ footer{
   .articleTitle,.subArticle,.imageWrapper{
     width: 50%;
 
+  }
+  .photo\&video .category{
+    width: 75%;
+  }
+  #section > .category{
+    width: 75%;
   }
   #header .thirdLevel{
     gap:15px;
