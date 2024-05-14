@@ -1313,7 +1313,7 @@ footer{
   .main{
     gap:20px;
   }
-  .articleTitle,.subArticle,.imageWrapper{
+  .articleTitle,.subArticle,.main .imageWrapper{
     width: 48%;
   }
   #mainTitle h1{
@@ -1432,7 +1432,7 @@ footer{
     margin: 0px;
     width: 100%;
   }
-  .articleTitle,.imageWrapper{
+  .articleTitle,.main .imageWrapper{
     width: 100%;
   }
   #lastAd{
@@ -1745,9 +1745,28 @@ footer{
 }
 @media only screen and (min-width: 1280px) {
 
-  .articleTitle,.subArticle,.imageWrapper{
-    width: 50%;
-
+  .front{
+    width: 57%;
+    margin-right: 15px;
+  }
+  .main{
+     gap: 30px;
+  }
+  .paper{
+    width: 20%;
+  }
+  .subArticle{
+    width: 48%;
+    flex-direction: column;
+  }
+  .subArticle a,.subArticle .subArticleText{
+    width: 100%;
+  }
+  .articleTitle{
+    width: 40%;
+  }
+  .main .imageWrapper{
+    width: 55%;
   }
   .photo\&video .category{
     width: 75%;
