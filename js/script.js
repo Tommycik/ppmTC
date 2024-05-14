@@ -2,16 +2,29 @@ var visible = [false, false, false];
 var homeChecked = false;
 
 function elementVisible(id) {
-  //visible[n]
-  if (document.getElementById(id).style.display == "flex") {
-    document.getElementById(id).style.display = "none";
-    //document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(0deg)";
+  let object = document.getElementById(id);
+  if (object.style.display == "flex") {
+    object.style.display = "none";
   } else {
-    document.getElementById(id).style.display = "flex";
-    //document.getElementById(id).getElementsByClassName("img")[0].style.transform = "rotate(180deg)";
+    object.style.display = "flex";
   }
+}
+  function hiddenText(id,object,type) {
+    let target=document.getElementById(id);
+    let targetImg=object.getElementsByTagName("img")[0];
+    if (target.style.display == "flex") {
+      targetImg.style.transform = "rotate(0deg)";
+    }else{
+      if(type==1){
+        targetImg.style.transform = "rotate(90deg)";
+      }else{
+        targetImg.style.transform = "rotate(180deg)";
+      }
+    }
+    elementVisible(id);
 
 }
+
 
 function showMore() {
   document.getElementsByClassName("showMore")[0].style.display = "none";

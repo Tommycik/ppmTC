@@ -727,10 +727,13 @@ section{
 }
 .categoryHead:hover{
   color: steelblue;
+  stroke:steelblue;
 }
 .categoryName .categoryHead img{
   width: 30px;
-
+}
+.categoryName .categoryHead img{
+  width: 30px;
 }
 
 .categoryImg{
@@ -1231,8 +1234,12 @@ footer{
 
 }
 .lateral .enderPart button{
-  width: 5px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
+}
+.lateral .enderPart button img{
+  width: 100%;
+  height: 100%;
 }
 
 #hiddenMenuNews,#hiddenMenuOpinion{
