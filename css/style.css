@@ -66,14 +66,14 @@ header{
   margin-right: 10px;
 }
 #header .secondLevel{
-  width: 100%;
+  width: auto;
   display: none;
   height: 65px;
   flex-direction: row;
   justify-content: center;
 }
 #header .thirdLevel{
-  width: 100%;
+  width: auto;
   padding: 20px;
   display: none;
   justify-content: center;
@@ -85,7 +85,7 @@ header{
   text-decoration: underline;
 }
 #header .fourthLevel{
-  width: 100%;
+  width: auto;
   max-width: 1280px;
   display: none;
   justify-content: flex-start;
