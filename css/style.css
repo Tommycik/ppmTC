@@ -416,8 +416,7 @@ section{
 }
 .content{
   height: fit-content;
-  width: 100%;
-  max-width: 100%;
+  width: 236px;
   display: inline;
 }
 #breakingNews h2{
@@ -656,6 +655,7 @@ section{
   border-top: #ddd8d5 solid 1px;
   padding: 20px 0;
   flex-direction: column;
+  width: 273px;
 }
 #firstHeadline{
   border: none;
@@ -1378,10 +1378,16 @@ footer{
   #breakingNews{
     width: 100%;
   }
+  .content{
+    width: 100%;
+  }
   .front{
     width: 100%;
   }
   .headlines{
+    width: 100%;
+  }
+  .headline{
     width: 100%;
   }
   .ad{
