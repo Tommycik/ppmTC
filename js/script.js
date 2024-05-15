@@ -3,7 +3,8 @@ var homeChecked = false;
 
 function elementVisible(id) {
   let object = document.getElementById(id);
-  if (object.style.display == "flex") {
+  let state= object.style.display;
+  if (state == "flex"|| state == "block"|| state == "inline") {
     object.style.display = "none";
   } else {
     object.style.display = "flex";
@@ -272,6 +273,7 @@ window.onload=function (){
   upComing();
   document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
+  document.getElementById("breakingNews").style.display = "flex";
 }
 var position=0
 var eventDisplayed=3;
