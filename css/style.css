@@ -406,10 +406,12 @@ section{
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  height: fit-content;
 }
 .front{
   flex-direction: column;
   width: 100%;
+  height: fit-content;
 }
 .articles{
   width: 100%;
@@ -579,6 +581,7 @@ section{
   flex-direction: column;
   margin-top: 60px ;
   width: 100%;
+  height: fit-content;
 }
 .newsHead{
   color: #5d5b5a;
@@ -1326,9 +1329,6 @@ footer{
   .articleTitle h1{
     margin-top: 0;
   }
-  .paper{
-    height: 105vw;
-  }
   .paper a{
     width: 90%;
     max-width: 550px ;
@@ -1585,11 +1585,20 @@ footer{
   .upComing{
     width: 65%;
   }
+  #lastAd{
+    display: block;
+  }
 
 }
 @media only screen and (min-width: 1000px){
   #header{
     margin-bottom: 280px;
+  }
+  .photo\&video{
+    margin-top: 250px;
+  }
+  .ad{
+    margin-bottom: 200px;
   }
 }
 
@@ -1605,12 +1614,6 @@ footer{
   }
   #homeEndImg{
     width: 18vw;
-  }
-  .ad{
-    margin-bottom: 700px;
-  }
-  #lastAd{
-    display: block;
   }
   .subArticles{
     margin-bottom: 20px;
@@ -1637,6 +1640,9 @@ footer{
   }
   .front{
     width: 48%;
+  }
+  .ad{
+    margin-bottom: 250px;
   }
   .half .enderPart{
     width: 38%;
