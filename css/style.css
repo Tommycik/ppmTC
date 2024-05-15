@@ -732,6 +732,9 @@ section{
   width: 100%;
   margin-top: 120px;
 }
+.frontPage + .recommended{
+  width: 172px;
+}
 .forYou{
   font-family: "Times New Roman", Serif;
   margin-bottom: 30px;
@@ -765,7 +768,7 @@ section{
   font-size: 16px;
 }
 .categories{
-  width: 100%;
+  width: 123px;
   flex-direction: row;
   margin-top: 130px;
   flex-wrap: wrap;
@@ -775,6 +778,9 @@ section{
   flex-direction: column;
   flex-wrap: nowrap;
   margin-bottom: 30px ;
+}
+#section > .category{
+  width: 213px;
 }
 .categoryName a{
   text-decoration: none;
@@ -847,7 +853,7 @@ section{
 }
 .photo\&video {
   margin: 150px 0 0 0;
-  width:100%;
+  width:213px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -1000,13 +1006,13 @@ li button{
 .upHead{
   height: fit-content;
   max-height:27px;
-  padding:5px 15px 5px 25px;
+  padding:5px 15px 5px 20px;
   justify-content: space-between;
 }
 
 #upTitle{
   font-weight: normal;
-  font-size: 20px;
+  font-size: 19px;
 }
 .upSub{
   display: none;
@@ -1016,6 +1022,7 @@ li button{
 }
 .upHead span{
   margin-right: 15px;
+  display: none;
 }
 .upHead div{
   justify-content: flex-end;
@@ -1373,7 +1380,36 @@ footer{
 .half .enderPart,.half .subscribeButton{
   width: 100%;
 }
+@media only screen and (min-width: 160px) {
+  .categories {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 210px) {
+  .frontPage + .recommended{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 245px) {
+  #section > .category{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 250px) {
+  .photo\&video {
+    width:100%;
+  }
+}
 
+@media only screen and (min-width: 272px) {
+  .upHead span{
+    display: inline;
+  }
+}
+@media only screen and (min-width: 300px) {
+  /*homeEnd*/
+
+}
 @media only screen and (min-width: 310px) {
   #breakingNews{
     width: 100%;
@@ -1506,6 +1542,7 @@ footer{
   }
   .options{
     padding-left: 3%;
+    margin-left: 15px;
   }
 
 }
@@ -1703,6 +1740,7 @@ footer{
   }
   .options{
     justify-content: space-between;
+    margin-left: 0;
   }
 
 }

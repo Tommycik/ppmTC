@@ -139,12 +139,58 @@ function menu3() {
 }
 
 window.onscroll = function () {
-  activeWindow()
+  activeWindow();
 };
 window.onresize = function () {
-  activeWindow()
+  activeWindow();
+  slidderManager();
 };
 
+function slidderManager(){
+  let innerWidth = window.innerWidth;
+  if(innerWidth<270){
+
+    eventDisplayed=1;
+  } else if(innerWidth<450){
+    eventDisplayed=2;
+  }else if(innerWidth < 640) {
+    eventDisplayed=3;
+  }else if (innerWidth < 800) {
+    eventDisplayed=2;
+  }else if (innerWidth < 940) {
+    eventDisplayed=3;
+
+  }else if (innerWidth < 1040) {
+    eventDisplayed=4;
+  }else if (innerWidth < 1310) {
+    eventDisplayed=5;
+  }else {
+    eventDisplayed=6;
+  }
+  let title=document.getElementById("upTitle");
+  if(innerWidth<270){
+    title.innerHTML="Upcoming Events";
+  } else if(innerWidth<280){
+    title.innerHTML="Upcoming Eve...";
+  } else if(innerWidth<285){
+    title.innerHTML="Upcoming Even...";
+  }else{
+    title.innerHTML="Upcoming Events";
+  }
+  let width=((events/eventDisplayed)*100).toString()
+  document.getElementsByClassName("draggable")[0].style.width = width+'%';
+  let container = document.getElementsByClassName("draggable")[0];
+  let content = container.innerHTML;
+  container.innerHTML= content;
+  let change="0"
+  if(end){
+    position=-((events/eventDisplayed)*100-100);
+    change=position.toString()+'%';
+    container.style.left = change;
+  }
+
+
+}
 function activeWindow() {
   if (window.scrollY > 0) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
@@ -164,36 +210,6 @@ function activeWindow() {
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
   }
-  let innerWidth = window.innerWidth;
-  if(innerWidth<450){
-    eventDisplayed=2;
-  }else if(innerWidth < 640) {
-    eventDisplayed=3;
-  }else if (innerWidth < 800) {
-    eventDisplayed=2;
-  }else if (innerWidth < 940) {
-    eventDisplayed=3;
-
-  }else if (innerWidth < 1040) {
-    eventDisplayed=4;
-  }else if (innerWidth < 1310) {
-    eventDisplayed=5;
-  }else {
-    eventDisplayed=6;
-  }
-  let width=((events/eventDisplayed)*100).toString()
-  document.getElementsByClassName("draggable")[0].style.width = width+'%';
-  let container = document.getElementsByClassName("draggable")[0];
-  let content = container.innerHTML;
-  container.innerHTML= content;
-  let change="0"
-  if(end){
-    position=-((events/eventDisplayed)*100-100);
-    change=position.toString()+'%';
-    container.style.left = change;
-  }
-
-
 }
 
 function scrollFunction() {
@@ -277,6 +293,7 @@ window.onload=function (){
   document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
   document.getElementById("breakingNews").style.display = "flex";
+  slidderManager();
 }
 var position=0
 var eventDisplayed=3;
