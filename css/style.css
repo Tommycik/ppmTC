@@ -1237,8 +1237,8 @@ footer{
   height: 100%;
 }
 .ender{
-  font-weight: 900;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 .ender:hover{
@@ -1402,7 +1402,7 @@ footer{
   }
 }
 
-@media only screen and (min-width: 272px) {
+@media only screen and (min-width: 255px) {
   .upHead span{
     display: inline;
   }

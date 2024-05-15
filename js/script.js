@@ -169,16 +169,16 @@ function slidderManager(){
   }
   let title=document.getElementById("upTitle");
   let string ="Upcoming Events";
-  if(innerWidth<236){
-    let toggle=Math.floor((236-innerWidth) / 4)+2;
+  if(innerWidth<215){
+    let toggle=Math.floor((215-innerWidth) / 5)+2;
     string = string.slice(0,15-toggle);
     string = string+"..."
     if(toggle<10){
       title.innerHTML=string;
     }
-  } else if((innerWidth>=270 && innerWidth<280)){
+  } else if((innerWidth>=250 && innerWidth<265)){
     title.innerHTML="Upcoming Eve...";
-  } else if((innerWidth>=280 && innerWidth<285)){
+  } else if((innerWidth>=265 && innerWidth<270)){
     title.innerHTML="Upcoming Even...";
   }else{
     title.innerHTML="Upcoming Events";
