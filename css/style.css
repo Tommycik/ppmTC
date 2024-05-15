@@ -402,6 +402,40 @@ section{
   padding: 5px;
   display: flex;
 }
+#breakingNews{
+  width: 100%;
+  max-width: 100%;
+  background-color: #eeff41;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 5px;
+  height: fit-content;
+  margin-bottom: 35px;
+}
+#breakingNews h2{
+  font-size: 17px;
+  margin: 0;
+  font-weight: 750;
+  height: fit-content;
+}
+#breakingNews a,#breakingNews p{
+  font-weight: lighter;
+  height: fit-content;
+  font-size: 16px;
+  color: black;
+  margin: 0;
+}
+#breakingNews a:hover{
+  color: black;
+  text-decoration: underline;
+}
+#breakingNews button{
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+}
 .frontPage{
   flex-direction: row;
   flex-wrap: wrap;
