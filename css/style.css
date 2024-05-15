@@ -9,6 +9,7 @@ body{
   padding: 0;
   margin: 0;
   line-height: 19px;
+  overflow-x: hidden;
 }
 button:hover{
   cursor: pointer;
@@ -405,8 +406,7 @@ section{
   display: flex;
 }
 #breakingNews{
-  width: 100%;
-  max-width: 100%;
+  width: 273px;
   background-color: #eeff41;
   display: flex;
   padding: 5px;
@@ -465,7 +465,7 @@ section{
 }
 .front{
   flex-direction: column;
-  width: 100%;
+  width: 273px;
   height: fit-content;
 }
 .articles{
@@ -599,7 +599,7 @@ section{
 }
 .ad{
   margin-top: 40px;
-  width: 100%;
+  width: 273px;
   flex-direction: column;
 }
 #lastAd{
@@ -641,7 +641,7 @@ section{
 .headlines{
   flex-direction: column;
   margin-top: 60px ;
-  width: 100%;
+  width: 273px;
   height: fit-content;
 }
 .newsHead{
@@ -674,6 +674,7 @@ section{
   justify-items:  center;
   height: 100px;
   padding: 10px;
+  width: 100%;
 }
 .signup p{
   margin: 15px;
@@ -1008,9 +1009,13 @@ li button{
   font-size: 20px;
 }
 .upSub{
+  display: none;
   font-size: 12px;
   font-weight: normal;
   margin-right: 20px;
+}
+.upHead span{
+  margin-right: 15px;
 }
 .upHead div{
   justify-content: flex-end;
@@ -1369,6 +1374,21 @@ footer{
   width: 100%;
 }
 
+@media only screen and (min-width: 310px) {
+  #breakingNews{
+    width: 100%;
+  }
+  .front{
+    width: 100%;
+  }
+  .headlines{
+    width: 100%;
+  }
+  .ad{
+    width: 100%;
+  }
+
+}
 @media only screen and (min-width: 320px)  {
   .subArticle a{
     width: 45%;
@@ -1387,7 +1407,15 @@ footer{
   #lastAd{
     display: block;
   }
+}@media only screen and (min-width: 456px){
+  .upSub{
+    display: block;
+  }
+  .upHead span{
+    margin-right: 0;
+  }
 }
+
 @media only screen and (min-width: 640px) {
 
 
