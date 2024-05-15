@@ -1115,8 +1115,8 @@ footer{
 .end{
   padding: 10px 0 20px 0;
   flex-direction: column;
-  max-width: 100%;
-  max-width: 1450px;
+  max-width: 1350px;
+  width: auto;
 }
 #footer .homeEnd{
   padding-top: 10px;
@@ -1208,6 +1208,7 @@ footer{
   margin-top: 20px;
   flex-direction: column;
   width: 100%;
+
   border-top: #d3d3d3 solid 1px;
 }
 .endPage{
@@ -1218,6 +1219,7 @@ footer{
   flex-wrap: wrap;
 }
 .endLink{
+  max-width: 1250px;
   width: 100%;
   color: #686665;
   margin: 12px 0;
@@ -1822,7 +1824,14 @@ footer{
   .upComing{
     width: 78%;
   }
+}@media only screen and (min-width: 1360px) {
+  .endPage{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
+
+
 @media only screen and (min-width: 1431px) {
   .options{
     flex-wrap: nowrap;
@@ -1851,13 +1860,17 @@ footer{
     width: 30%;
 
   }
-
-
 }
+
 @media only screen and (min-width: 1550px) {
   .end{
-    padding-left: 55px;
+    padding-left: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 80px;
   }
+  .options{
+    padding-left: 0;
+  }
+
 }
