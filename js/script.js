@@ -164,16 +164,19 @@ function activeWindow() {
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
   }
-  if(window.innerWidth < 640) {
-    eventDisplayed=3;
-  }else if (window.innerWidth < 800) {
+  let innerWidth = window.innerWidth;
+  if(innerWidth<450){
     eventDisplayed=2;
-  }else if (window.innerWidth < 940) {
+  }else if(innerWidth < 640) {
+    eventDisplayed=3;
+  }else if (innerWidth < 800) {
+    eventDisplayed=2;
+  }else if (innerWidth < 940) {
     eventDisplayed=3;
 
-  }else if (window.innerWidth < 1040) {
+  }else if (innerWidth < 1040) {
     eventDisplayed=4;
-  }else if (window.innerWidth < 1310) {
+  }else if (innerWidth < 1310) {
     eventDisplayed=5;
   }else {
     eventDisplayed=6;
