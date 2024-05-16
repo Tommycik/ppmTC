@@ -37,7 +37,7 @@ button{
 
 header{
   display: flex;
-  position: sticky;
+  position:sticky;
   top:0;
   left:0;
   margin-bottom: 90px;

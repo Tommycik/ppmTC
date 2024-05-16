@@ -203,6 +203,9 @@ function activeWindow() {
   } else if (window.scrollY <= 10) {
     document.getElementById("header").style.boxShadow = "none";
   }
+  if(window.scrollX > 0) {
+    document.getElementById("header").style.left = "0";
+  }
   if (window.innerWidth >= 1040) {
     scrollFunction();
 
