@@ -22,6 +22,7 @@ a{
 }
 a:hover{
   color: #005d9b;
+  cursor: pointer;
 }
 img{
   width: 100%;
@@ -107,7 +108,7 @@ header{
   font-size: 14px;
 }
 .menuGroup {
-  padding-right: 10px;
+  padding-right: 2%;
 }
 .menuGroup .menu{
   align-self: center;
@@ -136,12 +137,12 @@ header{
 }
 .home{
   border:none;
-
   width: 52vw;
   max-height:95%;
   max-width: 300px;
   background-color: #fafafa;
 }
+
 .headButton{
   display: none;
   justify-content: center;
@@ -1207,16 +1208,12 @@ footer{
   display: flex;
   justify-content: center;
   width: 100%;
+  height: fit-content;
 }
 .homeEnd a{
-  width: fit-content;
+  width: 280px;
 }
-.homeEnd a:hover{
-  cursor: pointer;
-}
-#homeEndImg{
-  width: 250px;
-}
+
 .options{
   flex-direction: row;
   flex-wrap: wrap;
@@ -1491,7 +1488,7 @@ footer{
 @media only screen and (min-width: 640px) {
 
 
-  #homeEndImg{
+  #homeEnd a{
     width: 40vw;
   }
   .main{
@@ -1548,11 +1545,15 @@ footer{
     overflow: hidden;
   }
   .end{
-    width: 38%;
+    width: 45%;
   }
   #footer .homeEnd{
+    justify-content: flex-start;
     padding-bottom: 15px;
-    padding-left: 3%;
+    padding-left: 6%;
+  }
+  .homeEnd a{
+    width: 35vw;
   }
   .subscribeButton{
     height: 40px;
@@ -1673,11 +1674,11 @@ footer{
     width: 30%;
     margin-right: 150px;
   }
-  #footer .homeEnd{
-    justify-content: flex-start;
+  .homeEnd a{
+    width: 27vw;
   }
-  #homeEndImg{
-    width: 28vw;
+  #footer .homeEnd{
+    padding-left: 2vw;
   }
   .half .enderPart{
     width: 100%;
@@ -1809,7 +1810,7 @@ footer{
   .category + .recommended{
     width: 100%;
   }
-  #homeEndImg{
+  #homeEnd a{
     width: 18vw;
   }
   .subArticles{
@@ -1841,20 +1842,7 @@ footer{
   .ad{
     margin-bottom: 250px;
   }
-  .half .enderPart{
-    width: 38%;
-    margin-right: 30px;
-  }
-  .a{
-    width: 40%;
-    margin-right: 30px;
-  }
-  .half .subscribeButton{
-    width: 40%;
-  }
-  .a .enderPart{
-    width: 100%;
-  }
+
   .half{
     width: 50%;
     margin-right: 0;
@@ -1954,7 +1942,7 @@ footer{
   }
   .half,#half2{
     gap: 8%;
-    width: 47%;
+    width: 48%;
   }
 
   .options{
@@ -1963,13 +1951,26 @@ footer{
   }
   .half .enderPart{
     margin-right: 0;
-    width: 42%;
+    width: 43%;
   }
   #half2 .a{
     margin-right: 0;
   }
   #half2 .enderPart{
     width: 100%;
+  }
+  .a{
+    width: 45%;
+    margin-right: 30px;
+  }
+  .a .enderPart{
+    width: 100%;
+  }
+  .half .subscribeButton{
+    width: 45%;
+  }
+  .homeEnd a{
+    width: 19vw;
   }
 }
 @media only screen and (min-width: 1130px) {
