@@ -170,7 +170,7 @@ function slidderManager(){
   let title=document.getElementById("upTitle");
   let string ="Upcoming Events";
   if(innerWidth<215){
-    let toggle=Math.floor((215-innerWidth) / 5)+2;
+    let toggle=Math.floor((215-innerWidth) / 4)+2;
     string = string.slice(0,15-toggle);
     string = string+"..."
     if(toggle<10){
