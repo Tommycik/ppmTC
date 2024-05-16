@@ -39,6 +39,7 @@ header{
   display: flex;
   position: sticky;
   top:0;
+  left:0;
   margin-bottom: 90px;
   flex-direction: column;
   border-bottom: 1px solid #9d9a98 ;
@@ -1454,9 +1455,6 @@ footer{
   .subscribeButton a{
     padding: 0;
   }
-  body{
-    overflow-x: hidden;
-  }
 
 }
 @media only screen and (min-width: 320px)  {
@@ -1469,7 +1467,9 @@ footer{
     font-weight: 780;
     font-size: 20px;
   }
-
+  body{
+    overflow-x: hidden;
+  }
 
   
 }
