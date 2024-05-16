@@ -83,7 +83,7 @@ function menu1() {
   }
 
   elementVisible('lateralMenu', 0);
-
+  headerManager();
 }
 
 function menu2() {
@@ -111,6 +111,7 @@ function menu2() {
   }
 
   elementVisible('accountMenu', 1);
+  headerManager();
 }
 
 function menu3() {
@@ -136,13 +137,14 @@ function menu3() {
 
 
   elementVisible('searchMenu', 2);
+  headerManager();
 }
 
 window.onscroll = function () {
   activeWindow();
 };
 
-function headermanager(){
+function headerManager(){
   let offsetHeader = (document.getElementsByTagName("body")[0].offsetWidth).toString();
   document.getElementById("header").style.width = offsetHeader+"px";
   document.getElementById("header").style.marginLeft = (window.scrollX).toString()+"px";
@@ -204,7 +206,7 @@ function slidderManager(){
 
 }
 function activeWindow() {
-  headermanager();
+  headerManager();
   if (window.scrollY > 0) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
   } else if (window.scrollY <= 10) {
@@ -310,7 +312,7 @@ window.onload=function (){
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
   document.getElementById("breakingNews").style.display = "flex";
   slidderManager();
-  headermanager();
+  headerManager();
 }
 var position=0
 var eventDisplayed=3;
