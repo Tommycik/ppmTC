@@ -161,7 +161,7 @@ header{
 }
 #lateralMenu{
   background-color: rgba(0, 0, 0, 0.5);
-  height:100vh;
+  height:calc(100vh - 65px);
   width: 100%;
   display: none;
   position: fixed;
@@ -221,7 +221,7 @@ header{
 }
 #accountMenu{
   background-color: rgba(0, 0, 0, 0.5);
-  height:100vh;
+  height:calc(100vh - 65px);
   width: 100%;
   display: none;
   position: fixed;
@@ -316,10 +316,7 @@ header{
   flex-direction: column;
   padding:0 10px;
 }
-#accountMenu .signupMenu{
-  margin-top:auto;
-  margin-bottom: 25vh;
-}
+
 .up .homepage{
   align-content: baseline;
 
@@ -340,13 +337,19 @@ header{
 }
 
 .signupMenu{
-  width: 100%;
+  width: auto;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   border-top: black solid 1px;
-  padding-top: 20px;
+  border-bottom: white solid 1px;
+  padding: 20px;
   height: fit-content;
+  margin-bottom: 20px;
+}
+#accountMenu .signupMenu{
+  margin-top:auto;
+  margin-bottom: 10vh;
 }
 .signupMenu p{
   width: auto;
