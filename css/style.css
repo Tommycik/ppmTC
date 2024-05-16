@@ -414,7 +414,7 @@ section{
 
 }
 #breakingNews{
-  width: 273px;
+  width: auto;
   background-color: #eeff41;
   display: flex;
   padding: 5px;
@@ -424,14 +424,15 @@ section{
 }
 .content{
   height: fit-content;
-  width: 236px;
+  width: 100%;
   display: inline;
 }
 #breakingNews h2{
+  position: static;
+  width: 8.8em;
   font-size: 17px;
   margin: 0 20px 0 0;
   font-weight: 790;
-  width: auto;
   display: inline;
   height: fit-content;
 }
@@ -462,6 +463,8 @@ section{
   padding: 0;
   width: 30px;
   height: 30px;
+  min-height: 30px;
+  min-width: 30px;
   margin-left: auto;
 }
 .frontPage{
@@ -1430,12 +1433,6 @@ footer{
 
 }
 @media only screen and (min-width: 310px) {
-  #breakingNews{
-    width: 100%;
-  }
-  .content{
-    width: 100%;
-  }
   .front{
     width: 100%;
   }
