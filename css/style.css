@@ -249,13 +249,12 @@ header{
   border: black solid 1px;
   flex-direction: column;
   background-color: #fafafa;
-  width: 100%;
+  width: 300px;
   min-height:100% ;
   height:fit-content;
-  max-width:300px;
 }
 #searchMenu .lateral{
-  max-width: none;
+  width: 100%;
   height: fit-content;
   min-height:0 ;
   padding: 10px 4%;
@@ -281,6 +280,7 @@ header{
 }
 .search form input{
   border: none;
+  width: 60%;
   font-size: 17px;
   color: black;
   font-weight: lighter;
@@ -296,6 +296,8 @@ header{
   color:white ;
   border: none;
   font-size: 15px;
+  position: relative;
+  z-index: 1;
   font-weight: bolder;
   padding: 8px 10px;
   border-radius: 5px;
