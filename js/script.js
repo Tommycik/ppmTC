@@ -216,6 +216,9 @@ function activeWindow() {
     document.getElementById("header").style.left = "0";
   }
   if (window.innerWidth >= 1040) {
+    if(visible[1]==true){
+      menu2();
+    }
     scrollFunction();
 
   } else {
