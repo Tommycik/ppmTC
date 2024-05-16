@@ -141,6 +141,12 @@ function menu3() {
 window.onscroll = function () {
   activeWindow();
 };
+
+function headermanager(){
+  let offsetHeader = (document.getElementsByTagName("body")[0].offsetWidth).toString();
+  document.getElementById("header").style.width = offsetHeader+"px";
+  document.getElementById("header").style.marginLeft = (window.scrollX).toString()+"px";
+}
 window.onresize = function () {
   activeWindow();
   slidderManager();
@@ -198,6 +204,7 @@ function slidderManager(){
 
 }
 function activeWindow() {
+  headermanager();
   if (window.scrollY > 0) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
   } else if (window.scrollY <= 10) {
@@ -303,6 +310,7 @@ window.onload=function (){
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
   document.getElementById("breakingNews").style.display = "flex";
   slidderManager();
+  headermanager();
 }
 var position=0
 var eventDisplayed=3;
