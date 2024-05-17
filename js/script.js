@@ -62,6 +62,8 @@ function menu1() {
   if (visible[2]) {
     menu3();
   }
+  const element = document.getElementsByClassName("lateral")[0];
+  element.classList.toggle('fullWidth');
   var x = document.getElementById("lateralMenu");
 
   if (visible[0]) {
@@ -93,6 +95,8 @@ function menu2() {
   if (visible[2]) {
     menu3();
   }
+  const element = document.getElementsByClassName("lateral")[1];
+  element.classList.toggle('fullWidth');
   var x = document.getElementById("accountMenu");
 
   if (visible[1]) {
