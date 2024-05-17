@@ -35,21 +35,21 @@ function showMore() {
 }
 
 function overlay(x) {
-  var home = document.getElementById("home1");
+  var home = document.getElementById("homeHead");
   if (x == 1) {
     document.getElementById("header").style.boxShadow = "none";
-    if (home1.style.visibility == "hidden") {
-      home1.style.visibility = "visible";
+    if (home.style.visibility == "hidden") {
+      home.style.visibility = "visible";
       homeChecked = true;
     } else {
       homeChecked = false;
     }
   } else if (x == 0) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
-    if (home1.style.visibility == "visible") {
+    if (home.style.visibility == "visible") {
       if (homeChecked) {
         homeChecked = false;
-        home1.style.visibility = "hidden";
+        home.style.visibility = "hidden";
       }
     }
 
@@ -70,15 +70,15 @@ function menu1() {
   if (visible[0]) {
 
     overlay(0);
-    document.getElementById("menu1").src="img/menu.svg" ;
+    document.getElementById("menu").src="img/menu.svg" ;
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("lateralMenu").style.overflow = "hidden";
     visible[0]=false;
 
   } else {
     overlay(1);
-    document.getElementById("menu1").style.visibility = "visible";
-    document.getElementById("menu1").src="img/cross.svg" ;
+    document.getElementById("menu").style.visibility = "visible";
+    document.getElementById("menu").src="img/cross.svg" ;
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("lateralMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
@@ -101,13 +101,13 @@ function menu2() {
   var x = document.getElementById("accountMenu");
 
   if (visible[1]) {
-    document.getElementById("menu2").style.transform="rotate(0deg)";
+    document.getElementById("search").style.transform="rotate(0deg)";
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("accountMenu").style.overflow = "hidden";
     overlay(0);
     visible[1]=false;
   } else {
-    document.getElementById("menu2").style.transform="rotate(180deg)";
+    document.getElementById("search").style.transform="rotate(180deg)";
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("accountMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";

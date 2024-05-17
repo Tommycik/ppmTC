@@ -126,7 +126,7 @@ header{
 }
 
 #allSections{
-  margin-left: 5px;
+  padding-left: 11px;
   display: none;
   height: fit-content;
   border:none;
@@ -175,25 +175,25 @@ header{
 }
 
 
-.meteoAndDate{
+.weatherAndDate{
   padding: 0 5px 15px 5px;
 }
-.meteo a:hover{
+.weather a:hover{
   color: black;
 }
-.secondLevel .meteoAndDate{
+.secondLevel .weatherAndDate{
   display: none;
   position: fixed;
   left: 0;
   margin-left:3%;
   padding: 15px 0;
 }
-.meteo{
+.weather{
   align-self: center;
   width: 60px;
   height: 27px;
 }
-.meteo a{
+.weather a{
   width: 100%;
   height: 100%;
   display: flex;
@@ -202,9 +202,9 @@ header{
   width: 34px;
   height: 100%;
 }
-.meteoIcon{
+.weatherIcon{
   width: 26px;
-  height: 100%;
+  height: 26px;
 }
 .todayDate{
   margin-left: 15px;
@@ -2070,10 +2070,10 @@ footer{
   #header .secondLevel,#header .thirdLevel,#header .fourthLevel{
     display: flex;
   }
-  .meteoAndDate{
+  .weatherAndDate{
     display: none;
   }
-  .secondLevel .meteoAndDate{
+  .secondLevel .weatherAndDate{
     display: flex;
   }
   .upComing{
