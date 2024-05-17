@@ -551,11 +551,13 @@ section{
   font-size: 13px;
   margin-left: 0;
   padding-left: 0;
+  display: inline;
 }
 .related li{
   padding: 5px 0;
   margin-bottom: 5px;
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .related li:before{
@@ -565,13 +567,13 @@ section{
   line-height:20px;
 }
 .related li div{
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
 }
 .timeAgo{
   color: #6a6a73;
   font-size: 12px;
   margin: 5px 0 0 0;
+  display: inline;
 }
 .subArticles{
   width: 100%;
@@ -665,7 +667,7 @@ section{
 .headline{
   border-top: #ddd8d5 solid 1px;
   padding: 20px 0;
-  flex-direction: column;
+  display: inline-block;
   width: 273px;
 }
 #firstHeadline{
