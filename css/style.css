@@ -1467,7 +1467,7 @@ footer{
     overflow-x: hidden;
   }
 
-  
+
 }
 @media only screen and (min-width: 425px){
   #lastAd{
@@ -1744,6 +1744,9 @@ footer{
   .photo\&video .categoryImg{
     flex-direction: column;
     gap:0
+  }
+  #section > .category{
+    width: 60%;
   }
   .upComing{
     width: 60%;
