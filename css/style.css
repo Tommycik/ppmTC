@@ -371,12 +371,12 @@ header{
   background-color: inherit;
   opacity: 1;
 }
-.up{
+.menuBody{
   flex-direction: column;
   padding:0 10px;
 }
 
-.up .homepage{
+.menuBody .homepage{
   align-content: baseline;
 
 }
@@ -390,10 +390,7 @@ header{
   width: 15px;
   height: 15px;
 }
-#figure img{
-  width: 100%;
-  height:100%;
-}
+
 
 .signupMenu{
   width: auto;
@@ -1437,7 +1434,7 @@ footer{
   height: 16px;
 }
 
-#hiddenMenuNews,#hiddenMenuOpinion{
+.menuHidden{
   padding-left: 20px;
   display: none;
   max-height: 0;
@@ -1445,7 +1442,7 @@ footer{
   animation: upInOut 2s ease-in-out;
   overflow-y: hidden;
 }
-#hiddenMenuNews.fullHeight,#hiddenMenuOpinion.fullHeight{
+.menuHidden.fullHeight{
   max-height: 2000px;
 }
 
