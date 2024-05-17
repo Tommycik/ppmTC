@@ -23,6 +23,7 @@ function elementVisible(id) {
       }
     }
     elementVisible(id);
+    target.classList.toggle('fullHeight');
 
 }
 

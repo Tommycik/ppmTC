@@ -1406,8 +1406,28 @@ footer{
 
 #hiddenMenuNews,#hiddenMenuOpinion{
   padding-left: 20px;
+  height: 0;
   display: none;
   flex-direction: column;
+  animation: upInOut 0.2s ease-in-out;
+  overflow-y: hidden;
+}
+#hiddenMenuNews.fullHeight,#hiddenMenuOpinion.fullHeight{
+  height: fit-content;
+}
+
+@keyframes upInOut{
+  0% {
+    height: 0;
+  }
+
+  50%{
+    height: 0;
+  }
+
+  100% {
+   height: fit-content;
+  }
 }
 .lateral .hiddenLink{
   font-weight: bold;
