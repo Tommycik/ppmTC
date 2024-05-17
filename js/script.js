@@ -292,7 +292,8 @@ function upComing(){
   let month=date.getMonth();
   let day=date.getDay();
   let number= date.getDate();
-  for (let count = 1; count <= 17; count++) {
+  let dateLine = document.getElementsByClassName("days")[0];
+  for (let count = 1; count <= dateLine.getElementsByTagName("a").length; count++) {
 
     if(month == 1){
       max=28;
@@ -308,9 +309,9 @@ function upComing(){
     }
     month++;
     let id=count.toString();
-    document.getElementsByClassName("days")[0].getElementsByTagName("a")[count-1].getElementsByClassName("day")[0].innerHTML = days[day-1][1];
-    document.getElementsByClassName("days")[0].getElementsByTagName("a")[count-1].getElementsByClassName("date")[0].innerHTML =number;
-   day++;
+    dateLine.getElementsByTagName("a")[count-1].getElementsByClassName("day")[0].innerHTML = days[day-1][1];
+    dateLine.getElementsByTagName("a")[count-1].getElementsByClassName("date")[0].innerHTML =number;
+    day++;
    number++;
   }
 }
