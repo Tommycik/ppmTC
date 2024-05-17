@@ -472,13 +472,14 @@ section{
 
 }
 #breakingNews{
-  width: auto;
+  width: calc(100% - 20px);
   background-color: #eeff41;
   display: flex;
-  padding: 5px;
+  padding:10px;
   align-items: center;
   height: fit-content;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+  position: relative;
 }
 .content{
   height: fit-content;
@@ -486,9 +487,10 @@ section{
   display: inline;
 }
 #breakingNews h2{
+  white-space: nowrap;
   position: static;
   width: 8.8em;
-  font-size: 17px;
+  font-size: 18px;
   margin: 0 20px 0 0;
   font-weight: 790;
   display: inline;
@@ -523,7 +525,10 @@ section{
   height: 30px;
   min-height: 30px;
   min-width: 30px;
-  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 15px);
+  background-color: transparent;
 }
 .frontPage{
   flex-direction: row;
