@@ -308,8 +308,8 @@ function upComing(){
     }
     month++;
     let id=count.toString();
-   document.getElementById(id).getElementsByClassName("day")[0].innerHTML = days[day-1][1];
-   document.getElementById(id).getElementsByClassName("date")[0].innerHTML =number;
+    document.getElementsByClassName("days")[0].getElementsByTagName("a")[count-1].getElementsByClassName("day")[0].innerHTML = days[day-1][1];
+    document.getElementsByClassName("days")[0].getElementsByTagName("a")[count-1].getElementsByClassName("date")[0].innerHTML =number;
    day++;
    number++;
   }

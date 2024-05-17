@@ -1105,10 +1105,6 @@ li button{
   max-width: 12px;
   max-height: 12px;
 }
-.upHead span a{
-  max-width: 10px;
-  max-height: 10px;
-}
 .upMain{
   max-height: 172px;
   height: 172px;
@@ -1135,6 +1131,9 @@ li button{
   justify-content: center;
   height: 100%;
   width: fit-content;
+}
+.wrapper + .sliderContainer img{
+  transform: rotate(180deg)
 }
 .drag{
   width: 15px;
