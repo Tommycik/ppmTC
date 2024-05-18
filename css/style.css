@@ -574,8 +574,10 @@ section{
   margin-top: 0;
 }
 .imageWrapper{
+  display: block;
   width: 100%;
   height: auto;
+  overflow-y: hidden;
   aspect-ratio:1.78 ;
 }
 .imageWrapper a{
@@ -669,10 +671,6 @@ section{
   width: 100%;
   font-weight: 780;
   font-size: 20px;
-}
-.subArticle a img{
-  height: 100%;
-  width: 100%;
 }
 .ad{
   margin-top: 40px;
