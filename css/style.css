@@ -767,6 +767,7 @@ section{
 }
 .subOnly{
   margin-bottom: 5px;
+  white-space: nowrap;
   margin-top: 0;
   padding: 0 5px;
   background-color: #005e9d;
@@ -880,7 +881,7 @@ section{
   margin-bottom: 10px;
 }
 .categoryImg .imageWrapper a{
-  aspect-ratio: 4/3;
+  aspect-ratio: 4.006/3;
 }
 .categoryImg p{
   margin:15px 0 20px 0;
