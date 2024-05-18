@@ -1338,7 +1338,7 @@ footer{
     top: 0;
   }
 }
-#hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness{
+.endHidden{
   display: none;
   flex-direction: column;
   position: relative;
@@ -1346,7 +1346,7 @@ footer{
   margin-top: 10px;
   animation: downInOut 0.15s ease-in-out;
 }
-#hiddenNews.fullHeight,#hiddenContact.fullHeight,#hiddenClass.fullHeight,#hiddenBusiness.fullHeight{
+.endHidden.fullHeight{
   top: 0;
 }
 
@@ -1695,7 +1695,7 @@ footer{
   .subscribeButton a{
     font-size: 15px;
   }
-  #hiddenNews,#hiddenContact,#hiddenClass,#hiddenBusiness {
+  .endHidden{
     top:0;
     display: flex;
   }
