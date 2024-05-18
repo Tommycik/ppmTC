@@ -575,11 +575,19 @@ section{
 }
 .imageWrapper{
   width: 100%;
-  height: fit-content;
+  height: auto;
+  aspect-ratio:1.78 ;
 }
 .imageWrapper a{
   width: 100%;
+  height: 100%;
+  margin-bottom: auto;
 }
+.imageWrapper a img{
+  height: auto;
+  max-height: 100%;
+}
+
 /*.image-wrapper img {
   left: 0;
   position: absolute;
@@ -653,9 +661,8 @@ section{
   flex-wrap: nowrap;
   width: 90%;
 }
-.subArticle a {
+.subArticle .imageWrapper {
   width: 58px;
-  height: fit-content;
 }
 .subArticleText a{
   height: 40%;
@@ -1593,7 +1600,7 @@ footer{
 
 }
 @media only screen and (min-width: 320px)  {
-  .subArticle a{
+  .subArticle .imageWrapper{
     width: 45%;
   }
   .subArticleText a{
@@ -1728,7 +1735,8 @@ footer{
   }
   #breakingNews a,#breakingNews h2{
     margin-right: 0 ;
-  }#breakingNews p{
+  }
+  #breakingNews p{
      display: inline;
    }
 
@@ -1746,7 +1754,7 @@ footer{
     margin-bottom: 100px;
   }
 
-  .subArticle .subArticleText,.subArticle a{
+  .subArticle .subArticleText,.subArticle a,.subArticle .imageWrapper{
     width: 100%;
   }
   .subArticle{
@@ -1961,7 +1969,7 @@ footer{
   .subArticle .subArticleText{
     width: 43%;
   }
-  .subArticle a{
+  .subArticle .imageWrapper{
     width: 57%;
   }
   .subArticleText a{
@@ -2131,7 +2139,7 @@ footer{
     width: 48%;
     flex-direction: column;
   }
-  .subArticle a,.subArticle .subArticleText{
+  .subArticle a,.subArticle .subArticleText,.subArticle .imageWrapper{
     width: 100%;
   }
   .articleTitle{
