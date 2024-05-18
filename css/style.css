@@ -462,7 +462,7 @@ section{
   width: auto;
   max-width: 1280px;
   margin: 5px;
-  padding: 15px;
+  padding: 5px;
   display: flex;
 
 }
@@ -927,7 +927,7 @@ section{
   margin-bottom: 0;
 }
 .photo\&video .categoryText{
-  margin-top:0px;
+  margin-top:0;
 }
 .variant .categoryRelated .categoryText {
   margin-top:5px;
@@ -985,6 +985,9 @@ section{
 .photo\&video .categoryText .subOnly{
   margin-top: 5px;
 }
+.photo\&video .hiddenArticle .categoryText {
+  margin-top: 15px;
+}
 .variant .othersSub a{
   font-size: 15px;
   font-weight: 600;
@@ -1034,20 +1037,20 @@ section{
 }
 
 .hiddenArticle{
-  width: 46%;
+  width: 100%;
   flex-direction: column;
   height: auto;
   margin-bottom: 65px;
 }
 
-.promoFull{
+#promoFull{
   width: 100%;
   max-width: 552px;
   max-height: 287px;
   margin-bottom: 40px;
   margin-top: 70px;
-  height: fit-content;
 }
+
 
 .photo\&video .relatedNews{
   border-top: none;
@@ -1600,6 +1603,9 @@ footer{
   body{
     overflow-x: hidden;
   }
+  .photo\&video .hiddenArticle{
+    width: 46%;
+  }
 
 
 }
@@ -1785,11 +1791,14 @@ footer{
   .hiddenArticles .hiddenArticle{
     width: 30%;
   }
-  .photo\&video .promoFull{
+  .photo\&video .hiddenArticle .categoryText {
+    margin-top: 15px;
+  }
+  .photo\&video #promoFull{
     width:37%;
     margin-top: 50px;
   }
-  .promoFull a{
+  #promoFull a{
     margin-top: 0px;
   }
   .endLinks{
@@ -1994,8 +2003,8 @@ footer{
   .categories{
     margin-top:280px;
   }
-  .photo\&video .promoFull{
-    width: 23%;
+  .photo\&video #promoFull{
+    width: 29.5%;
   }
   .hiddenArticles .hiddenArticle{
     width: 22.5%;
@@ -2024,6 +2033,7 @@ footer{
   .photo\&video .categoryImg{
     width: 50%;
     margin-right: 20px;
+    gap:0;
   }
   .photo\&video .othersSub{
     width: 100%;
