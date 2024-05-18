@@ -932,6 +932,9 @@ section{
 .variant .categoryRelated .categoryText {
   margin-top:5px;
 }
+.variant .categoryRelated .categoryText a{
+ line-height: 19px;
+}
 .photo\&video .categoryImg a{
   line-height: 33px;
 }
@@ -941,6 +944,9 @@ section{
 }
 .photo\&video .categoryImg p{
   display: none;
+}
+.variant .imageWrapper a{
+  aspect-ratio:4.004/3;
 }
 .photo\&video .category .imageWrapper a{
   aspect-ratio:5.34/3;
