@@ -923,6 +923,13 @@ section{
   flex-direction: row;
   flex-wrap: wrap;
 }
+.photo\&video .articleBody{
+  margin-bottom: 0;
+}
+.photo\&video .categoryRelated{
+  gap: 10px;
+  margin-top: 10px;
+}
 .photo\&video .categoryHead{
   margin-bottom: 0;
 }
@@ -1659,9 +1666,7 @@ footer{
   .categories .category{
     max-width: 48%;
   }
-  .photo\&video .categoryRelated{
-    gap: 20px;
-  }
+
   .photo\&video .othersSub{
     width: 48%;
   }
