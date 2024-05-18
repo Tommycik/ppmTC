@@ -462,7 +462,7 @@ section{
   width: auto;
   max-width: 1280px;
   margin: 5px;
-  padding: 5px;
+  padding: 15px;
   display: flex;
 
 }
@@ -701,11 +701,9 @@ section{
 }
 
 .images a{
-  height: fit-content;
-}
-.images a img{
   height: 90px;
-  width: 100%;
+  width: 120px;
+  aspect-ratio: 1;
 }
 .seeAll{
   color: #808080;
