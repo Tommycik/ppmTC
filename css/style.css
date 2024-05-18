@@ -1854,12 +1854,6 @@ footer{
     border-bottom: none;
   }
   .variant .categoryImg a{
-    width: 50%;
-  }
-  .variant .categoryImg a{
-    width: 100%;
-  }
-  .variant .categoryText a{
     width: 100%;
   }
   .variant .first,.variant .categoryRelated .relatedNews{
@@ -1867,14 +1861,10 @@ footer{
     border-top: none;
     border-bottom: #ddd8d5 solid 1px;
   }
-  .photo\&video .categoryImg a{
-    width: 100%;
-  }
   .variant{
     border-bottom: none;
   }
   .variant .categoryRelated{
-
     flex-direction: column;
     align-content: flex-end;
     margin-bottom: 20px;
