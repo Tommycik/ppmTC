@@ -942,7 +942,7 @@ section{
 .photo\&video .categoryImg p{
   display: none;
 }
-.photo\&video .categoryImg .imageWrapper a{
+.photo\&video .category .imageWrapper a{
   aspect-ratio:5.34/3;
 }
 .variant{
@@ -973,19 +973,16 @@ section{
   flex: 0 0 90px;
   margin-right: 15px;
 }
-.othersSub .imageWrapper a{
-   width:100%;
-   aspect-ratio:5.34/3;
- }
+
 .photo\&video .othersSub .categoryText {
   margin-top: 0;
   align-items: flex-start;
   justify-items: flex-start;
 }
-.photo\&video .othersSub .categoryText a{
+.photo\&video .othersSub .categoryText a,.photo\&video .hiddenArticle .categoryText a{
   line-height: 19px;
 }
-.photo\&video .othersSub .categoryText .subOnly{
+.photo\&video .categoryText .subOnly{
   margin-top: 5px;
 }
 .variant .othersSub a{
@@ -1032,14 +1029,10 @@ section{
 
 .hiddenArticles a{
   width: 100%;
-  margin-bottom: 10px;
   font-weight: 800;
   font-size: 14px;
 }
-.hiddenArticles img{
-  width: 100%;
 
-}
 .hiddenArticle{
   width: 46%;
   flex-direction: column;
@@ -2005,7 +1998,7 @@ footer{
     width: 23%;
   }
   .hiddenArticles .hiddenArticle{
-    width: 23%;
+    width: 22.5%;
   }
   .linksContainer{
     flex-direction: column;
