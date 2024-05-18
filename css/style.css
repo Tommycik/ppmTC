@@ -1699,7 +1699,7 @@ footer{
     top:0;
     display: flex;
   }
-  #newsButton,#contactButton,#classButton,#businessButton{
+  #footer .headHid button{
     display: none;
   }
 
