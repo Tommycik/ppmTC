@@ -925,10 +925,9 @@ section{
 }
 .photo\&video .categoryHead{
   margin-bottom: 0;
-
 }
 .photo\&video .categoryText{
-  margin-top:5px;
+  margin-top:0px;
 }
 .variant .categoryRelated .categoryText {
   margin-top:5px;
@@ -942,6 +941,9 @@ section{
 }
 .photo\&video .categoryImg p{
   display: none;
+}
+.photo\&video .categoryImg .imageWrapper a{
+  aspect-ratio:5.34/3 ;
 }
 .variant{
   flex-direction: row;
