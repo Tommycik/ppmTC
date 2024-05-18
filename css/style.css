@@ -943,7 +943,7 @@ section{
   display: none;
 }
 .photo\&video .categoryImg .imageWrapper a{
-  aspect-ratio:5.34/3 ;
+  aspect-ratio:5.34/3;
 }
 .variant{
   flex-direction: row;
@@ -969,18 +969,24 @@ section{
 #lastSub{
   border: none;
 }
-.subImg{
+.othersSub .imageWrapper{
   flex: 0 0 90px;
-  height: 50px;
   margin-right: 15px;
 }
-.subImg a{
-  width:100%;
-  height: 100%;
+.othersSub .imageWrapper a{
+   width:100%;
+   aspect-ratio:5.34/3;
+ }
+.photo\&video .othersSub .categoryText {
+  margin-top: 0;
+  align-items: flex-start;
+  justify-items: flex-start;
 }
-.subImg img{
-  width:100%;
-  height: 100%;
+.photo\&video .othersSub .categoryText a{
+  line-height: 19px;
+}
+.photo\&video .othersSub .categoryText .subOnly{
+  margin-top: 5px;
 }
 .variant .othersSub a{
   font-size: 15px;
