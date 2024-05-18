@@ -1886,6 +1886,9 @@ footer{
   #section > .category{
     width: 60%;
   }
+  #section > .category .categoryImg .categoryText{
+    margin-top: 15px;
+  }
   .upComing{
     width: 60%;
   }
