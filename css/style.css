@@ -2136,10 +2136,10 @@ footer{
     margin-right: 0;
     width: 43%;
   }
-  #half2 .linksContainer{
+  .options .half:nth-child(2) .linksContainer{
     margin-right: 0;
   }
-  #half2 .enderPart{
+  .options .half:nth-child(2) .enderPart{
     width: 100%;
   }
   .linksContainer{
@@ -2234,22 +2234,22 @@ footer{
     width: 100%;
   }
 
-  #half2 .linksContainer .enderPart{
+  .options .half:nth-child(2) .linksContainer .enderPart{
     width: 100%;
   }
   .half{
     margin-right: 145px;
     width: 20%;
   }
-  #half2{
+  .options .half:nth-child(2){
     width: 67%;
     margin-right: 0;
     gap:145px;
   }
-  #half2 .linksContainer{
+  .options .half:nth-child(2) .linksContainer{
     width: 30%;
   }
-  #half2 .subscribeButton{
+  .options .half:nth-child(2) .subscribeButton{
     width: 30%;
 
   }
