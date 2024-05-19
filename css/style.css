@@ -2028,7 +2028,7 @@ footer{
   .photo\&video .category{
     width: 68%;
   }
-  .photo\&video .othersSub:nth-last-child(1){
+  .variant .relatedNews:nth-last-child(1){
     border-bottom: none;
   }
   .frontPage + .recommended{
