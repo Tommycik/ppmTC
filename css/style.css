@@ -890,10 +890,11 @@ section{
   aspect-ratio: 4.006/3;
 }
 .categoryImg p{
-  margin:15px 0 20px 0;
+  margin:10px 0 20px 0;
   font-size: 16px;
   font-family: Helvetica, sans-serif ;
 }
+
 .categoryText{
   flex-direction: column;
   margin-top: 0;
@@ -931,6 +932,7 @@ section{
 }
 .photo\&video .articleBody{
   margin-bottom: 0;
+  margin-top: 15px;
 }
 .photo\&video .categoryRelated{
   gap: 10px;
@@ -1015,6 +1017,7 @@ section{
 .centeredGeometry{
   justify-content: center;
   border-top: #DDD8D5 solid 1px;
+  margin-top: 10px;
   border-collapse: collapse;
 
 }
@@ -1881,6 +1884,7 @@ footer{
   .photo\&video .categoryRelated{
     flex-direction: row;
     align-content: center;
+    margin-bottom: 0;
   }
   .photo\&video .othersSub{
     width: 45%;
