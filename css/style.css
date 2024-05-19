@@ -91,6 +91,9 @@ header{
 .thirdLevel .headCategory:hover{
   text-decoration: underline;
 }
+.thirdLevel a{
+  font-size: 15px;
+}
 #header .fourthLevel{
   width: auto;
   max-width: 1280px;
@@ -104,13 +107,14 @@ header{
   gap:25px;
 }
 .fourthLevel .textPart p{
-  color: #00538a;
-  font-size: 15px;
-  font-weight: bolder;
+  color: #005e9d;
+  font-size: 13px;
+  font-weight: 800;
 }
 .fourthLevel .headLinks{
   font-weight: lighter;
   font-size: 14px;
+  color: #5c5a5e;
 }
 .menuGroup {
   padding-right: 2%;
