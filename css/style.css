@@ -11,6 +11,7 @@ body{
   line-height: 19px;
   overflow-x: scroll;
 }
+
 button:hover{
   cursor: pointer;
 }
@@ -22,17 +23,21 @@ a{
   transition: background-color 0.15s ease-in-out,
   color 0.15s ease-in-out;
 }
+
 a:hover{
   color: #005d9b;
   cursor: pointer;
 }
+
 img{
   width: 100%;
   height: 100%;
 }
+
 div{
   display: flex;
 }
+
 button{
   background-color: inherit;
   border: none;
@@ -50,12 +55,12 @@ header{
   flex-direction: column;
   border-bottom: 1px solid #9d9a98 ;
   background-color: #fafafa;
-  justify-content: flex-start;
   align-content: center;
   width: auto;
   height:65px;
   z-index: 200;
 }
+
 #header .firstLevel{
   display: flex;
   height: 65px;
