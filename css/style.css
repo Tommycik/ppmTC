@@ -561,7 +561,7 @@ section{
 .articleBody{
   margin-top: 0;
   font-size: 16px;
-  color: #555454;
+  color: #1f1e1e;
   font-weight: lighter;
   font-family: "Times New Roman", Serif;
 }
@@ -633,6 +633,9 @@ section{
   font-size: 14px;
   margin: 5px 0 0 0;
   display: inline;
+}
+.related .timeAgo{
+  font-size: 11px;
 }
 .subArticles{
   width: 100%;
