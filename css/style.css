@@ -46,7 +46,7 @@ button{
   color 0.3s ease-in-out;
 }
 
-/*header*/
+/*header levels*/
 header{
   display: flex;
   position: sticky;
@@ -131,6 +131,7 @@ header{
   color: #5c5a5e;
 }
 
+/*header components*/
 .menuGroup {
   padding-right: 2%;
 }
@@ -155,12 +156,14 @@ header{
   width: fit-content;
   font-size: 17px;
   background-color: inherit;
-  color: #616161;
+  color: #1a1a1a;
   font-weight: bolder;
 }
+
 .neutral{
   width: fit-content;
 }
+
 .home{
   border:none;
   width: 52vw;
@@ -171,7 +174,7 @@ header{
   background-color: #fafafa;
 }
 
-.headButton{
+.headLog{
   display: none;
   justify-content: center;
   align-items: center;
@@ -183,11 +186,75 @@ header{
   font-size: 17px ;
   border-radius: 5px;
 }
-.headButton:hover{
+
+.headLog:hover{
   text-decoration: underline;
   color: white;
   background-color: steelblue;
 }
+
+.secondLevel .weatherAndDate{
+  display: none;
+  position: fixed;
+  left: 0;
+  margin-left:3%;
+  padding: 15px 0;
+}
+
+.weatherAndDate{
+  padding: 0 5px 15px 5px;
+}
+
+.weather{
+  align-self: center;
+  width: 60px;
+  height: 27px;
+}
+
+.weather a{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.weather a:hover{
+  color: black;
+}
+
+.temperature{
+  width: 34px;
+  height: 100%;
+}
+
+.weatherIcon{
+  width: 26px;
+  height: 26px;
+}
+
+.todayDate{
+  margin-left: 15px;
+  flex-direction: column;
+}
+
+.dateShow{
+  font-weight: bold;
+  font-size: 16px;
+  margin:0;
+}
+
+.todayDate a{
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #7f817f;
+}
+
+.todayDate a:hover{
+  color: #7f817f;
+  text-decoration: underline;
+}
+
+/*Menu */
 .overlay{
   background-color: rgba(0, 0, 0, 0.5);
   height:calc(100vh - 65px);
@@ -198,6 +265,14 @@ header{
   z-index:10000;
 }
 
+#accountMenu{
+  justify-content: flex-end;
+}
+#searchMenu{
+  flex-direction: column;
+}
+
+/*Menu components*/
 .clickableBackground{
   width: calc(100vw - 300px);
   position: relative;
@@ -207,64 +282,6 @@ header{
   min-height: 100%;
 }
 
-.weatherAndDate{
-  padding: 0 5px 15px 5px;
-}
-
-.weather a:hover{
-  color: black;
-}
-
-.secondLevel .weatherAndDate{
-  display: none;
-  position: fixed;
-  left: 0;
-  margin-left:3%;
-  padding: 15px 0;
-}
-.weather{
-  align-self: center;
-  width: 60px;
-  height: 27px;
-}
-.weather a{
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-.temperature{
-  width: 34px;
-  height: 100%;
-}
-.weatherIcon{
-  width: 26px;
-  height: 26px;
-}
-.todayDate{
-  margin-left: 15px;
-  flex-direction: column;
-}
-.dateShow{
-  font-weight: bold;
-  font-size: 16px;
-  margin:0;
-}
-.todayDate a{
-  font-weight: normal;
-  font-size: 12px;
-  margin-top: 10px;
-  color: #7f817f;
-}
-.todayDate a:hover{
-  color: #7f817f;
-  text-decoration: underline;
-}
-#accountMenu{
-  justify-content: flex-end;
-}
-#searchMenu{
-  flex-direction: column;
-}
 #searchMenu .clickableBackground{
   min-height: calc( 100% - 67px);
   width: 100%;
@@ -2119,7 +2136,7 @@ footer{
   #menuA,#menuB{
     display: none;
   }
-  .headButton{
+  .headLog{
     display: flex;
   }
   #allSections{
