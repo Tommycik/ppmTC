@@ -1033,6 +1033,7 @@ section{
 }
 
 .centeredGeometry{
+  position: relative;
   justify-content: center;
   border-top: #DDD8D5 solid 1px;
   margin-top: 10px;
@@ -1043,13 +1044,13 @@ section{
   width: 0;
   height: 0;
   line-height: 0;
-  border-top: 25px solid #E5E4E2;
+  border-top: 24px solid #E5E4E2;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
 }
 .centeredGeometry .triangle:nth-child(2){
-  position: relative;
-  right: 50px;
+  position: absolute;
+  right: calc(50% - 24px);
   bottom:1px;
   z-index: 20;
   border-top: 24px solid #fafafa;
