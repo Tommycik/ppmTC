@@ -1423,7 +1423,7 @@ footer{
   width: 100%;
   color: #504e4e;
   margin: 12px 0;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 17px;
 }
 .endLink:hover{
