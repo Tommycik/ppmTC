@@ -184,7 +184,7 @@ header{
 .clickableBackground{
   width: calc(100vw - 300px);
   position: relative;
-  left:0px;
+  left:0;
   background-color: transparent;
   color:transparent;
   min-height: 100%;
@@ -289,8 +289,8 @@ header{
   font-size: 15px;
   position: absolute;
   left:  calc( 100% - 75px);
-  bottom: 0px;
-  margin-right: 0px;
+  bottom: 0;
+  margin-right: 0;
   z-index: 10000;
   font-weight: bolder;
   padding: 8px 10px;
@@ -576,7 +576,7 @@ section{
   font-size: 16px;
   color: #5c5a5e;
   font-weight: lighter;
-  font-family: "Times New Roman", Serif;
+  font-family: "Times New Roman", serif;
 }
 #mainTitle{
   height: auto;
@@ -821,7 +821,7 @@ section{
   width: 172px;
 }
 .forYou{
-  font-family: "Times New Roman", Serif;
+  font-family: "Times New Roman", serif;
   margin-bottom: 30px;
   padding-bottom: 5px;
   color: #005d9c;
@@ -1857,7 +1857,7 @@ footer{
     margin-top: 50px;
   }
   #promoFull a{
-    margin-top: 0px;
+    margin-top: 0;
   }
   .endLinks{
     flex-direction: column;
