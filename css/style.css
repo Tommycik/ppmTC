@@ -1425,13 +1425,13 @@ footer{
 .endLink{
   max-width: 1250px;
   width: 100%;
-  color: #504e4e;
+  color: #5c5a5e;
   margin: 12px 0;
   font-weight: normal;
   font-size: 17px;
 }
 .endLink:hover{
-  color: #686665;
+  color: #5c5a5e;
 }
 .lateral .enderPart{
   flex-direction: column;
@@ -1935,9 +1935,9 @@ footer{
     margin-bottom:100px;
     column-gap: 10px;
   }
-  .endPage a{
+  .endLink{
     width: fit-content;
-    font-size: 13px;
+    font-size: 14px;
   }
   .half{
     width: 27%;
@@ -2176,6 +2176,9 @@ footer{
   }
   .photo\&video .category{
     width: 75%;
+  }
+  .photo\&video #promoFull{
+    width: 23%;
   }
   #section > .category{
     width: 75%;
