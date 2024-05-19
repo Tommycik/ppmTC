@@ -1312,7 +1312,7 @@ footer{
   flex-direction: column;
   border-top: black solid 2px;
   width: 100%;
-  padding: 15px 0 15px 0;
+  padding: 15px 0 10px 0;
   height:fit-content;
 }
 .headHid{
@@ -1409,7 +1409,6 @@ footer{
   margin-top: 20px;
   flex-direction: column;
   width: 100%;
-
   border-top: #d3d3d3 solid 1px;
 }
 .endPage{
@@ -1422,7 +1421,7 @@ footer{
 .endLink{
   max-width: 1250px;
   width: 100%;
-  color: #686665;
+  color: #504e4e;
   margin: 12px 0;
   font-weight: lighter;
   font-size: 17px;
