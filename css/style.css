@@ -46,7 +46,7 @@ button{
   color 0.3s ease-in-out;
 }
 
-/*header levels*/
+/*Header levels*/
 header{
   display: flex;
   position: sticky;
@@ -131,7 +131,7 @@ header{
   color: #5c5a5e;
 }
 
-/*header components*/
+/*Header components*/
 .menuGroup {
   padding-right: 2%;
 }
@@ -268,6 +268,7 @@ header{
 #accountMenu{
   justify-content: flex-end;
 }
+
 #searchMenu{
   flex-direction: column;
 }
@@ -287,22 +288,44 @@ header{
   width: 100%;
 }
 
+.lateral{
+  border: black solid 1px;
+  position: relative;
+  left:0;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 300px;
+  min-height: 100%;
+  height:fit-content ;
+}
+
+#searchMenu .lateral{
+  width: auto;
+  min-height: fit-content;
+  padding: 10px 4%;
+  border: #7d7d7d solid 2px;
+  box-shadow: black 0 0 5px;
+}
+
 .search div{
   justify-content: center;
   align-items: center;
   width: fit-content;
   margin-right: 5px;
 }
+
 .search img{
   width: 20px;
   height: 20px;
 }
+
 .search form{
   display: flex;
   padding: 5px;
   position: relative;
   width: 100%;
 }
+
 .search form input{
   border: none;
   width: 60%;
@@ -312,6 +335,7 @@ header{
   background-color: inherit;
   margin-right: auto;
 }
+
 .search form button{
   display: flex;
   justify-content: center;
@@ -330,92 +354,22 @@ header{
   padding: 8px 10px;
   border-radius: 5px;
 }
+
 .search label{
   width: 100%;
   min-width: fit-content;
   display: flex;
 }
-:focus {
+
+.search :focus {
   outline: white;
 }
+
 ::placeholder {
   color: #7d7d7d ;
   background-color: inherit;
   opacity: 1;
 }
-
-.lateral{
-  border: black solid 1px;
-  position: relative;
-  left:0;
-  flex-direction: column;
-  background-color: #fafafa;
-  width: 300px;
-  min-height: 100%;
-  height:fit-content ;
-}
-#lateralMenu .lateral{
-  left: -300px;
-  animation: slideInOut1 0.15s ease-in-out;
-}
-#lateralMenu .lateral.fullWidth{
-  left: 0;
-}
-@keyframes slideInOut1 {
-  0% {
-    left: -300px;
-  }
-  20% {
-    left: -240px;
-  }
-  40% {
-    left: -180px ;
-  }
-  60%{
-    left: -120px;
-  }
-  80%{
-    left: -60px;
-  }
-  100% {
-    left: 0;
-  }
-}
-#accountMenu .lateral{
-  left: 300px;
-  animation: slideInOut2 0.15s ease-in-out;
-}
-#accountMenu .lateral.fullWidth{
-  left: 0;
-}
-@keyframes slideInOut2{
-  0% {
-    left: 300px;
-  }
-  20% {
-    left: 240px;
-  }
-  40% {
-    left: 180px ;
-  }
-  60%{
-    left: 120px;
-  }
-  80%{
-    left: 60px;
-  }
-  100% {
-    left: 0;
-  }
-}
-#searchMenu .lateral{
-  width: auto;
-  min-height: fit-content;
-  padding: 10px 4%;
-  border: #7d7d7d solid 2px;
-  box-shadow: black 0 0 5px;
-}
-
 
 .menuBody{
   flex-direction: column;
@@ -425,6 +379,7 @@ header{
 .menuBody .homepage{
   align-content: baseline;
 }
+
 .homepage a{
   font-weight: bold;
   font-size: 20px;
@@ -435,7 +390,6 @@ header{
   width: 15px;
   height: 15px;
 }
-
 
 .signupMenu{
   width: auto;
@@ -448,19 +402,21 @@ header{
   height: fit-content;
   margin-bottom: 20px;
 }
+
 #accountMenu .signupMenu{
   margin-top:auto;
 }
+
 #accountMenu .lateral{
   padding-bottom: 10vh;
 }
+
 .signupMenu p{
   width: auto;
   display: flex;
   justify-content: center;
   font-size: 15px;
   font-weight: bolder;
-
 }
 
 .signupMenu a{
@@ -475,10 +431,12 @@ header{
   height: 40px;
   border-radius: 5px;
 }
+
 .signupMenu a:hover{
   background-color: steelblue;
   text-decoration: underline;
 }
+
 .subscribeButtonMenu{
   margin-top: 25px;
   margin-bottom: 15px;
@@ -486,6 +444,7 @@ header{
   height: 40px;
   justify-content: center;
 }
+
 .subscribeButtonMenu a{
   font-size: 16px;
   color: white;
@@ -499,13 +458,89 @@ header{
   background-color: #005d9c;
 }
 
-
 .subscribeButtonMenu a:hover{
   text-decoration: underline;
   background-color: steelblue;
   border-color: #005d9c;
+}
+
+/*Menu animations*/
+#lateralMenu .lateral{
+  left: -300px;
+  animation: slideInOut1 0.15s ease-in-out;
+}
+
+#lateralMenu .lateral.fullWidth{
+  left: 0;
+}
+
+@keyframes slideInOut1 {
+
+  0% {
+    left: -300px;
+  }
+
+  20% {
+    left: -240px;
+  }
+
+  40% {
+    left: -180px ;
+  }
+
+  60%{
+    left: -120px;
+  }
+
+  80%{
+    left: -60px;
+  }
+
+  100% {
+    left: 0;
+  }
 
 }
+
+#accountMenu .lateral{
+  left: 300px;
+  animation: slideInOut2 0.15s ease-in-out;
+}
+
+#accountMenu .lateral.fullWidth{
+  left: 0;
+}
+
+@keyframes slideInOut2{
+
+  0% {
+    left: 300px;
+  }
+
+  20% {
+    left: 240px;
+  }
+
+  40% {
+    left: 180px ;
+  }
+
+  60%{
+    left: 120px;
+  }
+
+  80%{
+    left: 60px;
+  }
+
+  100% {
+    left: 0;
+  }
+
+}
+
+/*section*/
+
 section{
   flex-direction: column;
   width: auto;
