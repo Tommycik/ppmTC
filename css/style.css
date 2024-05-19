@@ -731,7 +731,7 @@ section{
   display: inline-block;
   width: 273px;
 }
-#firstHeadline{
+.frontPage .headlines .headline:nth-child(2){
   border: none;
 }
 .headline a{
@@ -1812,6 +1812,9 @@ footer{
   #lastAd{
     display: none;
   }
+  .frontPage + .recommended{
+    width: 60%;
+  }
   .photo\&video{
     gap: 20px;
   }
@@ -1859,6 +1862,9 @@ footer{
 
   .categories .category{
     max-width: 48%;
+  }
+  .categories .category .categoryRelated .relatedNews:nth-child(1){
+    border-top: none;
   }
   .category + .recommended{
     width: 100%;
@@ -2022,6 +2028,9 @@ footer{
   .photo\&video .category{
     width: 68%;
   }
+  .frontPage + .recommended{
+    width: 68%;
+  }
   #section > .category{
     width: 68%;
   }
@@ -2175,6 +2184,9 @@ footer{
     width: 55%;
   }
   .photo\&video .category{
+    width: 75%;
+  }
+  .frontPage + .recommended{
     width: 75%;
   }
   .photo\&video #promoFull{
