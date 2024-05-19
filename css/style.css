@@ -561,7 +561,7 @@ section{
 .articleBody{
   margin-top: 0;
   font-size: 16px;
-  color: #737272 ;
+  color: #555454;
   font-weight: lighter;
   font-family: "Times New Roman", Serif;
 }
@@ -569,8 +569,10 @@ section{
   height: auto;
   width: 100%;
   margin: 0;
+  font-size: 18px;
   padding: 0;
   line-height: 29px;
+  word-spacing: -4px;
 }
 #mainTitle h1{
   margin-top: 0;
@@ -628,7 +630,7 @@ section{
 }
 .timeAgo{
   color: #6a6a73;
-  font-size: 12px;
+  font-size: 14px;
   margin: 5px 0 0 0;
   display: inline;
 }
@@ -658,8 +660,8 @@ section{
 .subArticleText a{
   height: 40%;
   width: 100%;
-  font-weight: 780;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 18px;
 }
 .ad{
   margin-top: 40px;
@@ -676,6 +678,7 @@ section{
   color: #dc582f;
   margin:0 0 5px 0;
   font-weight: normal;
+  padding-bottom: 10px;
   font-size: 22px;
 }
 
@@ -693,12 +696,12 @@ section{
   aspect-ratio: 1;
 }
 .seeAll{
-  color: #808080;
-  font-size: 13px;
-  font-weight: normal;
+  color: #919191;
+  font-size: 14px;
+  font-weight: 500;
 }
 .seeAll:hover{
-  color: #808080;
+  color: #919191;
 }
 .headlines{
   flex-direction: column;
@@ -710,13 +713,14 @@ section{
   color: #5d5b5a;
   font-size: 20px;
   font-weight: normal;
+  margin-bottom: 5px;
   padding-bottom: 10px;
   border-bottom: #005d9c solid 2px;
   font-family: "Times New Roman", serif;
 }
 .headline{
   border-top: #ddd8d5 solid 1px;
-  padding: 20px 0;
+  padding: 15px 0;
   display: inline-block;
   width: 273px;
 }
@@ -771,8 +775,8 @@ section{
   margin-bottom: 5px;
   white-space: nowrap;
   margin-top: 0;
-  padding: 0 5px;
-  background-color: #005e9d;
+  padding: 2px 5px;
+  background-color: #00538a;
   color: white;
   font-size: 12px;
   width: fit-content;
@@ -1612,8 +1616,6 @@ footer{
   .subArticleText a{
     height: 40%;
     width: 100%;
-    font-weight: 780;
-    font-size: 20px;
   }
   body{
     overflow-x: hidden;
