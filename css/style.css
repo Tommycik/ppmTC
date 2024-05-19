@@ -2367,7 +2367,7 @@ footer{
     width: 70%;
   }
 
-  .category + .recommended{
+  .category + .recommended,.subArticleText a,.variant .categoryRelated .relatedNews,.photo\&video .othersSub{
     width: 100%;
   }
 
@@ -2393,10 +2393,6 @@ footer{
     width: 57%;
   }
 
-  .subArticleText a{
-    width: 100%;
-  }
-
   .paper{
     width: 29%;
   }
@@ -2417,7 +2413,6 @@ footer{
     width: 50%;
     margin-right: 0;
     flex-direction: row;
-
   }
 
   .photo\&video .category{
@@ -2460,10 +2455,6 @@ footer{
     width: 35%;
   }
 
-  .variant .categoryRelated .relatedNews{
-    width: 100%;
-  }
-
   .variant .categoryImg{
     width: 60%;
     margin-right: 5%;
@@ -2485,15 +2476,16 @@ footer{
     gap:0;
   }
 
-  .photo\&video .othersSub{
-    width: 100%;
-  }
-
-  #menuA,#menuB{
+  #menuA,#menuB,.weatherAndDate{
     display: none;
   }
 
-  .headLog{
+  .headLog,.secondLevel .weatherAndDate{
+    display: flex;
+  }
+
+
+  #header .secondLevel,#header .thirdLevel,#header .fourthLevel{
     display: flex;
   }
 
@@ -2525,18 +2517,6 @@ footer{
     border-bottom: black solid 1px;
   }
 
-  #header .secondLevel,#header .thirdLevel,#header .fourthLevel{
-    display: flex;
-  }
-
-  .weatherAndDate{
-    display: none;
-  }
-
-  .secondLevel .weatherAndDate{
-    display: flex;
-  }
-
   .upComing{
     width: 70%;
     margin-bottom: 290px;
@@ -2565,17 +2545,13 @@ footer{
     margin-right: 0;
   }
 
-  .options .half:nth-child(2) .enderPart{
+  .options .half:nth-child(2) .enderPart,.linksContainer .enderPart{
     width: 100%;
   }
 
   .linksContainer{
     width: 45%;
     margin-right: 30px;
-  }
-
-  .linksContainer .enderPart{
-    width: 100%;
   }
 
   .half .subscribeButton{
@@ -2628,19 +2604,11 @@ footer{
     width: 55%;
   }
 
-  .photo\&video .category{
-    width: 75%;
-  }
-
-  .frontPage + .recommended{
-    width: 75%;
-  }
-
   .photo\&video #promoFull{
     width: 23%;
   }
 
-  #section > .category{
+  #section > .category,.frontPage + .recommended,.photo\&video .category{
     width: 75%;
   }
 
@@ -2648,12 +2616,7 @@ footer{
     gap:15px;
   }
 
-  #header .fourthLevel{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #section{
+  #header .fourthLevel,#section{
     margin-left: auto;
     margin-right: auto;
   }
@@ -2681,11 +2644,7 @@ footer{
     flex-wrap: nowrap;
   }
 
-  .half .enderPart{
-    width: 100%;
-  }
-
-  .options .half:nth-child(2) .linksContainer .enderPart{
+  .options .half:nth-child(2) .linksContainer .enderPart,.half .enderPart{
     width: 100%;
   }
 
@@ -2712,19 +2671,19 @@ footer{
 
 @media only screen and (min-width: 1550px){
 
-  .endLinks{
-    padding-left: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 80px;
-  }
-
   #footer .homeEnd{
     padding-left: 0;
   }
 
   #footer .homeEnd a{
     width: 280px;
+  }
+
+  .endLinks{
+    padding-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 80px;
   }
 
   .options{
