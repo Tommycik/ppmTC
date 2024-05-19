@@ -266,6 +266,7 @@ header{
 .search form{
   display: flex;
   padding: 5px;
+  position: relative;
   width: 100%;
 }
 .search form input{
@@ -281,15 +282,15 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #095f9e;
+  background-color: #005d9c;
   cursor:pointer;
   color:white ;
   border: none;
   font-size: 15px;
-  position: fixed;
-  left:calc(100vw - 90px);
-  top:77px;
-  margin-right: 20px;
+  position: absolute;
+  left:  calc( 100% - 75px);
+  bottom: 0px;
+  margin-right: 0px;
   z-index: 10000;
   font-weight: bolder;
   padding: 8px 10px;
