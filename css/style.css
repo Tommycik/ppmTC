@@ -1195,25 +1195,25 @@ li button{
   background-size: cover;
   background-position: center;
 }
-#first .dragElementHead{
+.draggable .dragElement:nth-child(1) .dragElementHead{
   background-image: url("../img/up.jpg");
 }
-#second .dragElementHead{
+.draggable .dragElement:nth-child(2) .dragElementHead{
   background-image: url("../img/up.jpg");
 }
-#third .dragElementHead{
+.draggable .dragElement:nth-child(3) .dragElementHead{
   background-image: url("../img/up.jpg");
 }
-#fourth .dragElementHead{
+.draggable .dragElement:nth-child(4) .dragElementHead{
   background-image: url("../img/up.jpg");
 }
-#fifth .dragElementHead{
+.draggable .dragElement:nth-child(5) .dragElementHead{
   background-image: url("../img/up.jpg");
 }
-#sixth .dragElementHead{
+.draggable .dragElement:nth-child(6) .dragElementHead{
   background-image: url("../img/up.jpg");
 }
-#seventh .dragElementHead{
+.draggable .dragElement:nth-child(7) .dragElementHead{
   background-image: url("../img/up.jpg");
 }
 .dragElementDescription{
@@ -1233,7 +1233,7 @@ li button{
   font-weight: lighter;
   font-size: 12px;
 }
-#first .dragElementDescription{
+.draggable .dragElement:nth-child(1) .dragElementDescription{
   background-color: #005e9d;
   color: white;
 }
@@ -1890,7 +1890,7 @@ footer{
   .variant .categoryImg a{
     width: 100%;
   }
-  .variant .first,.variant .categoryRelated .relatedNews{
+  .variant .categoryRelated .relatedNews{
     width: 48%;
     border-top: none;
     border-bottom: #ddd8d5 solid 1px;
