@@ -539,7 +539,7 @@ header{
 
 }
 
-/*section*/
+/*section and components*/
 
 section{
   flex-direction: column;
@@ -548,8 +548,9 @@ section{
   margin: 5px;
   padding: 5px;
   display: flex;
-
 }
+
+/*Breaking news*/
 #breakingNews{
   width: calc(100% - 20px);
   background-color: #eeff41;
@@ -560,11 +561,13 @@ section{
   margin-bottom: 36px;
   position: relative;
 }
+
 .content{
   height: fit-content;
   width: 100%;
   display: inline;
 }
+
 #breakingNews h2{
   white-space: nowrap;
   position: static;
@@ -575,10 +578,12 @@ section{
   display: inline;
   height: fit-content;
 }
+
 .breakingText{
   display: inline;
   width: fit-content;
 }
+
 #breakingNews a,#breakingNews p{
   font-weight: lighter;
   height: fit-content;
@@ -587,17 +592,21 @@ section{
   width: auto;
   margin: 0;
 }
+
 #breakingNews a{
   margin-right: 20px ;
   display: inline;
 }
+
 #breakingNews p{
   display: inline-block;
 }
+
 #breakingNews a:hover{
   color: black;
   text-decoration: underline;
 }
+
 #breakingNews button{
   padding: 0;
   width: 30px;
@@ -609,37 +618,41 @@ section{
   top: calc(50% - 15px);
   background-color: transparent;
 }
+
+/*Main content*/
 .frontPage{
-  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   height: fit-content;
 }
+
 .front{
   flex-direction: column;
   width: 273px;
   height: fit-content;
 }
+
 .articles{
   width: 100%;
-  flex-direction: row;
   flex-wrap: wrap;
-
 }
+
 .main{
-  flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 15px;
   border-bottom: #ddd8d5 solid 1px;
 }
+
 .articleTitle{
   width: 100%;
   flex-direction: column;
 }
+
 .articleTitle h1{
   font-weight: 800;
   font-family:Helvetica, sans-serif;
 }
+
 .articleBody{
   margin-top: 0;
   font-size: 16px;
@@ -647,6 +660,7 @@ section{
   font-weight: lighter;
   font-family: "Times New Roman", serif;
 }
+
 #mainTitle{
   height: auto;
   width: 100%;
@@ -656,44 +670,53 @@ section{
   line-height: 29px;
   word-spacing: -4px;
 }
+
 #mainTitle h1{
   margin-top: 0;
 }
+
+/*Image Wrapper*/
 .imageWrapper{
   display: block;
   width: 100%;
   height: fit-content;
 }
+
 .imageWrapper a{
   display: block;
   width: 100%;
   height: auto;
   overflow-y: hidden;
   aspect-ratio:5.34/3 ;
-
 }
+
 .imageWrapper a img{
   height: auto;
   margin-bottom: auto;
 }
+
+/*Related to the main article*/
 .relatedTitle{
   font-size: 12px;
   margin-top: 0;
   margin-bottom: 0;
   color: #5c5a5e;
 }
+
 .related{
   margin: 0;
   padding: 5px 5px 0 5px;
   list-style: none;
   border-top: #aaa7a4 solid 1px;
 }
+
 .related a{
   font-size: 13px;
   margin-left: 0;
   padding-left: 0;
   display: inline;
 }
+
 .related li{
   padding: 5px 0;
   margin-bottom: 5px;
@@ -701,24 +724,30 @@ section{
   align-items: center;
   gap: 10px;
 }
+
 .related li:before{
   content:"•";
   font-size:13px;
   vertical-align:middle;
   line-height:20px;
 }
+
 .related li div{
   display: inline-block;
 }
+
 .timeAgo{
   color: #6a6a73;
   font-size: 14px;
   margin: 5px 0 0 0;
   display: inline;
 }
+
 .related .timeAgo{
   font-size: 11px;
 }
+
+/*Lesser articles*/
 .subArticles{
   width: 100%;
   height: fit-content;
