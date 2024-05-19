@@ -1039,14 +1039,22 @@ section{
   border-collapse: collapse;
 
 }
-#triangolo {
+.centeredGeometry .triangle {
   width: 0;
   height: 0;
   line-height: 0;
-
   border-top: 25px solid #E5E4E2;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
+}
+.centeredGeometry .triangle:nth-child(2){
+  position: relative;
+  right: 50px;
+  bottom:1px;
+  z-index: 20;
+  border-top: 24px solid #fafafa;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
 }
 .showMore{
   background-color: #fafafa;
