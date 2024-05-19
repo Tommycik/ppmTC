@@ -997,6 +997,9 @@ section{
 .photo\&video .othersSub:nth-last-child(1){
   border: none;
 }
+.variant .relatedNews:nth-last-child(1){
+  padding-bottom:0;
+}
 .othersSub .imageWrapper{
   flex: 0 0 90px;
   margin-right: 15px;
