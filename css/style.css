@@ -286,11 +286,19 @@ header{
   color:white ;
   border: none;
   font-size: 15px;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  left:calc(100vw - 90px);
+  top:77px;
+  margin-right: 20px;
+  z-index: 10000;
   font-weight: bolder;
   padding: 8px 10px;
   border-radius: 5px;
+}
+.search label{
+  width: 100%;
+  min-width: fit-content;
+  display: flex;
 }
 :focus {
   outline: white;
