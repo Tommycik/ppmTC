@@ -2120,32 +2120,41 @@ footer{
     flex-direction: column;
     width: 46%;
   }
+
   .front{
     width: 40%;
   }
+
   .paper,.headlines{
     width: 28%;
     margin-top: 0;
   }
+
   .newsHead{
     margin-top: 0;
   }
+
   .paper{
     margin-left: 0;
   }
+
   .paper a{
     margin: 0;
     width: 100%;
   }
+
   .articleTitle,.main .imageWrapper{
     width: 100%;
   }
+
   .front .ad .images a:nth-last-child(1){
     display: none;
   }
+
   .frontPage + .recommended{
     width: 60%;
   }
+
   .photo\&video{
     gap: 20px;
   }
@@ -2153,40 +2162,51 @@ footer{
   .photo\&video .category,.category{
     width: 60%;
   }
+
   .photo\&video .categoryText .articleBody{
     display: flex;
   }
+
   .hiddenArticles .hiddenArticle{
     width: 30%;
   }
+
   .photo\&video .hiddenArticle .categoryText {
     margin-top: 15px;
   }
+
   .photo\&video #promoFull{
     width:37%;
     margin-top: 50px;
   }
+
   #promoFull a{
     margin-top: 0;
   }
+
   .endLinks{
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
   }
+
   .categories{
     margin-top:160px;
   }
+
   .half{
     width: 30%;
     margin-right: 150px;
   }
+
   .homeEnd a{
     width: 27vw;
   }
+
   #footer .homeEnd{
     padding-left: 2vw;
   }
+
   .half .enderPart{
     width: 100%;
   }
@@ -2194,70 +2214,89 @@ footer{
   .categories .category{
     max-width: 48%;
   }
+
   .categories .category .categoryRelated .relatedNews:nth-child(1){
     border-top: none;
   }
+
   .category + .recommended{
     width: 100%;
   }
+
   .variant .categoryImg{
     flex-direction: row;
     flex-wrap: nowrap;
   }
+
   .categoryText{
     flex-direction: column;
     flex-wrap: nowrap;
     width: 100%;
   }
+
   .variant.categoryText{
     width: 50%;
   }
+
   .variant .categoryImg .categoryText{
     border-bottom: #ddd8d5 solid 1px;
   }
+
   .photo\&video .variant .categoryImg .categoryText{
     border-bottom: none;
   }
+
   .variant .categoryImg a{
     width: 100%;
   }
+
   .variant .categoryRelated .relatedNews{
     width: 48%;
     border-top: none;
     border-bottom: #ddd8d5 solid 1px;
   }
+
   .variant{
     border-bottom: none;
   }
+
   .variant .categoryRelated{
     flex-direction: column;
     align-content: flex-end;
     margin-bottom: 20px;
   }
+
   .photo\&video .categoryRelated{
     flex-direction: row;
     align-content: center;
     margin-bottom: 0;
   }
+
   .photo\&video .othersSub{
     width: 45%;
   }
+
   .variant .categoryImg{
     gap:20px;
   }
+
   .photo\&video .categoryImg{
     flex-direction: column;
     gap:0
   }
+
   #section > .category{
     width: 60%;
   }
+
   #section > .category .categoryImg .categoryText{
     margin-top: 15px;
   }
+
   .upComing{
     width: 60%;
   }
+
   .upHead span{
     margin-right: 0;
   }
@@ -2265,6 +2304,7 @@ footer{
   .upSub{
     display: inline-block;
   }
+
   .endPage{
     flex-direction: row;
     padding-top: 15px;
@@ -2272,80 +2312,103 @@ footer{
     margin-bottom:100px;
     column-gap: 10px;
   }
+
   .endLink{
     width: fit-content;
     font-size: 14px;
   }
+
   .half{
     width: 27%;
   }
+
   .options{
     justify-content: space-between;
     margin-left: 0;
   }
 
 }
+
 @media only screen and (min-width: 940px) {
 
   .upComing{
     width: 65%;
   }
+
   .front .ad .images a:nth-last-child(1){
     display: block;
   }
 
 }
+
 @media only screen and (min-width: 1000px){
+
   #header{
     margin-bottom: 280px;
   }
+
   .photo\&video{
     margin-top: 250px;
   }
+
   .ad{
     margin-bottom: 200px;
   }
+
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1040px){
+
   .headlines{
     margin-right: 20px;
   }
+
   .recommended{
     width: 70%;
   }
+
   .category + .recommended{
     width: 100%;
   }
+
   #homeEnd a{
     width: 18vw;
   }
+
   .subArticles{
     margin-bottom: 20px;
   }
+
   .subArticle{
     flex-direction: row;
     border: none;
     width: 100%;
   }
+
   .subArticle .subArticleText{
     width: 43%;
   }
+
   .subArticle .imageWrapper{
     width: 57%;
   }
+
   .subArticleText a{
     width: 100%;
   }
+
   .paper{
     width: 29%;
   }
+
   .headlines{
     width: 18%;
   }
+
   .front{
     width: 48%;
   }
+
   .ad{
     margin-bottom: 250px;
   }
@@ -2356,69 +2419,89 @@ footer{
     flex-direction: row;
 
   }
+
   .photo\&video .category{
     width: 68%;
   }
+
   .variant .relatedNews:nth-last-child(1){
     border-bottom: none;
   }
+
   .frontPage + .recommended{
     width: 68%;
   }
+
   #section > .category{
     width: 68%;
   }
+
   .categories .category{
     width: 24%;
   }
+
   .categories{
     margin-top:280px;
   }
+
   .photo\&video #promoFull{
     width: 29.5%;
   }
+
   .hiddenArticles .hiddenArticle{
     width: 22.5%;
   }
+
   .linksContainer{
     flex-direction: column;
   }
+
   .variant .categoryRelated {
     width: 35%;
   }
+
   .variant .categoryRelated .relatedNews{
     width: 100%;
   }
+
   .variant .categoryImg{
     width: 60%;
     margin-right: 5%;
     gap:10px;
   }
+
   .variant .categoryImg .categoryText{
     border-bottom: none;
   }
+
   .photo\&video .categoryRelated {
     width: 45%;
     flex-direction: column;
   }
+
   .photo\&video .categoryImg{
     width: 50%;
     margin-right: 20px;
     gap:0;
   }
+
   .photo\&video .othersSub{
     width: 100%;
   }
+
   #menuA,#menuB{
     display: none;
   }
+
   .headLog{
     display: flex;
   }
+
   #allSections{
     display:block;
     background-color: #fafafa;
   }
+
   #header{
     height: 300px;
     margin-bottom: 220px;
@@ -2427,33 +2510,42 @@ footer{
     padding: 0;
     margin-top: 0;
   }
+
   #header .firstLevel{
     height: 65px;
     padding-top: 0;
     margin-top: 0;
   }
+
   #header .firstLevel .home{
     visibility: hidden;
   }
+
   #header .thirdLevel{
     border-bottom: black solid 1px;
   }
+
   #header .secondLevel,#header .thirdLevel,#header .fourthLevel{
     display: flex;
   }
+
   .weatherAndDate{
     display: none;
   }
+
   .secondLevel .weatherAndDate{
     display: flex;
   }
+
   .upComing{
     width: 70%;
     margin-bottom: 290px;
   }
+
   .endPage{
     margin-bottom:15px;
   }
+
   .half{
     gap: 8%;
     width: 48%;
@@ -2463,100 +2555,128 @@ footer{
     gap:1%;
     justify-content: flex-start;
   }
+
   .half .enderPart{
     margin-right: 0;
     width: 43%;
   }
+
   .options .half:nth-child(2) .linksContainer{
     margin-right: 0;
   }
+
   .options .half:nth-child(2) .enderPart{
     width: 100%;
   }
+
   .linksContainer{
     width: 45%;
     margin-right: 30px;
   }
+
   .linksContainer .enderPart{
     width: 100%;
   }
+
   .half .subscribeButton{
     width: 45%;
   }
+
   .homeEnd a{
     width: 19vw;
   }
+
 }
-@media only screen and (min-width: 1130px) {
+
+@media only screen and (min-width: 1130px){
+
   .upComing{
     width: 75%;
   }
+
 }
-@media only screen and (min-width: 1280px) {
+
+@media only screen and (min-width: 1280px){
 
   .front{
     width: 57%;
     margin-right: 15px;
   }
+
   .main{
      gap: 30px;
   }
+
   .paper{
     width: 20%;
   }
+
   .subArticle{
     width: 48%;
     flex-direction: column;
   }
+
   .subArticle a,.subArticle .subArticleText,.subArticle .imageWrapper{
     width: 100%;
   }
+
   .articleTitle{
     width: 40%;
   }
+
   .main .imageWrapper{
     width: 55%;
   }
+
   .photo\&video .category{
     width: 75%;
   }
+
   .frontPage + .recommended{
     width: 75%;
   }
+
   .photo\&video #promoFull{
     width: 23%;
   }
+
   #section > .category{
     width: 75%;
   }
+
   #header .thirdLevel{
     gap:15px;
   }
+
   #header .fourthLevel{
     margin-left: auto;
     margin-right: auto;
-
   }
+
   #section{
     margin-left: auto;
     margin-right: auto;
   }
 
-
 }
-@media only screen and (min-width: 1310px) {
+
+@media only screen and (min-width: 1310px){
+
   .upComing{
     width: 78%;
   }
-}@media only screen and (min-width: 1360px) {
+
+}@media only screen and (min-width: 1360px){
+
   .endPage{
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
+@media only screen and (min-width: 1431px){
 
-@media only screen and (min-width: 1431px) {
   .options{
     flex-wrap: nowrap;
   }
@@ -2568,37 +2688,45 @@ footer{
   .options .half:nth-child(2) .linksContainer .enderPart{
     width: 100%;
   }
+
   .half{
     margin-right: 145px;
     width: 20%;
   }
+
   .options .half:nth-child(2){
     width: 67%;
     margin-right: 0;
     gap:145px;
   }
+
   .options .half:nth-child(2) .linksContainer{
     width: 30%;
   }
+
   .options .half:nth-child(2) .subscribeButton{
     width: 30%;
-
   }
+
 }
 
-@media only screen and (min-width: 1550px) {
+@media only screen and (min-width: 1550px){
+
   .endLinks{
     padding-left: 40px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 80px;
   }
+
   #footer .homeEnd{
     padding-left: 0;
   }
+
   #footer .homeEnd a{
     width: 280px;
   }
+
   .options{
     padding-left: 0;
   }
