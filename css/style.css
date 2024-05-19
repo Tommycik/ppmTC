@@ -403,7 +403,9 @@ header{
 }
 #accountMenu .signupMenu{
   margin-top:auto;
-  margin-bottom: 10vh;
+}
+#accountMenu .lateral{
+  padding-bottom: 10vh;
 }
 .signupMenu p{
   width: auto;
