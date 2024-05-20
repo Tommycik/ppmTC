@@ -50,6 +50,7 @@ button{
 header{
   display: flex;
   position: sticky;
+  /*todo*/
   -webkit-position: sticky;
   top:0;
   left:0;
@@ -1906,7 +1907,7 @@ footer{
     overflow-x: hidden;
   }
 
-  paper{
+  .paper{
     margin-top: 50px;
   }
 
