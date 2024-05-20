@@ -445,5 +445,6 @@ function slider(left){
   let container = document.getElementsByClassName("draggable")[0];
   container.style.left = change;
 
-  //container.innerHTML= container.innerHTML;
+  container.innerHTML= container.innerHTML;
+
 }
