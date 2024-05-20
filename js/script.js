@@ -323,7 +323,7 @@ function scrollFunction() {
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
 
-  } else {
+  } else if(window.scrollY <= 20){
 
     document.getElementsByClassName("firstLevel")[0].style.height = "65px";
     document.getElementsByClassName("secondLevel")[0].style.display = "flex";
