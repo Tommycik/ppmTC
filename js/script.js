@@ -274,9 +274,9 @@ function activeWindow() {
 
   headerManager();
 
-  if (window.scrollY > 0) {
+  if (window.scrollY > 65) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
-  } else if (window.scrollY <= 10) {
+  } else {
     document.getElementById("header").style.boxShadow = "none";
   }
 
@@ -310,7 +310,7 @@ function activeWindow() {
 //Responsive to scrolling
 function scrollFunction() {
 
-  if (window.scrollY > 30) {
+  if (window.scrollY > 65) {
 
     document.getElementsByClassName("secondLevel")[0].style.display = "none";
     document.getElementsByClassName("thirdLevel")[0].style.display = "none";
@@ -322,7 +322,7 @@ function scrollFunction() {
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
 
-  } else if (window.scrollY === 0) {
+  } else {
 
     document.getElementsByClassName("firstLevel")[0].style.height = "65px";
     document.getElementsByClassName("secondLevel")[0].style.display = "flex";
