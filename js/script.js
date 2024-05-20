@@ -274,7 +274,7 @@ function activeWindow() {
 
   headerManager();
 
-  if (window.scrollY > 65) {
+  if (window.scrollY > 0) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
   } else {
     document.getElementById("header").style.boxShadow = "none";
@@ -310,7 +310,7 @@ function activeWindow() {
 //Responsive to scrolling
 function scrollFunction() {
 
-  if (window.scrollY > 65) {
+  if (window.scrollY > 0) {
 
     document.getElementsByClassName("secondLevel")[0].style.display = "none";
     document.getElementsByClassName("thirdLevel")[0].style.display = "none";
