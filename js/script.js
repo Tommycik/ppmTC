@@ -285,7 +285,6 @@ function activeWindow() {
   }
 
   if (window.innerWidth >= 1040) {
-    document.getElementById("section").style.marginTop = "0px";
 
     scrollFunction();
 
@@ -302,7 +301,6 @@ function activeWindow() {
     document.getElementById("header").style.height = "65px";
     document.getElementById("header").style.borderBottom = "1px solid #9d9a98";
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
-    document.getElementById("section").style.marginTop = "0px";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
 
   }
@@ -319,7 +317,6 @@ function scrollFunction() {
     document.getElementsByClassName("fourthLevel")[0].style.display = "none";
     document.getElementsByClassName("home")[0].style.visibility = "visible";
     document.getElementById("header").style.height = "65px";
-    document.getElementById("section").style.marginTop = "235px";
     document.getElementById("header").style.borderBottom = "1px solid #9d9a98";
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
@@ -332,7 +329,6 @@ function scrollFunction() {
     document.getElementsByClassName("fourthLevel")[0].style.display = "flex";
     document.getElementsByClassName("home")[0].style.visibility = "hidden";
     document.getElementById("header").style.height = "300px";
-    document.getElementById("section").style.marginTop = "0px";
     document.getElementById("header").style.border = "none";
     document.getElementsByClassName("thirdLevel")[0].style.borderBottom = "1px solid black";
 
