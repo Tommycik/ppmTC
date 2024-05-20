@@ -285,7 +285,7 @@ function activeWindow() {
   }
 
   if (window.innerWidth >= 1040) {
-    //document.getElementById("section").style.marginTop = "0px";
+    document.getElementById("section").style.marginTop = "0px";
 
     scrollFunction();
 
