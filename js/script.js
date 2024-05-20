@@ -410,7 +410,7 @@ window.onload=function (){
   activeWindow();
   sliderManager();
   headerManager();
-
+  window.scroll(0,0);
 }
 
 let position=0
