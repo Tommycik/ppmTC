@@ -1907,12 +1907,9 @@ footer{
     overflow-x: hidden;
   }
 
-  .paper{
-    margin-top: 50px;
-  }
-
   .paper a{
     width: 50vw;
+    margin-top: 40px;
   }
   .photo\&video .hiddenArticle{
     width: 46%;
