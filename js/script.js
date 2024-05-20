@@ -407,10 +407,8 @@ window.onload=function (){
   document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
   document.getElementById("breakingNews").style.display = "flex";
-  activeWindow();
   sliderManager();
   headerManager();
-  window.scroll(0,0);
 }
 
 let position=0
