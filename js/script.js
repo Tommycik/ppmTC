@@ -410,7 +410,6 @@ window.onload=function (){
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
   document.getElementById("breakingNews").style.display = "flex";
   sliderManager();
-  headerManager();
 
 }
 
