@@ -111,7 +111,7 @@ function menu1() {
 
   }
 
-  elementVisible('lateralMenu', 0);
+  elementVisible('lateralMenu');
   headerManager();
 
 }
@@ -151,7 +151,7 @@ function menu2() {
 
   }
 
-  elementVisible('accountMenu', 1);
+  elementVisible('accountMenu');
   headerManager();
 
 }
@@ -186,7 +186,7 @@ function menu3() {
 
   }
 
-  elementVisible('searchMenu', 2);
+  elementVisible('searchMenu');
   headerManager();
 
 }
