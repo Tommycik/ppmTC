@@ -259,7 +259,7 @@ function sliderManager() {
   document.getElementsByClassName("draggable")[0].style.width = width+'%';
   let container = document.getElementsByClassName("draggable")[0];
 
-  container.innerHTML= container.innerHTML;
+  container.innerHTML = container.innerHTML;
   let change="0"
 
   if(end){
@@ -287,7 +287,7 @@ function activeWindow() {
 
   if (window.innerWidth >= 1040) {
 
-    if(visible[1]==true){
+    if(visible[1]===true){
       menu2();
     }
     scrollFunction();
@@ -302,6 +302,7 @@ function activeWindow() {
     document.getElementById("header").style.borderBottom = "1px solid #9d9a98"
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
+
   }
 
 }
