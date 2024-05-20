@@ -20,11 +20,11 @@ function hiddenText(id,object,type) {
   let target=document.getElementById(id);
   let targetImg=object.getElementsByTagName("img")[0];
 
-  if (target.style.display == "flex") {
+  if (target.style.display === "flex") {
     targetImg.style.transform = "rotate(0deg)";
   }else{
 
-    if(type==1){
+    if(type===1){
       targetImg.style.transform = "rotate(90deg)";
     }else{
       targetImg.style.transform = "rotate(180deg)";
@@ -388,9 +388,8 @@ function upComing(){
     }
 
     month++;
-    let id=count.toString();
     dateLine.getElementsByTagName("a")[count-1].getElementsByClassName("day")[0].innerHTML = days[day-1][1];
-    dateLine.getElementsByTagName("a")[count-1].getElementsByClassName("date")[0].innerHTML =number;
+    dateLine.getElementsByTagName("a")[count-1].getElementsByClassName("date")[0].innerHTML =number.toString();
     day++;
     number++;
 
