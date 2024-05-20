@@ -310,7 +310,7 @@ function activeWindow() {
 //Responsive to scrolling
 function scrollFunction() {
 
-  if (window.scrollY > 0) {
+  if (window.scrollY > 30) {
 
     document.getElementsByClassName("secondLevel")[0].style.display = "none";
     document.getElementsByClassName("thirdLevel")[0].style.display = "none";
