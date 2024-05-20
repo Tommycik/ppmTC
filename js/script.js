@@ -259,8 +259,7 @@ function sliderManager() {
   document.getElementsByClassName("draggable")[0].style.width = width+'%';
   let container = document.getElementsByClassName("draggable")[0];
 
-  container.innerHTML = container.innerHTML;
-  let change="0"
+  let change="0";
 
   if(end){
     position=-((events/eventDisplayed)*100-100);
@@ -417,7 +416,7 @@ let end=false;
 function slider(left){
 
   const events=  document.querySelectorAll('.upComing .draggable a').length;
-  let change="0";
+  let change;
 
   if(left){
 
@@ -443,7 +442,5 @@ function slider(left){
   change=position.toString()+'%';
   let container = document.getElementsByClassName("draggable")[0];
   container.style.left = change;
-
-  container.innerHTML= container.innerHTML;
 
 }
