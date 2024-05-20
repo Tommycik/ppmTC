@@ -15,6 +15,7 @@ function elementVisible(id) {
 
 }
 
+//TODO hidetext menus
 function hiddenText(id,object,type) {
 
   let target=document.getElementById(id);
