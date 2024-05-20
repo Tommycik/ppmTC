@@ -274,7 +274,7 @@ function activeWindow() {
 
   headerManager();
 
-  if (window.scrollY > 5) {
+  if (window.scrollY > 20) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
   } else {
     document.getElementById("header").style.boxShadow = "none";
@@ -311,7 +311,7 @@ function activeWindow() {
 //Responsive to scrolling
 function scrollFunction() {
 
-  if (window.scrollY > 5) {
+  if (window.scrollY > 20) {
 
     document.getElementsByClassName("secondLevel")[0].style.display = "none";
     document.getElementsByClassName("thirdLevel")[0].style.display = "none";
@@ -407,6 +407,7 @@ window.onload=function (){
   document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
   document.getElementById("breakingNews").style.display = "flex";
+  activeWindow();
   sliderManager();
   headerManager();
 
