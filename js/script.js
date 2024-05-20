@@ -258,9 +258,8 @@ function sliderManager() {
   let width=((events/eventDisplayed)*100).toString()
   document.getElementsByClassName("draggable")[0].style.width = width+'%';
   let container = document.getElementsByClassName("draggable")[0];
-  /*
-  let content = container.innerHTML;
-  container.innerHTML= content;*/
+
+  container.innerHTML= container.innerHTML;
   let change="0"
 
   if(end){
