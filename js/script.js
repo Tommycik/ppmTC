@@ -409,7 +409,6 @@ window.onload=function (){
   document.getElementById("breakingNews").style.display = "flex";
   sliderManager();
   headerManager();
-  activeWindow();
 }
 
 let position=0
