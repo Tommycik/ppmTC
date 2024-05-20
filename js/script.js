@@ -286,10 +286,11 @@ function activeWindow() {
 
   if (window.innerWidth >= 1040) {
 
+    scrollFunction();
+
     if(visible[1]===true){
       menu2();
     }
-    scrollFunction();
 
   } else {
 
