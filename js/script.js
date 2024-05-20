@@ -215,21 +215,21 @@ window.onresize = function () {
 function sliderManager() {
 
   const events=  document.querySelectorAll('.upComing .draggable a').length;
-  const outerWidth = window.outerWidth;
+  const innerWidth = window.innerWidth;
 
-  if(outerWidth<270){
+  if(innerWidth<270){
     eventDisplayed=1;
-  } else if(outerWidth<450){
+  } else if(innerWidth<450){
     eventDisplayed=2;
-  }else if(outerWidth < 640) {
+  }else if(innerWidth < 640) {
     eventDisplayed=3;
-  }else if (outerWidth < 800) {
+  }else if (innerWidth < 800) {
     eventDisplayed=2;
-  }else if (outerWidth < 940) {
+  }else if (innerWidth < 940) {
     eventDisplayed=3;
-  }else if (outerWidth < 1040) {
+  }else if (innerWidth < 1040) {
     eventDisplayed=4;
-  }else if (outerWidth < 1310) {
+  }else if (innerWidth < 1310) {
     eventDisplayed=5;
   }else {
     eventDisplayed=6;
@@ -238,18 +238,18 @@ function sliderManager() {
   const title = document.getElementById("upTitle");
   let string ="Upcoming Events";
 
-  if(outerWidth<215){
+  if(innerWidth<215){
 
-    let toggle=Math.floor((215-outerWidth) / 4)+2;
+    let toggle=Math.floor((215-innerWidth) / 4)+2;
     string = string.slice(0,15-toggle);
     string = string+"..."
     if(toggle<10){
       title.innerHTML=string;
     }
 
-  } else if((outerWidth>=250 && outerWidth<265)){
+  } else if((innerWidth>=250 && innerWidth<265)){
     title.innerHTML="Upcoming Eve...";
-  } else if((outerWidth>=265 && outerWidth<270)){
+  } else if((innerWidth>=265 && innerWidth<270)){
     title.innerHTML="Upcoming Even...";
   }else{
     title.innerHTML="Upcoming Events";
@@ -285,7 +285,7 @@ function activeWindow() {
     document.getElementById("header").style.left = "0";
   }
 
-  if (window.outerWidth >= 1040) {
+  if (window.innerWidth >= 1040) {
 
     if(visible[1]===true){
       menu2();
