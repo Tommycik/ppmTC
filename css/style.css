@@ -828,14 +828,14 @@ section{
 }
 
 .special{
-  border-bottom: #da4b1f solid 2px;
+  border-bottom: #eb714f solid 2px;
   display: block;
   width: 100%;
-  color: #dc582f;
+  color: #eb714f;
   margin:0 0 5px 0;
-  font-weight: normal;
+  font-weight: 500;
   padding-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 
@@ -952,15 +952,15 @@ section{
 
 /*Magazine*/
 .paper{
-  margin: 50px 0 0 0;
+  margin: 15px 0 0 0;
   justify-content: center;
   width: 100%;
   height: fit-content;
 }
 
 .paper a {
-  width: 50vw;
   margin:0 auto;
+  width: 100%;
   aspect-ratio: 3/3.19;
   height: auto;
 }
@@ -1276,6 +1276,7 @@ section{
   flex-wrap: wrap;
   gap: 20px;
   display: none;
+  margin-top: 20px;
   margin-bottom: -20px;
 }
 
@@ -1905,6 +1906,13 @@ footer{
     overflow-x: hidden;
   }
 
+  paper{
+    margin-top: 50px;
+  }
+
+  .paper a{
+    width: 50vw;
+  }
   .photo\&video .hiddenArticle{
     width: 46%;
   }
@@ -1976,10 +1984,6 @@ footer{
 
   .centeredGeometry,.showMore{
     width: 100%;
-  }
-
-  .photo\&video .othersSub:nth-last-child(1){
-    border-bottom: #DDD8D5 solid 1px;
   }
 
   .upComing{

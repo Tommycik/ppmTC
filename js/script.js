@@ -15,7 +15,6 @@ function elementVisible(id) {
 
 }
 
-//TODO hidetext menus
 function hiddenText(id,object,type) {
 
   let target=document.getElementById(id);
@@ -135,7 +134,7 @@ function menu2() {
 
   if (visible[1]) {
 
-    document.getElementById("search").style.transform="rotate(0deg)";
+    document.getElementById("accountArrow").style.transform="rotate(0deg)";
     document.getElementById("body").style.overflow = "scroll";
     document.getElementById("accountMenu").style.overflow = "hidden";
     overlay(0);
@@ -143,7 +142,7 @@ function menu2() {
 
   } else {
 
-    document.getElementById("search").style.transform="rotate(180deg)";
+    document.getElementById("accountArrow").style.transform="rotate(180deg)";
     document.getElementById("body").style.overflow = "hidden";
     document.getElementById("accountMenu").style.overflow = "auto";
     x.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
@@ -418,7 +417,7 @@ let end=false;
 function slider(left){
 
   const events=  document.querySelectorAll('.upComing .draggable a').length;
-  let change="0"
+  let change="0";
 
   if(left){
 
@@ -431,7 +430,6 @@ function slider(left){
   }else{
 
     position-=100;
-
     if(end){
       position+=100;
     }else  if(position<-((events/eventDisplayed)*100-100)|| events/eventDisplayed<2){
