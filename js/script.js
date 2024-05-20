@@ -1,12 +1,13 @@
 const visible = [false, false, false];
 let homeChecked = false;
+
 //Makes an element visible
 function elementVisible(id) {
 
   let object = document.getElementById(id);
   let state= object.style.display;
 
-  if (state == "flex"|| state == "block"|| state == "inline") {
+  if (state === "flex"|| state === "block"|| state === "inline") {
     object.style.display = "none";
   } else {
     object.style.display = "flex";
@@ -48,20 +49,20 @@ function overlay(x) {
 
   let home = document.getElementById("homeHead");
 
-  if (x == 1) {
+  if (x === 1) {
 
     document.getElementById("header").style.boxShadow = "none";
-    if (home.style.visibility == "hidden") {
+    if (home.style.visibility === "hidden") {
       home.style.visibility = "visible";
       homeChecked = true;
     } else {
       homeChecked = false;
     }
 
-  } else if (x == 0) {
+  } else if (x === 0) {
 
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
-    if (home.style.visibility == "visible") {
+    if (home.style.visibility === "visible") {
 
       if (homeChecked) {
         homeChecked = false;
@@ -207,12 +208,13 @@ function headerManager(){
 //When resizing
 window.onresize = function () {
   activeWindow();
-  slidderManager();
+  sliderManager();
 }
 
 //Manages the events slider
-function slidderManager(){
+function sliderManager() {
 
+  const events=  document.querySelectorAll('.upComing .draggable a').length;
   const innerWidth = window.innerWidth;
 
   if(innerWidth<270){
@@ -256,8 +258,9 @@ function slidderManager(){
   let width=((events/eventDisplayed)*100).toString()
   document.getElementsByClassName("draggable")[0].style.width = width+'%';
   let container = document.getElementsByClassName("draggable")[0];
+  /*
   let content = container.innerHTML;
-  container.innerHTML= content;
+  container.innerHTML= content;*/
   let change="0"
 
   if(end){
@@ -394,21 +397,30 @@ function upComing(){
 
 }
 
+//When loading the page
 window.onload=function (){
+
   upComing();
   document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
   document.getElementById("breakingNews").style.display = "flex";
-  slidderManager();
+  sliderManager();
   headerManager();
+
 }
-var position=0
-var eventDisplayed=3;
-var events=7;
-var end=false
+
+let position=0
+let eventDisplayed=3;
+let end=false;
+
+//Slider manager
 function slider(left){
+
+  const events=  document.querySelectorAll('.upComing .draggable a').length;
   let change="0"
+
   if(left){
+
     position+=100;
     if(position>0){
       position=0;
@@ -416,7 +428,9 @@ function slider(left){
     end=false;
 
   }else{
+
     position-=100;
+
     if(end){
       position+=100;
     }else  if(position<-((events/eventDisplayed)*100-100)|| events/eventDisplayed<2){
@@ -426,9 +440,10 @@ function slider(left){
     }
 
   }
+
   change=position.toString()+'%';
   let container = document.getElementsByClassName("draggable")[0];
   container.style.left = change;
-  let content = container.innerHTML;
-  container.innerHTML= content;
+
+  //container.innerHTML= container.innerHTML;
 }
