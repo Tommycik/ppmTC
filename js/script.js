@@ -349,18 +349,19 @@ function getTodaysDate(){
   let number=date.getDate();
   let x="th";
 
-  if(number==1){
+  if(number===1){
     x="st";
-  }else if(number==2){
+  }else if(number===2){
     x="nd";
-  }else if(number==3){
+  }else if(number===3){
     x="rd"
   }
+
   return day+', ' + month +' '+date.getDate()+x+' '+ year;
 
 }
 
-//Upcoming events
+//Upcoming days
 function upComing(){
 
   let date = new Date();
@@ -372,9 +373,9 @@ function upComing(){
 
   for (let count = 1; count <= dateLine.getElementsByTagName("a").length; count++) {
 
-    if(month == 1){
+    if(month === 1){
       max=28;
-    }else if(month == 3 || month == 5|| month == 8||month == 10){
+    }else if(month === 3 || month === 5|| month === 8||month === 10){
       max=30;
     }
 
