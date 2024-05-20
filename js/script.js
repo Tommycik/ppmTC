@@ -403,6 +403,7 @@ function upComing(){
 //When loading the page
 window.onload=function (){
 
+  activeWindow();
   upComing();
   document.getElementsByClassName("dateShow")[0].innerHTML =getTodaysDate();
   document.getElementsByClassName("dateShow")[1].innerHTML =getTodaysDate();
