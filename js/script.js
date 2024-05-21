@@ -61,7 +61,10 @@ function overlay(x) {
 
   } else if (x === 0) {
 
-    document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
+    if (window.scrollY > 40) {
+      document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
+    }
+
     if (home.style.visibility === "visible") {
 
       if (homeChecked) {
