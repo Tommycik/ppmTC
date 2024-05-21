@@ -293,6 +293,10 @@ header{
   min-height: 100%;
 }
 
+.clickableBackground:hover{
+  cursor:default;
+}
+
 #searchMenu .clickableBackground{
   min-height: calc( 100% - 67px);
   width: 100%;
