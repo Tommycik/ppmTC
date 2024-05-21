@@ -274,7 +274,7 @@ function activeWindow() {
 
   headerManager();
 
-  if (window.scrollY > 0) {
+  if (window.scrollY > 40) {
     document.getElementById("header").style.boxShadow = "#9d9a98 0 0 10px";
   } else {
     document.getElementById("header").style.boxShadow = "none";
@@ -299,29 +299,35 @@ function activeWindow() {
     document.getElementsByClassName("fourthLevel")[0].style.display = "none";
     document.getElementsByClassName("home")[0].style.visibility = "visible";
     document.getElementById("header").style.height = "65px";
+    document.getElementById("section").style.paddingTop="0";
+    document.getElementById("header").style.position = "sticky";
     document.getElementById("header").style.borderBottom = "1px solid #9d9a98";
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
-
+    scrolled = true;
   }
 
 }
 
 //Responsive to scrolling
+let scrolled=false;
 function scrollFunction() {
 
-  if (window.scrollY > 0) {
+  if (window.scrollY > 40 && scrolled === false) {
 
     document.getElementsByClassName("secondLevel")[0].style.display = "none";
     document.getElementsByClassName("thirdLevel")[0].style.display = "none";
     document.getElementsByClassName("fourthLevel")[0].style.display = "none";
     document.getElementsByClassName("home")[0].style.visibility = "visible";
     document.getElementById("header").style.height = "65px";
+    document.getElementById("header").style.position = "sticky";
+    document.getElementById("section").style.paddingTop="235px";
     document.getElementById("header").style.borderBottom = "1px solid #9d9a98";
     document.getElementsByClassName("thirdLevel")[0].style.boder = "none";
     document.getElementsByClassName("firstLevel")[0].style.height = "100%";
+    scrolled = true;
 
-  } else {
+  } else if(window.scrollY <= 40 && scrolled === true){
 
     document.getElementsByClassName("firstLevel")[0].style.height = "65px";
     document.getElementsByClassName("secondLevel")[0].style.display = "flex";
@@ -329,8 +335,11 @@ function scrollFunction() {
     document.getElementsByClassName("fourthLevel")[0].style.display = "flex";
     document.getElementsByClassName("home")[0].style.visibility = "hidden";
     document.getElementById("header").style.height = "300px";
+    document.getElementById("header").style.position = "relative";
+    document.getElementById("section").style.paddingTop="0";
     document.getElementById("header").style.border = "none";
     document.getElementsByClassName("thirdLevel")[0].style.borderBottom = "1px solid black";
+    scrolled = false;
 
   }
 
