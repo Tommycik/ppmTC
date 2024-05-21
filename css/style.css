@@ -263,7 +263,7 @@ header{
   height:calc(100vh - 65px);
   width: 100%;
   display: none;
-  position: fixed;
+  position: absolute;
   top:65px;
   z-index:10000;
 }
