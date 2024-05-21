@@ -47,12 +47,12 @@ function showMore() {
 //Manages home title
 function overlay(x) {
 
-  let home = document.getElementById("homeHead");
+  let home =  document.querySelectorAll('.home')[0];
 
   if (x === 1) {
 
     document.getElementById("header").style.boxShadow = "none";
-    if (home.style.visibility === "hidden") {
+    if (home.style.visibility !== "visible") {
       home.style.visibility = "visible";
       homeChecked = true;
     } else {
